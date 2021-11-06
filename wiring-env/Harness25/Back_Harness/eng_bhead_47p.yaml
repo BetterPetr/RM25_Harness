@@ -1,0 +1,24 @@
+connectors:
+  AHDP06_47P: &ahdp47
+    pinlabels: [HB, AV, AT, PWR, GND, HB, AV, AT, AV, AT, AV, AT, SIG, SIG, SIG, SIG, PWR, SIG, SIG, AT, SIG, AV, AV, PWR, UDIG, GND, 12V, 5V, GND, GND, UDIG, GND, PWR, SIG, SIG, SIG, SIG, SIG, PWR, GND, CANHi, CANLo, SIG, 0VECUGND, SIG, SIG, 5VECUPWR]
+    type: AMPHENOL HDP 47P
+    subtype: female
+    notes: Bulkhead Connector going to Engine
+
+  DT04_2P: &dt2p_temp
+    pinlabels: [GND, SIG]
+    type: DT04_2P
+    subtype: female
+    notes: LRADFan
+
+cables:
+  W2P: &template_cbl2
+    wirecount: 2
+    gauge: 22 AWG
+    color_code: IEC
+
+connections:
+-
+  - AHDP06_47P: [1-2]
+  - W2P: [1-2]
+  - DT04_2P: [1-2]
