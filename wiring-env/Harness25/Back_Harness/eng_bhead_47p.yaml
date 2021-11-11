@@ -5,11 +5,17 @@ connectors:
     subtype: female
     notes: Bulkhead Connector going to Engine
 
+  # BINDER_4P: &bndr2p_temp
+  #   pinlabels: [GND, PWR, SIG, NA]
+  #   type: BINDER_4P
+  #   subtype: male
+  #   notes: Shift Position Motor
+
   DT04_2P: &dt2p_temp
     pinlabels: [GND, SIG]
     type: DT04_2P
-    subtype: female
-    notes: LRADFan
+    subtype: male
+    notes: CAM SYNC
 
 cables:
   W2P: &template_cbl2
@@ -19,6 +25,6 @@ cables:
 
 connections:
 -
-  - AHDP06_47P: [1-2]
+  - AHDP06_47P: [21,23]
   - W2P: [1-2]
-  - DT04_2P: [1-2]
+  - DT04_2P: [2,1]

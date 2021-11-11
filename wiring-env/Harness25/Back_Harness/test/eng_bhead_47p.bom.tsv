@@ -1,0 +1,8 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 2 x 22 AWG	0	m	2P
+2	Cable, 3 x 22 AWG	0	m	3P
+3	Cable, 5 x 22 AWG	0	m	5P
+4	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD
+5	Connector, Binder 4P, female, 4 pins	1		SHIFT_POSM
+6	Connector, Deutsch DT04_2P, female, 2 pins	1		CAM_Sync
+7	Connector, Deutsch DT04_6P, female, 6 pins	1		LRCenter

@@ -1,0 +1,58 @@
+templates:
+  - &DT2P_f
+    type: Deutsch DT04_2P
+    subtype: female
+  - &DT6P_f
+    type: Deutsch DT04_6P
+    subtype: female
+  - &Bndr4P_f
+    type: Binder 4P
+    subtype: female
+
+connectors:
+  BULKHEAD: &ahdp47
+    pinlabels: [HB, AV, AT, PWR, GND, HB, AV, AT, AV, AT, AV, AT, SIG, SIG, SIG, SIG, PWR, SIG, SIG, AT, SIG, AV, AV, PWR, UDIG, GND, 12V, 5V, GND, GND, UDIG, GND, PWR, SIG, SIG, SIG, SIG, SIG, PWR, GND, CANHi, CANLo, SIG, 0VECUGND, SIG, SIG, 5VECUPWR]
+    type: AMPHENOL HDP 47P
+    subtype: female
+    notes: Bulkhead Connector (Engine Side)
+
+  SHIFT_POSM:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+    notes: Shift Position Motor
+
+  CAM_Sync:
+    <<: *DT2P_f
+    pinlabels: [GND, SIG]
+
+  LRCenter: # lrcenter
+    <<: *DT6P_f
+    pinlabels: [GND, PWR, wht, brn, gry, NA]
+
+cables:
+  2P: &template_cbl2
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [BK, OG]
+  3P: &temp_cbl3
+    wirecount: 3
+    gauge: 22 AWG
+    colors: [BK, RD, OG]
+  5P: &temp_cbl5
+    wirecount: 5
+    gauge: 22 AWG
+    colors: [BK, RD, WH, BN, GY]
+
+connections:
+-
+  - BULKHEAD: [21,40]
+  - 2P: [1-2]
+  - CAM_Sync: [2,1]
+-
+  - BULKHEAD: [32, 33, 38]
+  - 3P: [1-3]
+  - SHIFT_POSM: [1-3]
+-
+  - BULKHEAD: [42, 39, 41, 40, 43]
+  - 5P: [1-5]
+  - LRCenter: [1-5]
