@@ -27,13 +27,13 @@ connectors:
 
   LRCenter: # lrcenter
     <<: *DT6P_f
-    pinlabels: [GND, PWR, wht, brn, gry, NA]
+    pinlabels: [CANLo, PWR, CANHi, GND, SIG, NA]
 
 cables:
   2P: &template_cbl2
     wirecount: 2
     gauge: 22 AWG
-    colors: [BK, OG]
+    colors: [OG, BK]
   3P: &temp_cbl3
     wirecount: 3
     gauge: 22 AWG

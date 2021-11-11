@@ -304,7 +304,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
     <td port="p1l">1</td>
-    <td>GND</td>
+    <td>CANLo</td>
    </tr>
    <tr>
     <td port="p2l">2</td>
@@ -312,15 +312,15 @@ graph {
    </tr>
    <tr>
     <td port="p3l">3</td>
-    <td>wht</td>
+    <td>CANHi</td>
    </tr>
    <tr>
     <td port="p4l">4</td>
-    <td>brn</td>
+    <td>GND</td>
    </tr>
    <tr>
     <td port="p5l">5</td>
-    <td>gry</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p6l">6</td>
@@ -330,10 +330,10 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#000000:#000000"]
+	edge [color="#000000:#ff8000:#000000"]
 	BULKHEAD:p21r:e -- "2P":w1:w
 	"2P":w1:e -- CAM_Sync:p2l:w
-	edge [color="#000000:#ff8000:#000000"]
+	edge [color="#000000:#000000:#000000"]
 	BULKHEAD:p40r:e -- "2P":w2:w
 	"2P":w2:e -- CAM_Sync:p1l:w
 	"2P" [label=<
@@ -355,7 +355,7 @@ graph {
    <tr>
     <td>BULKHEAD:21:SIG</td>
     <td>
-     1:BK
+     1:OG
     </td>
     <td>CAM_Sync:2:SIG</td>
    </tr>
@@ -363,7 +363,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -371,7 +371,7 @@ graph {
    <tr>
     <td>BULKHEAD:40:GND</td>
     <td>
-     2:OG
+     2:BK
     </td>
     <td>CAM_Sync:1:GND</td>
    </tr>
@@ -379,7 +379,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -503,7 +503,7 @@ graph {
     <td>
      1:BK
     </td>
-    <td>LRCenter:1:GND</td>
+    <td>LRCenter:1:CANLo</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -535,7 +535,7 @@ graph {
     <td>
      3:WH
     </td>
-    <td>LRCenter:3:wht</td>
+    <td>LRCenter:3:CANHi</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -551,7 +551,7 @@ graph {
     <td>
      4:BN
     </td>
-    <td>LRCenter:4:brn</td>
+    <td>LRCenter:4:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
@@ -567,7 +567,7 @@ graph {
     <td>
      5:GY
     </td>
-    <td>LRCenter:5:gry</td>
+    <td>LRCenter:5:SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
