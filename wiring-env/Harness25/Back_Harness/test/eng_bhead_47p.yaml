@@ -5,8 +5,23 @@ templates:
   - &DT6P_f
     type: Deutsch DT04_6P
     subtype: female
+  - &DT4P_f
+    type: Deutsch DT04_4P
+    subtype: female
   - &Bndr4P_f
     type: Binder 4P
+    subtype: female
+  - &BSH2P_f
+    type: Bosch 2P
+    subtype: female
+  - &Sensata4P_f
+    type: Sensata 4P
+    subtype: female
+  - &TESuper3P_f
+    type: TE AMP Superseal 3P
+    subtype: female
+  - &HndaKnock_f
+    type: Honda CE3001 Connector 3P
     subtype: female
 
 connectors:
@@ -28,20 +43,98 @@ connectors:
   LRCenter: # lrcenter
     <<: *DT6P_f
     pinlabels: [CANLo, PWR, CANHi, GND, SIG, NA]
+  RRCenter:
+    <<: *DT6P_f
+    pinlabels: [CANLo, PWR, CANHi, GND, SIG, NA]
+
+  Inj1:
+    <<: *BSH2P_f
+    pinlabels: [PWR, SIG]
+  Inj2:
+    <<: *BSH2P_f
+    pinlabels: [PWR, SIG]
+  Inj3:
+    <<: *BSH2P_f
+    pinlabels: [PWR, SIG]
+  Inj4:
+    <<: *BSH2P_f
+    pinlabels: [PWR, SIG]
+
+  Fuel_PT:
+    <<: *Sensata4P_f
+    pinlabels: [GND, PWR, SIGY, SIGGn]
+  Oil_PT:
+    <<: *Sensata4P_f
+    pinlabels: [GND, PWR, SIGY, SIGGn]
+  WaterIn_PT:
+    <<: *Sensata4P_f
+    pinlabels: [GND, PWR, SIGY, SIGGn]
+  Intake_PT:
+    <<: *Sensata4P_f
+    pinlabels: [GND, PWR, SIGY, SIGGn]
+
+  T_Motor:
+    <<: *DT4P_f
+    pinlabels: [GND, PWR, UDIG]
+  TPS:
+    <<: *TESuper3P_f
+    pinlabels: [GND, PWR, 5V]
+  TPS_Pot:
+    <<: *DT4P_f
+    pinlabels: [AV, AV]
+
+  BrakeL:
+    <<: *DT2P_f
+    pinlabels: [PWR, SIG]
+
+  Shift_Motor:
+    <<: *DT2P_f
+    pinlabels: [HB, HB]
+
+  Knock:
+    <<: *HndaKnock_f
+    pinlabels: [PWR, SIG, SIG]
 
 cables:
   2P: &template_cbl2
     wirecount: 2
     gauge: 22 AWG
     colors: [OG, BK]
+  2PInj:
+    <<: *template_cbl2
+    gauge: 16 AWG
+    colors: [RD, VT]
+  2PBrkL:
+    <<: *template_cbl2
+    colors: [RD, YE]
+  2P_Tpot:
+    <<: *template_cbl2
+    colors: [YE, YE]
+  2P_SHFM:
+    <<: *template_cbl2
+    gauge: 16 AWG
+    colors: [VT, VT]
   3P: &temp_cbl3
     wirecount: 3
     gauge: 22 AWG
     colors: [BK, RD, OG]
+  3P_ET:
+    <<: *temp_cbl3
+    colors: [BK, RD, GY]
+  3P_TPS:
+    <<: *temp_cbl3
+    colors: [BK, RD, YE]
+  3P_KNK:
+    <<: *temp_cbl3
+    colors: [RD, OG, OG]
   5P: &temp_cbl5
     wirecount: 5
     gauge: 22 AWG
     colors: [BK, RD, WH, BN, GY]
+  4P: &temp_cbl4
+    wirecount: 4
+    gauge: 22 AWG
+    colors: [BK, RD, YE, GN]
 
 connections:
 -
@@ -53,6 +146,66 @@ connections:
   - 3P: [1-3]
   - SHIFT_POSM: [1-3]
 -
-  - BULKHEAD: [42, 39, 41, 40, 43]
+  - BULKHEAD: [40, 39, 41, 42, 43]
   - 5P: [1-5]
   - LRCenter: [1-5]
+-
+  - BULKHEAD: [40, 39, 45, 42, 46]
+  - 5P: [1-5]
+  - RRCenter: [1-5]
+-
+  - BULKHEAD: [17, 13]
+  - 2PInj: [1-2]
+  - Inj1: [1-2]
+-
+  - BULKHEAD: [17, 14]
+  - 2PInj: [1-2]
+  - Inj2: [1-2]
+-
+  - BULKHEAD: [17, 15]
+  - 2PInj: [1-2]
+  - Inj3: [1-2]
+-
+  - BULKHEAD: [17, 16]
+  - 2PInj: [1-2]
+  - Inj4: [1-2]
+-
+  - BULKHEAD: [44, 47, 2, 3]
+  - 4P: [1-4]
+  - Fuel_PT: [1-4]
+-
+  - BULKHEAD: [44, 47, 7, 8]
+  - 4P: [1-4]
+  - Oil_PT: [1-4]
+-
+  - BULKHEAD: [44, 47, 11, 12]
+  - 4P: [1-4]
+  - WaterIn_PT: [1-4]
+-
+  - BULKHEAD: [44, 47, 9, 10]
+  - 4P: [1-4]
+  - Intake_PT: [1-4]
+-
+  - BULKHEAD: [28, 24, 25]
+  - 3P_ET: [1-3] 
+  - T_Motor: [1-3]
+-
+  - BULKHEAD: [29, 27, 28]
+  - 3P_TPS: [1-3]
+  - TPS: [1-3]
+-
+  - BULKHEAD: [22, 23]
+  - 2P_Tpot: [1-2]
+  - TPS_Pot: [1-2]
+-
+  - BULKHEAD: [38, 46]
+  - 2PBrkL: [1-2]
+  - BrakeL: [1-2]
+-
+  - BULKHEAD: [1, 6]
+  - 2P_SHFM: [1-2]
+  - Shift_Motor: [1-2]
+-
+  - BULKHEAD: [47, 18, 19]
+  - 3P_KNK: [1-3]
+  - Knock: [1-3]
