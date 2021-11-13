@@ -1,0 +1,225 @@
+templates:
+  - &template_cbl2
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [OG, BK]
+  - &DT2P_f
+    type: Deutsch DT04_2P
+    subtype: female
+  - &DT6P_f
+    type: Deutsch DT04_6P
+    subtype: female
+  - &DT4P_f
+    type: Deutsch DT04_4P
+    subtype: female
+  - &Bndr4P_f
+    type: Binder 4P
+    subtype: female
+  - &BSH2P_f
+    type: Bosch 2P
+    subtype: female
+  - &Sensata4P_f
+    type: Sensata 4P
+    subtype: female
+  - &TESuper3P_f
+    type: TE AMP Superseal 3P
+    subtype: female
+  - &HndaKnock_f
+    type: Honda CE3001 Connector 3P
+    subtype: female
+
+connectors:
+  BULKHEAD_A: &ahdp47
+    pinlabels: [HB, AV, AT, PWR, GND, HB, AV, AT, AV, AT, AV, AT, SIG, SIG, SIG, SIG, PWR, SIG, SIG, AT, SIG, AV, AV, PWR, UDIG, GND, 12V, 5V, GND, GND, UDIG, GND, PWR, SIG, SIG, SIG, SIG, SIG, PWR, GND, CANHi, CANLo, SIG, 0VECUGND, SIG, SIG, 5VECUPWR]
+    type: AMPHENOL HDP 47P
+    subtype: male
+    notes: Bulkhead Connector (Driver Side)
+  ECUA: &ECUA
+    pinlabels: [AT5, AT6, AV15, AV16, AV17, IGN_LS9, IGN_LS10, IGN_LS11, IGN_LS12, SEN_5V0_C1, LA-NB1, LA-NB2, KNOCK3, KNOCK4, DIG2, DIG3, DIG4, SEN_5V0_C2, SEN_5V0_B2, LIN, RS232_RX, RS232_TX, DIG1, BAT_NEG3, BAT_NEG4, SEN_0V_C1, SEN_0V_C2, CAN3_HI, CAN3_LO, CAN2_HI, CAN2_LO, BAT_NEG5, SEN_0V_B1, SEN_0V_A1]
+    type: MoTeC ECUA 34P
+    subtype: female
+  ECUB: &ECUB
+    pinlabels: [OUT_HB9, OUT_HB9, UDIG8, UDIG9, UDIG10, UDIG11, UDIG12, INJ_LS5, INJ_LS3, AV9, AV10, AV11, BAT_POS, INJ_LS6, INJ_LS4, AV12, AV13, AV14, BAT_POS, OUT_HB7, OUT_HB8, INJ_PH9, INJ_PH10, INJ_PH11, INJ_PH12, SEN_5V0_A]
+    type: MoTeC ECUB 26P
+    subtype: female
+  ECUC: &ECUC
+    pinlabels: [OUT_HB2, SEN-5V0_A, IGN_LS1, IGN_LS2, IGN_LS3, IGN_LS4, IGN_LS5, IGN_LS6, SEN_5V0_B, BAT_NEG1, BAT_NEG2, IGN_LS7, IGN_LS8, AV1, AV2, AV3, AV4, OUT_HB1, INJ_PH1, INJ_PH2, INJ_PH3, INJ_PH4, INJ_LS1, INJ_LS2, AV5, BAT_POS, INJ_PH5, INJ_PH6, INJ_PH7, INJ_PH8, OUT_HB3, OUT_HB4, OUT_HB5, OUT_HB6]
+    type: MoTeC ECUC 34P
+    subtype: female
+  ECUD: &ECUD
+    pinlabels: [UDIG1, UDIG2, AT1, AT2, AT3, AT4, KNOCK1, UDIG3, UDIG4, UDIG5, UGID6, BAT_BAK, KNOCK2, UDIG7, SEN_0V_A, SEN_0V_B, CAN1_HI, CAN1_LO, SEN_6V3, AV6, AV7, AV8, ETH_TX+, ETH_TX-, ETH_RX+, ETH_RX-]
+    type: MoTeC ECUD 26P
+    subtype: female
+
+cables:
+  # ECUA-Bulk_16: &temp_cbl
+  #   wirecount: 5
+  #   gauge: 16 AWG
+  #   colors: []
+  # ECUA-Bulk_22:
+  #   <<: *temp_cbl
+  #   gauge: 22 AWG
+  ECU_GND_22: &temp_ecupg
+    wirecount: 1
+    gauge: 22 AWG
+    colors: [BK]
+  ECU_PWR_22:
+    <<: *temp_ecupg
+    colors: [RD]
+  2P_PG22: &temp_pwr
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [BK, RD]
+  2P_PG16:
+    <<: *temp_pwr
+    gauge: 16 AWG
+
+  2P_CAMSync:
+    <<: *template_cbl2
+  2PInj1: &tempinj
+    <<: *template_cbl2
+    gauge: 16 AWG
+    colors: [RD, VT]
+  2PInj2:
+    <<: *tempinj
+  2PInj3:
+    <<: *tempinj
+  2PInj4:
+    <<: *tempinj
+  2PBrkL:
+    <<: *template_cbl2
+    colors: [RD, YE]
+  2P_Tpot:
+    <<: *template_cbl2
+    colors: [YE, YE]
+  2P_SHFM:
+    <<: *template_cbl2
+    gauge: 16 AWG
+    colors: [VT, VT]
+  3P_SHFT_POSM: &temp_cbl3
+    wirecount: 3
+    gauge: 22 AWG
+    colors: [BK, RD, OG]
+  3P_ET:
+    <<: *temp_cbl3
+    colors: [BK, RD, GY]
+  3P_TPS:
+    <<: *temp_cbl3
+    colors: [BK, RD, YE]
+  3P_KNK:
+    <<: *temp_cbl3
+    colors: [RD, OG, OG]
+  5P_LRCntr: &temp_cbl5
+    wirecount: 5
+    gauge: 22 AWG
+    colors: [BK, RD, WH, BN, GY]
+  5P_RRCntr:
+    <<: *temp_cbl5
+  2P_FPT: &temp_cblPT
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [YE, GN]
+    notes: Fuel P+T
+  2P_OPT:
+    <<: *temp_cblPT
+    notes: Oil P+T
+  2P_WIPT:
+    <<: *temp_cblPT
+    notes: WaterIn P+T
+  2P_IPT:
+    <<: *temp_cblPT
+    notes: Intake P+T
+
+connections:
+#CAM_Sync
+-
+  - ECU []
+  - 2P_CAMSync: [1-2]
+  - BULKHEAD_A: [21,40]
+#SHIFT_POSM
+-
+  - ECU []
+  - 3P_SHFT_POSM: [1-3]
+  - BULKHEAD_A: [32, 33, 38]
+#LRCenter
+-
+  - ECU []
+  - 5P_LRCntr: [1-5]
+  - BULKHEAD_A: [40, 39, 41, 42, 43]
+#RRCenter
+-
+  - ECU []
+  - 5P_RRCntr: [1-5]
+  - BULKHEAD_A: [40, 39, 45, 42, 46]
+#INJECTORS (PWR from PDM)
+-
+  - BULKHEAD_A: [17, 13]
+  - 2PInj1: [1-2]
+  - Inj1: [1-2]
+-
+  - BULKHEAD: [17, 14]
+  - 2PInj2: [1-2]
+  - Inj2: [1-2]
+-
+  - BULKHEAD: [17, 15]
+  - 2PInj3: [1-2]
+  - Inj3: [1-2]
+-
+  - BULKHEAD: [17, 16]
+  - 2PInj4: [1-2]
+  - Inj4: [1-2]
+#GND & PWR 44,47 BulkA 22AWG
+-
+  - ECUD: [15]
+  - ECU_GND_22: [1]
+  - BULKHEAD_A: [44]
+-
+  - ECUC: [2]
+  - ECU_PWR_22: [1]
+  - BULKHEAD_A: [47]
+
+#Fuel_PT
+-
+  - ECUD: [20, 3]
+  - 2P_FPT: [1-2]
+  - BULKHEAD_A: [2, 3]
+#Oil_PT
+-
+  - ECUD: [21, 4]
+  - 2P_OPT: [1-2]
+  - BULKHEAD_A: [7, 8]
+#WaterIn_PT
+-
+  - ECUD: []
+  - 4P_WIPT: [1-2]
+  - BULKHEAD_A: [11, 12]
+#Intake_PT
+-
+  - ECUA: [2,3]
+  - 2P_IPT: [1-2]
+  - BULKHEAD_A: [9,10]
+
+-
+  - BULKHEAD: [28, 24, 25]
+  - 3P_ET: [1-3] 
+  - T_Motor: [1-3]
+-
+  - BULKHEAD: [29, 27, 28]
+  - 3P_TPS: [1-3]
+  - TPS: [1-3]
+-
+  - BULKHEAD: [22, 23]
+  - 2P_Tpot: [1-2]
+  - TPS_Pot: [1-2]
+-
+  - BULKHEAD: [38, 46]
+  - 2PBrkL: [1-2]
+  - BrakeL: [1-2]
+-
+  - BULKHEAD: [1, 6]
+  - 2P_SHFM: [1-2]
+  - Shift_Motor: [1-2]
+-
+  - BULKHEAD: [47, 18, 19]
+  - 3P_KNK: [1-3]
+  - Knock: [1-3]
