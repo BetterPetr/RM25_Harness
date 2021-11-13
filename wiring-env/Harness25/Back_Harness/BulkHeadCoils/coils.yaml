@@ -1,0 +1,57 @@
+connectors:
+  BULKHEAD_16G: 
+    pinlabels: [C1P, C1I, C2P, C2I, C3P, C3I, C4P, C3I]
+    type: Deutsch HDP26-18-14SE
+    subtype: female
+    notes: Wiring for the 4 spark plugs
+
+  DNS_1:
+    pinlabels: [PWR, IGN]
+    type: Denso_2P
+
+  DNS_2:
+    pinlabels: [PWR, IGN]
+    type: Denso_2P
+
+  DNS_3:
+    pinlabels: [PWR, IGN]
+    type: Denso_2P
+
+  DNS_4:
+    pinlabels: [PWR, IGN]
+    type: Denso_2P
+
+cables:
+  2PC1: &template_cbl2
+    colors: [RD, VT]
+    wirecount: 2
+    gauge: 16 AWG
+  2PC2:
+    <<: *template_cbl2
+  2PC3:
+    <<: *template_cbl2
+  2PC4:
+    <<: *template_cbl2
+
+connections:
+-
+  - BULKHEAD_16G: [1-2]
+  - 2PC1: [1-2]
+  - DNS_1: [1-2]
+
+-
+  - BULKHEAD_16G: [3-4]
+  - 2PC2: [1-2]
+  - DNS_2: [1-2]
+
+-
+  - BULKHEAD_16G: [5-6]
+  - 2PC3: [1-2]
+  - DNS_3: [1-2]
+
+-
+  - BULKHEAD_16G: [7-8]
+  - 2PC4: [1-2]
+  - DNS_4: [1-2]
+
+  
