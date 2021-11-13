@@ -27,6 +27,9 @@ templates:
   - &HndaKnock_f
     type: Honda CE3001 Connector 3P
     subtype: female
+  - &SPAL4P
+    type: SPAL IX-SBL-YAZ-PT10 4P
+    subtype: female
 
 connectors:
   BULKHEAD: &ahdp47
@@ -79,7 +82,7 @@ connectors:
 
   T_Motor:
     <<: *DT4P_f
-    pinlabels: [GND, PWR, UDIG]
+    pinlabels: [GND, PWR, UDIG, NA]
   TPS:
     <<: *TESuper3P_f
     pinlabels: [GND, PWR, 5V]
@@ -98,6 +101,23 @@ connectors:
   Knock:
     <<: *HndaKnock_f
     pinlabels: [PWR, SIG, SIG]
+  
+  Clutch_PWR:
+    <<: *DT2P_f
+    pinlabels: [GND, PWR]
+  Clutch_POS:
+    <<: *DT4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+
+  RRShock: &RShock
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+  LRShock:
+    <<: *RShock
+  RAD_FAN:
+    <<: *SPAL4P
+    pinlabels: [SIG]
+    notes: PWM Signal - Fan Control
 
 cables:
   2P_CAMSync:
@@ -122,6 +142,9 @@ cables:
     <<: *template_cbl2
     gauge: 16 AWG
     colors: [VT, VT]
+  2P_ClchPWR:
+    <<: *template_cbl2
+    colors: [BK, RD]
   3P_SHFT_POSM: &temp_cbl3
     wirecount: 3
     gauge: 22 AWG
@@ -135,6 +158,14 @@ cables:
   3P_KNK:
     <<: *temp_cbl3
     colors: [RD, OG, OG]
+  3P_ClchPos:
+    <<: *temp_cbl3
+    colors: [BK, RD, OG]
+  3P_RRShk: &RShk
+    <<: *temp_cbl3
+    colors: [BK, RD, GY]
+  3P_LRShk:
+    <<: *RShk
   5P_LRCntr: &temp_cbl5
     wirecount: 5
     gauge: 22 AWG
@@ -202,7 +233,7 @@ connections:
   - 4P_IPT: [1-4]
   - Intake_PT: [1-4]
 -
-  - BULKHEAD: [28, 24, 25]
+  - BULKHEAD: [26, 24, 25]
   - 3P_ET: [1-3] 
   - T_Motor: [1-3]
 -
@@ -225,3 +256,19 @@ connections:
   - BULKHEAD: [47, 18, 19]
   - 3P_KNK: [1-3]
   - Knock: [1-3]
+-
+  - BULKHEAD: [5, 4]
+  - 2P_ClchPWR: [1-2]
+  - Clutch_PWR: [1-2]
+-
+  - BULKHEAD: [32, 33, 35]
+  - 3P_ClchPos: [1-3]
+  - Clutch_POS: [1-3]
+-
+  - BULKHEAD: [32, 33, 36]
+  - 3P_LRShk: [1-3]
+  - LRShock: [1-3]
+-
+  - BULKHEAD: [32, 33, 37]
+  - 3P_RRShk: [1-3]
+  - RRShock: [1-3]
