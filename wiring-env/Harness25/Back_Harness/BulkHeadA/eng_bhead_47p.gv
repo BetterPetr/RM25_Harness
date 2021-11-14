@@ -1626,7 +1626,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p32r:e -- "2P_WaterOut":w1:w
+	BULKHEAD:p44r:e -- "2P_WaterOut":w1:w
 	"2P_WaterOut":w1:e -- WaterOut:p1l:w
 	edge [color="#000000:#00ff00:#000000"]
 	BULKHEAD:p20r:e -- "2P_WaterOut":w2:w
@@ -1648,7 +1648,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:32:GND</td>
+    <td>BULKHEAD:44:0VECUGND</td>
     <td>
      1:BK
     </td>

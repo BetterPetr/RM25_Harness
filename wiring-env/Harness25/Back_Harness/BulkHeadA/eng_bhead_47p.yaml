@@ -297,6 +297,6 @@ connections:
   - 2P_CrankTrig: [1-2]
   - Crank_Trig: [1-2]
 -
-  - BULKHEAD: [32, 20]
+  - BULKHEAD: [44, 20]
   - 2P_WaterOut: [1-2]
   - WaterOut: [1-2]
