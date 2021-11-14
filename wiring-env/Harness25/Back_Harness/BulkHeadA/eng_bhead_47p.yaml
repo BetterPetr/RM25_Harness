@@ -88,7 +88,8 @@ connectors:
     pinlabels: [GND, PWR, UDIG, NA]
   TPS:
     <<: *TESuper3P_f
-    pinlabels: [GND, PWR, 5V]
+    pinlabels: [GND, 12V, 5V]
+    notes: 12V is PWR, 5V is sensor output
   TPS_Pot:
     <<: *DT4P_f
     pinlabels: [AV, AV]
