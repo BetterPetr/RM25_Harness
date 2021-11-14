@@ -1331,7 +1331,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p38r:e -- "2PBrkL":w1:w
+	BULKHEAD:p33r:e -- "2PBrkL":w1:w
 	"2PBrkL":w1:e -- BrakeL:p1l:w
 	edge [color="#000000:#ffff00:#000000"]
 	BULKHEAD:p46r:e -- "2PBrkL":w2:w
@@ -1353,7 +1353,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:38:SIG</td>
+    <td>BULKHEAD:33:PWR</td>
     <td>
      1:RD
     </td>
@@ -2353,13 +2353,13 @@ graph {
 	BULKHEAD:p39r:e -- "5P_RRCntr":w2:w
 	"5P_RRCntr":w2:e -- RRCenter:p2l:w
 	edge [color="#000000:#ffffff:#000000"]
-	BULKHEAD:p45r:e -- "5P_RRCntr":w3:w
+	BULKHEAD:p41r:e -- "5P_RRCntr":w3:w
 	"5P_RRCntr":w3:e -- RRCenter:p3l:w
 	edge [color="#000000:#895956:#000000"]
 	BULKHEAD:p42r:e -- "5P_RRCntr":w4:w
 	"5P_RRCntr":w4:e -- RRCenter:p4l:w
 	edge [color="#000000:#999999:#000000"]
-	BULKHEAD:p46r:e -- "5P_RRCntr":w5:w
+	BULKHEAD:p45r:e -- "5P_RRCntr":w5:w
 	"5P_RRCntr":w5:e -- RRCenter:p5l:w
 	"5P_RRCntr" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2410,7 +2410,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:45:SIG</td>
+    <td>BULKHEAD:41:CANHi</td>
     <td>
      3:WH
     </td>
@@ -2442,7 +2442,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:46:SIG</td>
+    <td>BULKHEAD:45:SIG</td>
     <td>
      5:GY
     </td>
