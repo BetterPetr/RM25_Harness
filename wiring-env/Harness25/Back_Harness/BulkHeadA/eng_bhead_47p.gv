@@ -1035,12 +1035,12 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#ff8000:#000000"]
-	BULKHEAD:p21r:e -- "2P_CAMSync":w1:w
-	"2P_CAMSync":w1:e -- CAM_Sync:p2l:w
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p40r:e -- "2P_CAMSync":w2:w
-	"2P_CAMSync":w2:e -- CAM_Sync:p1l:w
+	BULKHEAD:p40r:e -- "2P_CAMSync":w1:w
+	"2P_CAMSync":w1:e -- CAM_Sync:p1l:w
+	edge [color="#000000:#ff8000:#000000"]
+	BULKHEAD:p21r:e -- "2P_CAMSync":w2:w
+	"2P_CAMSync":w2:e -- CAM_Sync:p2l:w
 	"2P_CAMSync" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -1058,33 +1058,33 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:21:SIG</td>
+    <td>BULKHEAD:40:GND</td>
     <td>
-     1:OG
+     1:BK
     </td>
-    <td>CAM_Sync:2:SIG</td>
+    <td>CAM_Sync:1:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:40:GND</td>
+    <td>BULKHEAD:21:SIG</td>
     <td>
-     2:BK
+     2:OG
     </td>
-    <td>CAM_Sync:1:GND</td>
+    <td>CAM_Sync:2:SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff8000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

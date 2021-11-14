@@ -2,7 +2,7 @@ templates:
   - &template_cbl2
     wirecount: 2
     gauge: 22 AWG
-    colors: [OG, BK]
+    colors: [BK, OG]
   - &DT2P_f
     type: Deutsch DT04_2P
     subtype: female
@@ -128,6 +128,7 @@ connectors:
 cables:
   2P_CAMSync:
     <<: *template_cbl2
+    colors: [BK, OG]
   2PInj1: &tempinj
     <<: *template_cbl2
     gauge: 16 AWG
@@ -201,9 +202,9 @@ cables:
 
 connections:
 -
-  - BULKHEAD: [21,40]
+  - BULKHEAD: [40, 21]
   - 2P_CAMSync: [1-2]
-  - CAM_Sync: [2,1]
+  - CAM_Sync: [1-2]
 -
   - BULKHEAD: [32, 33, 38]
   - 3P_SHFT_POSM: [1-3]
