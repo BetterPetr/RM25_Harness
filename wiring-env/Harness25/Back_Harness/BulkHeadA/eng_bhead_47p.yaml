@@ -49,10 +49,10 @@ connectors:
 
   LRCenter: # lrcenter
     <<: *DT6P_f
-    pinlabels: [CANLo, PWR, CANHi, GND, SIG, NA]
+    pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
   RRCenter:
     <<: *DT6P_f
-    pinlabels: [CANLo, PWR, CANHi, GND, SIG, NA]
+    pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
 
   Inj1:
     <<: *BSH2P_f

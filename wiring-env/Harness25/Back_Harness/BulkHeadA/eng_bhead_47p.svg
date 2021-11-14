@@ -1018,7 +1018,7 @@
 <text text-anchor="start" x="496.5" y="-549.8" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="430.5" y="-530.8" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:40:GND</text>
 <text text-anchor="start" x="580" y="-530.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:BK &#160;&#160;&#160;</text>
-<text text-anchor="start" x="652" y="-530.8" font-family="arial" font-size="14.00" fill="#000000">LRCenter:1:CANLo</text>
+<text text-anchor="start" x="659.5" y="-530.8" font-family="arial" font-size="14.00" fill="#000000">LRCenter:1:GND</text>
 <polygon fill="#000000" stroke="transparent" points="421,-523 421,-525 780,-525 780,-523 421,-523"/>
 <polygon fill="#000000" stroke="transparent" points="421,-521 421,-523 780,-523 780,-521 421,-521"/>
 <polygon fill="#000000" stroke="transparent" points="421,-519 421,-521 780,-521 780,-519 421,-519"/>
@@ -1036,7 +1036,7 @@
 <polygon fill="#000000" stroke="transparent" points="421,-469 421,-471 780,-471 780,-469 421,-469"/>
 <text text-anchor="start" x="423" y="-455.8" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:42:CANLo</text>
 <text text-anchor="start" x="579.5" y="-455.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;4:BN &#160;&#160;&#160;</text>
-<text text-anchor="start" x="659.5" y="-455.8" font-family="arial" font-size="14.00" fill="#000000">LRCenter:4:GND</text>
+<text text-anchor="start" x="652" y="-455.8" font-family="arial" font-size="14.00" fill="#000000">LRCenter:4:CANLo</text>
 <polygon fill="#000000" stroke="transparent" points="421,-448 421,-450 780,-450 780,-448 421,-448"/>
 <polygon fill="#895956" stroke="transparent" points="421,-446 421,-448 780,-448 780,-446 421,-446"/>
 <polygon fill="#000000" stroke="transparent" points="421,-444 421,-446 780,-446 780,-444 421,-444"/>
@@ -1096,7 +1096,7 @@
 <text text-anchor="start" x="495.5" y="-157.8" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="429.5" y="-138.8" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:40:GND</text>
 <text text-anchor="start" x="579" y="-138.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:BK &#160;&#160;&#160;</text>
-<text text-anchor="start" x="651" y="-138.8" font-family="arial" font-size="14.00" fill="#000000">RRCenter:1:CANLo</text>
+<text text-anchor="start" x="658.5" y="-138.8" font-family="arial" font-size="14.00" fill="#000000">RRCenter:1:GND</text>
 <polygon fill="#000000" stroke="transparent" points="420,-131 420,-133 781,-133 781,-131 420,-131"/>
 <polygon fill="#000000" stroke="transparent" points="420,-129 420,-131 781,-131 781,-129 420,-129"/>
 <polygon fill="#000000" stroke="transparent" points="420,-127 420,-129 781,-129 781,-127 420,-127"/>
@@ -1114,7 +1114,7 @@
 <polygon fill="#000000" stroke="transparent" points="420,-77 420,-79 781,-79 781,-77 420,-77"/>
 <text text-anchor="start" x="422" y="-63.8" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:42:CANLo</text>
 <text text-anchor="start" x="578.5" y="-63.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;4:BN &#160;&#160;&#160;</text>
-<text text-anchor="start" x="658.5" y="-63.8" font-family="arial" font-size="14.00" fill="#000000">RRCenter:4:GND</text>
+<text text-anchor="start" x="651" y="-63.8" font-family="arial" font-size="14.00" fill="#000000">RRCenter:4:CANLo</text>
 <polygon fill="#000000" stroke="transparent" points="420,-56 420,-58 781,-58 781,-56 420,-56"/>
 <polygon fill="#895956" stroke="transparent" points="420,-54 420,-56 781,-56 781,-54 420,-54"/>
 <polygon fill="#000000" stroke="transparent" points="420,-52 420,-54 781,-54 781,-52 420,-52"/>
@@ -1514,7 +1514,7 @@
 <polygon fill="none" stroke="#000000" points="981.5,-507 981.5,-530 1073.5,-530 1073.5,-507 981.5,-507"/>
 <text text-anchor="start" x="1023" y="-514.8" font-family="arial" font-size="14.00" fill="#000000">1</text>
 <polygon fill="none" stroke="#000000" points="1073.5,-507 1073.5,-530 1203.5,-530 1203.5,-507 1073.5,-507"/>
-<text text-anchor="start" x="1114.5" y="-514.8" font-family="arial" font-size="14.00" fill="#000000">CANLo</text>
+<text text-anchor="start" x="1122" y="-514.8" font-family="arial" font-size="14.00" fill="#000000">GND</text>
 <polygon fill="none" stroke="#000000" points="981.5,-484 981.5,-507 1073.5,-507 1073.5,-484 981.5,-484"/>
 <text text-anchor="start" x="1023" y="-491.8" font-family="arial" font-size="14.00" fill="#000000">2</text>
 <polygon fill="none" stroke="#000000" points="1073.5,-484 1073.5,-507 1203.5,-507 1203.5,-484 1073.5,-484"/>
@@ -1526,7 +1526,7 @@
 <polygon fill="none" stroke="#000000" points="981.5,-438 981.5,-461 1073.5,-461 1073.5,-438 981.5,-438"/>
 <text text-anchor="start" x="1023" y="-445.8" font-family="arial" font-size="14.00" fill="#000000">4</text>
 <polygon fill="none" stroke="#000000" points="1073.5,-438 1073.5,-461 1203.5,-461 1203.5,-438 1073.5,-438"/>
-<text text-anchor="start" x="1122" y="-445.8" font-family="arial" font-size="14.00" fill="#000000">GND</text>
+<text text-anchor="start" x="1114.5" y="-445.8" font-family="arial" font-size="14.00" fill="#000000">CANLo</text>
 <polygon fill="none" stroke="#000000" points="981.5,-415 981.5,-438 1073.5,-438 1073.5,-415 981.5,-415"/>
 <text text-anchor="start" x="1023" y="-422.8" font-family="arial" font-size="14.00" fill="#000000">5</text>
 <polygon fill="none" stroke="#000000" points="1073.5,-415 1073.5,-438 1203.5,-438 1203.5,-415 1073.5,-415"/>
@@ -1551,7 +1551,7 @@
 <polygon fill="none" stroke="#000000" points="981.5,-115 981.5,-138 1073.5,-138 1073.5,-115 981.5,-115"/>
 <text text-anchor="start" x="1023" y="-122.8" font-family="arial" font-size="14.00" fill="#000000">1</text>
 <polygon fill="none" stroke="#000000" points="1073.5,-115 1073.5,-138 1203.5,-138 1203.5,-115 1073.5,-115"/>
-<text text-anchor="start" x="1114.5" y="-122.8" font-family="arial" font-size="14.00" fill="#000000">CANLo</text>
+<text text-anchor="start" x="1122" y="-122.8" font-family="arial" font-size="14.00" fill="#000000">GND</text>
 <polygon fill="none" stroke="#000000" points="981.5,-92 981.5,-115 1073.5,-115 1073.5,-92 981.5,-92"/>
 <text text-anchor="start" x="1023" y="-99.8" font-family="arial" font-size="14.00" fill="#000000">2</text>
 <polygon fill="none" stroke="#000000" points="1073.5,-92 1073.5,-115 1203.5,-115 1203.5,-92 1073.5,-92"/>
@@ -1563,7 +1563,7 @@
 <polygon fill="none" stroke="#000000" points="981.5,-46 981.5,-69 1073.5,-69 1073.5,-46 981.5,-46"/>
 <text text-anchor="start" x="1023" y="-53.8" font-family="arial" font-size="14.00" fill="#000000">4</text>
 <polygon fill="none" stroke="#000000" points="1073.5,-46 1073.5,-69 1203.5,-69 1203.5,-46 1073.5,-46"/>
-<text text-anchor="start" x="1122" y="-53.8" font-family="arial" font-size="14.00" fill="#000000">GND</text>
+<text text-anchor="start" x="1114.5" y="-53.8" font-family="arial" font-size="14.00" fill="#000000">CANLo</text>
 <polygon fill="none" stroke="#000000" points="981.5,-23 981.5,-46 1073.5,-46 1073.5,-23 981.5,-23"/>
 <text text-anchor="start" x="1023" y="-30.8" font-family="arial" font-size="14.00" fill="#000000">5</text>
 <polygon fill="none" stroke="#000000" points="1073.5,-23 1073.5,-46 1203.5,-46 1203.5,-23 1073.5,-23"/>

@@ -304,7 +304,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
     <td port="p1l">1</td>
-    <td>CANLo</td>
+    <td>GND</td>
    </tr>
    <tr>
     <td port="p2l">2</td>
@@ -316,7 +316,7 @@ graph {
    </tr>
    <tr>
     <td port="p4l">4</td>
-    <td>GND</td>
+    <td>CANLo</td>
    </tr>
    <tr>
     <td port="p5l">5</td>
@@ -348,7 +348,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
     <td port="p1l">1</td>
-    <td>CANLo</td>
+    <td>GND</td>
    </tr>
    <tr>
     <td port="p2l">2</td>
@@ -360,7 +360,7 @@ graph {
    </tr>
    <tr>
     <td port="p4l">4</td>
-    <td>GND</td>
+    <td>CANLo</td>
    </tr>
    <tr>
     <td port="p5l">5</td>
@@ -2266,7 +2266,7 @@ graph {
     <td>
      1:BK
     </td>
-    <td>LRCenter:1:CANLo</td>
+    <td>LRCenter:1:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2314,7 +2314,7 @@ graph {
     <td>
      4:BN
     </td>
-    <td>LRCenter:4:GND</td>
+    <td>LRCenter:4:CANLo</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
@@ -2382,7 +2382,7 @@ graph {
     <td>
      1:BK
     </td>
-    <td>RRCenter:1:CANLo</td>
+    <td>RRCenter:1:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2430,7 +2430,7 @@ graph {
     <td>
      4:BN
     </td>
-    <td>RRCenter:4:GND</td>
+    <td>RRCenter:4:CANLo</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
