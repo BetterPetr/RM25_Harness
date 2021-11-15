@@ -1,9 +1,9 @@
 connectors:
   BULKHEAD_16G: 
-    pinlabels: [C1P, C1I, C2P, C2I, C3P, C3I, C4P, C3I]
+    pinlabels: [C1PWR, C1IGN, C2PWR, C2IGN, C3PWR, C3IGN, C4PWR, C3IGN, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY]
     type: Deutsch HDP26-18-14SE
     subtype: female
-    notes: Wiring for the 4 spark plugs
+    notes: Coils
 
   DNS_1:
     pinlabels: [PWR, IGN]

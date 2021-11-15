@@ -12,7 +12,7 @@ connectors:
     pinlabels: [HB, AV, AT, PWR, GND, HB, AV, AT, AV, AT, AV, AT, SIG, SIG, SIG, SIG, PWR, SIG, SIG, AT, SIG, AV, AV, PWR, UDIG, GND, 12V, 5V, GND, GND, UDIG, GND, PWR, SIG, SIG, SIG, SIG, SIG, PWR, GND, CANHi, CANLo, SIG, 0VECUGND, SIG, SIG, 5VECUPWR]
     type: AMPHENOL HDP 47P
     subtype: male
-    notes: Bulkhead Connector (Driver Side)
+    notes: Bulkhead Connector A (Driver Side)
   ECUA:
     pinlabels: [AT5, AT6, AV15, AV16, AV17, IGN_LS9, IGN_LS10, IGN_LS11, IGN_LS12, SEN_5V0_C1, LA-NB1, LA-NB2, KNOCK3, KNOCK4, DIG2, DIG3, DIG4, SEN_5V0_C2, SEN_5V0_B2, LIN, RS232_RX, RS232_TX, DIG1, BAT_NEG3, BAT_NEG4, SEN_0V_C1, SEN_0V_C2, CAN3_HI, CAN3_LO, CAN2_HI, CAN2_LO, BAT_NEG5, SEN_0V_B1, SEN_0V_A1]
     type: MoTeC ECUA 34P
