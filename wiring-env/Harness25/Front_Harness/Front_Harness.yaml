@@ -191,7 +191,7 @@ connections:
 #INJECTORS Signals
 -
   - ECUB: [8]
-  - 1PInj1: [1-2]
+  - 1PInj1: [1]
   - BULKHEAD_A: [13]
 -
   - ECUB: [9]
@@ -252,7 +252,7 @@ connections:
 #TPS 12V PWR
 -
   - PDMA: [6]
-  - 1P_TPS12V: [1-3]
+  - 1P_TPS12V: [1]
   - BULKHEAD_A: [27]
 #TPS 5V AV
 -
