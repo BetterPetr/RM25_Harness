@@ -226,7 +226,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Binder 4P</td>
+   <td balign="left">Deutsch DT04_4P</td>
    <td balign="left">female</td>
    <td balign="left">4-pin</td>
   </tr></table>
@@ -253,7 +253,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Shift Position Motor</td>
+   <td balign="left">Shift Position</td>
   </tr></table>
  </td></tr>
 </table>
@@ -328,6 +328,11 @@ graph {
    </tr>
   </table>
  </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Strain Gauge + LR WhlSpd</td>
+  </tr></table>
+ </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	RRCenter [label=<
@@ -371,6 +376,11 @@ graph {
     <td>NA</td>
    </tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Strain Gauge + RR WhlSpd</td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -716,13 +726,18 @@ graph {
    </tr>
    <tr>
     <td port="p2l">2</td>
-    <td>PWR</td>
+    <td>12V</td>
    </tr>
    <tr>
     <td port="p3l">3</td>
     <td>5V</td>
    </tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">12V is PWR, 5V is sensor output</td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -1886,7 +1901,7 @@ graph {
     <td>
      2:RD
     </td>
-    <td>TPS:2:PWR</td>
+    <td>TPS:2:12V</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">

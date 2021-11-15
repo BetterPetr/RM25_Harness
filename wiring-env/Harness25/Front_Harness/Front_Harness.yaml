@@ -116,13 +116,16 @@ cables:
     <<: *temp_cbl1
     colors: [OG]
   1P_ET:
-    <<: *temp_cbl2
+    <<: *temp_cbl1
     colors: [GY]
-  1P_TPS:
-    <<: *temp_cbl2
+  1P_TPS12V:
+    <<: *temp_cbl1
+    colors: [RD]
+  1P_TPS5V:
+    <<: *temp_cbl1
     colors: [YE]
   2P_KNK:
-    <<: *temp_cbl2
+    <<: *template_cbl2
     colors: [OG, OG]
   2P_CAN:
     wirecount: 2
@@ -232,13 +235,19 @@ connections:
   - BULKHEAD_A: [9,10]
 #T_Motor
 -
-  - ECUB []
+  - PDMA: [15]
   - 1P_ET: [1]
   - BULKHEAD_A: [25]
+#TPS 12V PWR
 -
-  - BULKHEAD: [29, 27, 28]
-  - 3P_TPS: [1-3]
-  - TPS: [1-3]
+  - PDMA: [6]
+  - 1P_TPS12V: [1-3]
+  - BULKHEAD_A: [27]
+#TPS 5V AV
+-
+  - ECUC: [25]
+  - 1P_TPS5V: [1]
+  - BULKHEAD_A: [28]
 # SERVO POT In & Out
 -
   - ECUC: [15-16]
@@ -254,6 +263,7 @@ connections:
   - ECUB: [20, 21]
   - 2P_SHFM: [1-2]
   - BULKHEAD_A: [1, 6]
+#Knock 
 -
   - BULKHEAD: [47, 18, 19]
   - 3P_KNK: [1-3]

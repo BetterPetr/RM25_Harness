@@ -39,9 +39,9 @@ connectors:
     notes: Bulkhead Connector (Engine Side)
 
   SHIFT_POSM:
-    <<: *Bndr4P_f
+    <<: *DT4P_f
     pinlabels: [GND, PWR, SIG, NA]
-    notes: Shift Position Motor
+    notes: Shift Position
 
   CAM_Sync:
     <<: *DT2P_f
@@ -50,9 +50,11 @@ connectors:
   LRCenter: # lrcenter
     <<: *DT6P_f
     pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
+    notes: Strain Gauge + LR WhlSpd
   RRCenter:
     <<: *DT6P_f
     pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
+    notes: Strain Gauge + RR WhlSpd
 
   Inj1:
     <<: *BSH2P_f
