@@ -134,7 +134,7 @@ cables:
     colors: [BK, OG]
   2PInj1: &tempinj
     <<: *template_cbl2
-    gauge: 16 AWG
+    gauge: 22 AWG
     colors: [RD, VT]
   2PInj2:
     <<: *tempinj
@@ -154,6 +154,7 @@ cables:
     colors: [VT, VT]
   2P_ClchPWR:
     <<: *template_cbl2
+    gauge: 16 AWG
     colors: [BK, RD]
   2P_CrankTrig:
     <<: *template_cbl2

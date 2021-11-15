@@ -260,7 +260,7 @@
 <polygon fill="none" stroke="#000000" points="456,-3891.5 456,-3914.5 582,-3914.5 582,-3891.5 456,-3891.5"/>
 <text text-anchor="start" x="511" y="-3899.3" font-family="arial" font-size="14.00" fill="#000000">2x</text>
 <polygon fill="none" stroke="#000000" points="582,-3891.5 582,-3914.5 745,-3914.5 745,-3891.5 582,-3891.5"/>
-<text text-anchor="start" x="636.5" y="-3899.3" font-family="arial" font-size="14.00" fill="#000000">16 AWG</text>
+<text text-anchor="start" x="636.5" y="-3899.3" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
 <text text-anchor="start" x="524.5" y="-3878.3" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="458" y="-3859.3" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:17:PWR</text>
 <text text-anchor="start" x="599" y="-3859.3" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:RD &#160;&#160;&#160;</text>
@@ -299,7 +299,7 @@
 <polygon fill="none" stroke="#000000" points="456,-3733.5 456,-3756.5 582,-3756.5 582,-3733.5 456,-3733.5"/>
 <text text-anchor="start" x="511" y="-3741.3" font-family="arial" font-size="14.00" fill="#000000">2x</text>
 <polygon fill="none" stroke="#000000" points="582,-3733.5 582,-3756.5 745,-3756.5 745,-3733.5 582,-3733.5"/>
-<text text-anchor="start" x="636.5" y="-3741.3" font-family="arial" font-size="14.00" fill="#000000">16 AWG</text>
+<text text-anchor="start" x="636.5" y="-3741.3" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
 <text text-anchor="start" x="524.5" y="-3720.3" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="458" y="-3701.3" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:17:PWR</text>
 <text text-anchor="start" x="599" y="-3701.3" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:RD &#160;&#160;&#160;</text>
@@ -338,7 +338,7 @@
 <polygon fill="none" stroke="#000000" points="456,-3575.5 456,-3598.5 582,-3598.5 582,-3575.5 456,-3575.5"/>
 <text text-anchor="start" x="511" y="-3583.3" font-family="arial" font-size="14.00" fill="#000000">2x</text>
 <polygon fill="none" stroke="#000000" points="582,-3575.5 582,-3598.5 745,-3598.5 745,-3575.5 582,-3575.5"/>
-<text text-anchor="start" x="636.5" y="-3583.3" font-family="arial" font-size="14.00" fill="#000000">16 AWG</text>
+<text text-anchor="start" x="636.5" y="-3583.3" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
 <text text-anchor="start" x="524.5" y="-3562.3" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="458" y="-3543.3" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:17:PWR</text>
 <text text-anchor="start" x="599" y="-3543.3" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:RD &#160;&#160;&#160;</text>
@@ -377,7 +377,7 @@
 <polygon fill="none" stroke="#000000" points="456,-3417.5 456,-3440.5 582,-3440.5 582,-3417.5 456,-3417.5"/>
 <text text-anchor="start" x="511" y="-3425.3" font-family="arial" font-size="14.00" fill="#000000">2x</text>
 <polygon fill="none" stroke="#000000" points="582,-3417.5 582,-3440.5 745,-3440.5 745,-3417.5 582,-3417.5"/>
-<text text-anchor="start" x="636.5" y="-3425.3" font-family="arial" font-size="14.00" fill="#000000">16 AWG</text>
+<text text-anchor="start" x="636.5" y="-3425.3" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
 <text text-anchor="start" x="524.5" y="-3404.3" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="458" y="-3385.3" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:17:PWR</text>
 <text text-anchor="start" x="599" y="-3385.3" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:RD &#160;&#160;&#160;</text>
@@ -533,7 +533,7 @@
 <polygon fill="none" stroke="#000000" points="430,-4207.5 430,-4230.5 582,-4230.5 582,-4207.5 430,-4207.5"/>
 <text text-anchor="start" x="498" y="-4215.3" font-family="arial" font-size="14.00" fill="#000000">2x</text>
 <polygon fill="none" stroke="#000000" points="582,-4207.5 582,-4230.5 771,-4230.5 771,-4207.5 582,-4207.5"/>
-<text text-anchor="start" x="649.5" y="-4215.3" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
+<text text-anchor="start" x="649.5" y="-4215.3" font-family="arial" font-size="14.00" fill="#000000">16 AWG</text>
 <text text-anchor="start" x="494.5" y="-4194.3" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="433" y="-4175.3" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD:5:GND</text>
 <text text-anchor="start" x="565.5" y="-4175.3" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:BK &#160;&#160;&#160;</text>

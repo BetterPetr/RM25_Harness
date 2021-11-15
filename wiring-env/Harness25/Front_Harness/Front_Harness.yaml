@@ -6,30 +6,6 @@ templates:
   - &temp_cbl1
     wirecount: 1
     gauge: 22 AWG
-  - &DT2P_f
-    type: Deutsch DT04_2P
-    subtype: female
-  - &DT6P_f
-    type: Deutsch DT04_6P
-    subtype: female
-  - &DT4P_f
-    type: Deutsch DT04_4P
-    subtype: female
-  - &Bndr4P_f
-    type: Binder 4P
-    subtype: female
-  - &BSH2P_f
-    type: Bosch 2P
-    subtype: female
-  - &Sensata4P_f
-    type: Sensata 4P
-    subtype: female
-  - &TESuper3P_f
-    type: TE AMP Superseal 3P
-    subtype: female
-  - &HndaKnock_f
-    type: Honda CE3001 Connector 3P
-    subtype: female
 
 connectors:
   BULKHEAD_A:
@@ -63,13 +39,6 @@ connectors:
     subtype: female
 
 cables:
-  # ECUA-Bulk_16: &temp_cbl
-  #   wirecount: 5
-  #   gauge: 16 AWG
-  #   colors: []
-  # ECUA-Bulk_22:
-  #   <<: *temp_cbl
-  #   gauge: 22 AWG
   ECU_GND_BA44: &temp_ecupg
     wirecount: 1
     gauge: 22 AWG
@@ -93,13 +62,12 @@ cables:
     wirecount: 1
     gauge: 16 AWG
     colors: [RD]
-
   1P_CAMSync:
     <<: *temp_cbl1
     colors: [OG]
   1PInj1: &tempinj
     <<: *temp_cbl1
-    gauge: 16 AWG
+    gauge: 22 AWG
     colors: [VT]
   1PInj2:
     <<: *tempinj
@@ -145,6 +113,35 @@ cables:
   1P_RRWSP:
     <<: *WhlSP
     notes: RR WheelSpeed
+  1P_CrankTrigGND:
+    <<: *temp_cbl1
+    colors: [BK]
+  1P_CrankTrig:
+    <<: *temp_cbl1
+    colors: [YE]
+  1P_WaterOut:
+    <<: *temp_cbl1
+    colors: [GN]
+  1P_RFAN:
+    <<: *temp_cbl1
+    colors: [GY]
+  1P_RRShk:
+    <<: *temp_cbl1
+    colors: [GY]
+  1P_LRShk:
+    <<: *temp_cbl1
+    colors: [GY]
+  1P_ClchPos:
+    <<: *temp_cbl1
+    colors: [OG]
+  1P_ClchGND:
+    <<: *temp_cbl1
+    gauge: 16 AWG
+    colors: [BK]
+  1P_ClchPWR:
+    <<: *temp_cbl1
+    gauge: 16 AWG
+    colors: [RD]
   2P_FPT: &temp_cblPT
     wirecount: 2
     gauge: 22 AWG
@@ -169,7 +166,7 @@ connections:
 #SHIFT_POSM
 -
   - ECUC: [17]
-  - 3P_SHFT_POSM: [1]
+  - 1P_SHFT_POSM: [1]
   - BULKHEAD_A: [38]
 #CAN
 -
@@ -309,14 +306,20 @@ connections:
   - BULKHEAD_A: [37]
 #Rad Fan
 -
-  - BULKHEAD: [34]
+  - ECUC: [18]
   - 1P_RFAN: [1]
-  - RAD_FAN: [1]
+  - BULKHEAD_A: [34]
+#Crank Trigger
 -
-  - BULKHEAD: [30, 31]
-  - 2P_CrankTrig: [1-2]
-  - Crank_Trig: [1-2]
+  - ECUA: [33]
+  - 1P_CrankTrigGND: [1]
+  - BULKHEAD_A: [30]
 -
-  - BULKHEAD: [44, 20]
-  - 2P_WaterOut: [1-2]
-  - WaterOut: [1-2]
+  - ECUD: [1]
+  - 1P_CrankTrig: [1]
+  - BULKHEAD_A: [31]
+#WaterOut
+-
+  - ECUA: [1]
+  - 1P_WaterOut: [1]
+  - BULKHEAD_A: [20]
