@@ -26,7 +26,7 @@ connectors:
     type: MoTeC ECUC 34P
     subtype: female
   ECUD:
-    pinlabels: [UDIG1, UDIG2, AT1, AT2, AT3, AT4, KNOCK1, UDIG3, UDIG4, UDIG5, UGID6, BAT_BAK, KNOCK2, UDIG7, SEN_0V_A, SEN_0V_B, CAN1_HI, CAN1_LO, SEN_6V3, AV6, AV7, AV8, ETH_TX+, ETH_TX-, ETH_RX+, ETH_RX-]
+    pinlabels: [UDIG1, UDIG2, AT1, AT2, AT3, AT4, KNOCK1, UDIG3, UDIG4, UDIG5, UDIG6, BAT_BAK, KNOCK2, UDIG7, SEN_0V_A, SEN_0V_B, CAN1_HI, CAN1_LO, SEN_6V3, AV6, AV7, AV8, ETH_TX+, ETH_TX-, ETH_RX+, ETH_RX-]
     type: MoTeC ECUD 26P
     subtype: female
   PDMA:
@@ -37,8 +37,17 @@ connectors:
     pinlabels: [NA, NA, OUT6, NA, OUT7, NA, OUT8, NA, OUT6, NA, OUT7, NA, OUT8, NA, DIG13, NA, DIG15, VBATT-, NA, DIG11, DIG12, GND, DIG14, DIG16, CAN Lo, CAN Hi]
     type: MoTeC PDMB
     subtype: female
+  CHAS_GND:
+    pinlabels: [GND]
+    type: Chassis Ground
 
 cables:
+  PDMA_ChGND26: &PDM_ChGND
+    wirecount: 1
+    gauge: 16 AWG
+    colors: [BK]
+  PDMB_ChGND18:
+    <<: *PDM_ChGND
   ECU_GND_BA44: &temp_ecupg
     wirecount: 1
     gauge: 22 AWG
@@ -51,13 +60,18 @@ cables:
   ECU_PWR_BA33:
     <<: *temp_ecupg
     colors: [RD]
-  2P_PG22: &temp_pwr
-    wirecount: 2
-    gauge: 22 AWG
-    colors: [BK, RD]
-  2P_PG16:
-    <<: *temp_pwr
-    gauge: 16 AWG
+  CNTR_GND_BA40:
+    <<: *temp_ecupg
+  CNTR_PWR_BA39:
+    <<: *temp_ecupg
+    colors: [RD]
+  ET_GND_BA26:
+    <<: *temp_ecupg
+  ET_PWR_BA24:
+    <<: *temp_ecupg
+    colors: [RD]
+  TPS_GND_BA29:
+    <<: *temp_ecupg
   1P_InjPWR:
     wirecount: 1
     gauge: 16 AWG
@@ -158,6 +172,15 @@ cables:
     notes: Intake P+T
 
 connections:
+#PDM Chassis GND
+-
+  - CHAS_GND: [1]
+  - PDMA_ChGND26: [1]
+  - PDMA: [26]
+-
+  - CHAS_GND: [1]
+  - PDMB_ChGND18: [1]
+  - PDMB: [18]
 #CAM_Sync
 -
   - ECUD: [2]
@@ -223,6 +246,29 @@ connections:
   - ECUA: [18]
   - ECU_PWR_BA33: [1]
   - BULKHEAD_A: [33]
+#Wheel Centers GND & PWR 40,39 BulkA 22AWG
+-
+  - CHAS_GND: [1]
+  - CNTR_GND_BA40: [1]
+  - BULKHEAD_A: [40]
+-
+  - PDMA: [6]
+  - CNTR_PWR_BA39: [1]
+  - BULKHEAD_A: [39]
+#ET GND & PWR 26,24 BulkA 22AWG
+-
+  - CHAS_GND: [1]
+  - ET_GND_BA26: [1]
+  - BULKHEAD_A: [26]
+-
+  - PDMA: [15]
+  - ET_PWR_BA24: [1]
+  - BULKHEAD_A: [24]
+#TPS GND 29 BulkA 22AWG
+-
+  - ECUD: [16]
+  - TPS_GND_BA29: [1]
+  - BULKHEAD_A: [29]
 
 #Fuel_PT
 -
@@ -241,12 +287,12 @@ connections:
   - BULKHEAD_A: [11, 12]
 #Intake_PT
 -
-  - ECUA: [2,3]
+  - ECUA: [3,2]
   - 2P_IPT: [1-2]
   - BULKHEAD_A: [9,10]
 #T_Motor
 -
-  - PDMA: [15]
+  - ECUC: [18]
   - 1P_ET: [1]
   - BULKHEAD_A: [25]
 #TPS 12V PWR
@@ -285,7 +331,7 @@ connections:
   - 1P_ClchPWR: [1]
   - BULKHEAD_A: [4]
 -
-  - PDMA: [26]
+  - CHAS_GND: [1]
   - 1P_ClchGND: [1]
   - BULKHEAD_A: [5]
 #Clutch Position

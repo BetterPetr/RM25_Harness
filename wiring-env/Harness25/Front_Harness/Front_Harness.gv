@@ -710,7 +710,7 @@ graph {
     <td port="p10r">10</td>
    </tr>
    <tr>
-    <td>UGID6</td>
+    <td>UDIG6</td>
     <td port="p11r">11</td>
    </tr>
    <tr>
@@ -794,138 +794,172 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
+    <td port="p1l">1</td>
     <td>OUT1</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
+    <td port="p2l">2</td>
     <td>OUT9</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
+    <td port="p3l">3</td>
     <td>OUT2</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
+    <td port="p4l">4</td>
     <td>OUT10</td>
     <td port="p4r">4</td>
    </tr>
    <tr>
+    <td port="p5l">5</td>
     <td>OUT3</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
+    <td port="p6l">6</td>
     <td>OUT11</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
+    <td port="p7l">7</td>
     <td>OUT4</td>
     <td port="p7r">7</td>
    </tr>
    <tr>
+    <td port="p8l">8</td>
     <td>OUT12</td>
     <td port="p8r">8</td>
    </tr>
    <tr>
+    <td port="p9l">9</td>
     <td>OUT5</td>
     <td port="p9r">9</td>
    </tr>
    <tr>
+    <td port="p10l">10</td>
     <td>OUT1</td>
     <td port="p10r">10</td>
    </tr>
    <tr>
+    <td port="p11l">11</td>
     <td>OUT13</td>
     <td port="p11r">11</td>
    </tr>
    <tr>
+    <td port="p12l">12</td>
     <td>OUT2</td>
     <td port="p12r">12</td>
    </tr>
    <tr>
+    <td port="p13l">13</td>
     <td>OUT14</td>
     <td port="p13r">13</td>
    </tr>
    <tr>
+    <td port="p14l">14</td>
     <td>OUT3</td>
     <td port="p14r">14</td>
    </tr>
    <tr>
+    <td port="p15l">15</td>
     <td>OUT15</td>
     <td port="p15r">15</td>
    </tr>
    <tr>
+    <td port="p16l">16</td>
     <td>OUT4</td>
     <td port="p16r">16</td>
    </tr>
    <tr>
+    <td port="p17l">17</td>
     <td>OUT5</td>
     <td port="p17r">17</td>
    </tr>
    <tr>
+    <td port="p18l">18</td>
     <td>NA</td>
     <td port="p18r">18</td>
    </tr>
    <tr>
+    <td port="p19l">19</td>
     <td>DIG2</td>
     <td port="p19r">19</td>
    </tr>
    <tr>
+    <td port="p20l">20</td>
     <td>NA</td>
     <td port="p20r">20</td>
    </tr>
    <tr>
+    <td port="p21l">21</td>
     <td>DIG4</td>
     <td port="p21r">21</td>
    </tr>
    <tr>
+    <td port="p22l">22</td>
     <td>NA</td>
     <td port="p22r">22</td>
    </tr>
    <tr>
+    <td port="p23l">23</td>
     <td>DIG7</td>
     <td port="p23r">23</td>
    </tr>
    <tr>
+    <td port="p24l">24</td>
     <td>NA</td>
     <td port="p24r">24</td>
    </tr>
    <tr>
+    <td port="p25l">25</td>
     <td>NA</td>
     <td port="p25r">25</td>
    </tr>
    <tr>
+    <td port="p26l">26</td>
     <td>VBATT-</td>
     <td port="p26r">26</td>
    </tr>
    <tr>
+    <td port="p27l">27</td>
     <td>DIG1</td>
     <td port="p27r">27</td>
    </tr>
    <tr>
+    <td port="p28l">28</td>
     <td>GND</td>
     <td port="p28r">28</td>
    </tr>
    <tr>
+    <td port="p29l">29</td>
     <td>DIG3</td>
     <td port="p29r">29</td>
    </tr>
    <tr>
+    <td port="p30l">30</td>
     <td>DIG5</td>
     <td port="p30r">30</td>
    </tr>
    <tr>
+    <td port="p31l">31</td>
     <td>DIG6</td>
     <td port="p31r">31</td>
    </tr>
    <tr>
+    <td port="p32l">32</td>
     <td>DIG8</td>
     <td port="p32r">32</td>
    </tr>
    <tr>
+    <td port="p33l">33</td>
     <td>DIG9</td>
     <td port="p33r">33</td>
    </tr>
    <tr>
+    <td port="p34l">34</td>
     <td>DIG10</td>
     <td port="p34r">34</td>
    </tr>
@@ -1053,6 +1087,109 @@ graph {
     <td port="p26l">26</td>
     <td>CAN Hi</td>
    </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	CHAS_GND [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CHAS_GND</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Chassis Ground</td>
+   <td balign="left">1-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td>GND</td>
+    <td port="p1r">1</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	CHAS_GND:p1r:e -- PDMA_ChGND26:w1:w
+	PDMA_ChGND26:w1:e -- PDMA:p26l:w
+	PDMA_ChGND26 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">PDMA_ChGND26</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>CHAS_GND:1:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>PDMA:26:VBATT-</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	CHAS_GND:p1r:e -- PDMB_ChGND18:w1:w
+	PDMB_ChGND18:w1:e -- PDMB:p18l:w
+	PDMB_ChGND18 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">PDMB_ChGND18</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>CHAS_GND:1:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>PDMB:18:VBATT-</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
   </table>
  </td></tr>
 </table>
@@ -1217,16 +1354,19 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	"2P_PG22" [label=<
+	edge [color="#000000:#000000:#000000"]
+	CHAS_GND:p1r:e -- CNTR_GND_BA40:w1:w
+	CNTR_GND_BA40:w1:e -- BULKHEAD_A:p40l:w
+	CNTR_GND_BA40 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">2P_PG22</td>
+   <td balign="left">CNTR_GND_BA40</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">2x</td>
+   <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
   </tr></table>
  </td></tr>
@@ -1234,11 +1374,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td><!-- 1_in --></td>
+    <td>CHAS_GND:1:GND</td>
     <td>
      1:BK
     </td>
-    <td><!-- 1_out --></td>
+    <td>BULKHEAD_A:40:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -1249,15 +1389,39 @@ graph {
      </table>
     </td>
    </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ff0000:#000000"]
+	PDMA:p6r:e -- CNTR_PWR_BA39:w1:w
+	CNTR_PWR_BA39:w1:e -- BULKHEAD_A:p39l:w
+	CNTR_PWR_BA39 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CNTR_PWR_BA39</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
    <tr>
-    <td><!-- 2_in --></td>
+    <td>PDMA:6:OUT11</td>
     <td>
-     2:RD
+     1:RD
     </td>
-    <td><!-- 2_out --></td>
+    <td>BULKHEAD_A:39:PWR</td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
@@ -1270,28 +1434,31 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	"2P_PG16" [label=<
+	edge [color="#000000:#000000:#000000"]
+	CHAS_GND:p1r:e -- ET_GND_BA26:w1:w
+	ET_GND_BA26:w1:e -- BULKHEAD_A:p26l:w
+	ET_GND_BA26 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">2P_PG16</td>
+   <td balign="left">ET_GND_BA26</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">2x</td>
-   <td balign="left">16 AWG</td>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td><!-- 1_in --></td>
+    <td>CHAS_GND:1:GND</td>
     <td>
      1:BK
     </td>
-    <td><!-- 1_out --></td>
+    <td>BULKHEAD_A:26:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -1302,18 +1469,82 @@ graph {
      </table>
     </td>
    </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ff0000:#000000"]
+	PDMA:p15r:e -- ET_PWR_BA24:w1:w
+	ET_PWR_BA24:w1:e -- BULKHEAD_A:p24l:w
+	ET_PWR_BA24 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ET_PWR_BA24</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
    <tr>
-    <td><!-- 2_in --></td>
+    <td>PDMA:15:OUT15</td>
     <td>
-     2:RD
+     1:RD
     </td>
-    <td><!-- 2_out --></td>
+    <td>BULKHEAD_A:24:PWR</td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	ECUD:p16r:e -- TPS_GND_BA29:w1:w
+	TPS_GND_BA29:w1:e -- BULKHEAD_A:p29l:w
+	TPS_GND_BA29 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">TPS_GND_BA29</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUD:16:SEN_0V_B</td>
+    <td>
+     1:BK
+    </td>
+    <td>BULKHEAD_A:29:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -1762,7 +1993,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#999999:#000000"]
-	PDMA:p15r:e -- "1P_ET":w1:w
+	ECUC:p18r:e -- "1P_ET":w1:w
 	"1P_ET":w1:e -- BULKHEAD_A:p25l:w
 	"1P_ET" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1781,7 +2012,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>PDMA:15:OUT15</td>
+    <td>ECUC:18:OUT_HB1</td>
     <td>
      1:GY
     </td>
@@ -2069,7 +2300,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUD:11:UGID6</td>
+    <td>ECUD:11:UDIG6</td>
     <td>
      1:GY
     </td>
@@ -2375,7 +2606,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	PDMA:p26r:e -- "1P_ClchGND":w1:w
+	CHAS_GND:p1r:e -- "1P_ClchGND":w1:w
 	"1P_ClchGND":w1:e -- BULKHEAD_A:p5l:w
 	"1P_ClchGND" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2394,7 +2625,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>PDMA:26:VBATT-</td>
+    <td>CHAS_GND:1:GND</td>
     <td>
      1:BK
     </td>
@@ -2647,10 +2878,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ffff00:#000000"]
-	ECUA:p2r:e -- "2P_IPT":w1:w
+	ECUA:p3r:e -- "2P_IPT":w1:w
 	"2P_IPT":w1:e -- BULKHEAD_A:p9l:w
 	edge [color="#000000:#00ff00:#000000"]
-	ECUA:p3r:e -- "2P_IPT":w2:w
+	ECUA:p2r:e -- "2P_IPT":w2:w
 	"2P_IPT":w2:e -- BULKHEAD_A:p10l:w
 	"2P_IPT" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2669,7 +2900,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUA:2:AT6</td>
+    <td>ECUA:3:AV15</td>
     <td>
      1:YE
     </td>
@@ -2685,7 +2916,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>ECUA:3:AV15</td>
+    <td>ECUA:2:AT6</td>
     <td>
      2:GN
     </td>

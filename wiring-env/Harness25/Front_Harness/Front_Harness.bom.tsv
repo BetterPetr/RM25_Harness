@@ -1,12 +1,13 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, 1 x 16 AWG	0	m	1P_ClchGND, 1P_ClchPWR, 1P_InjPWR
-2	Cable, 1 x 22 AWG	0	m	1PBrkL, 1PInj1, 1PInj2, 1PInj3, 1PInj4, 1P_CAMSync, 1P_ClchPos, 1P_CrankTrig, 1P_CrankTrigGND, 1P_ET, 1P_LRShk, 1P_LRWSP, 1P_RFAN, 1P_RRShk, 1P_RRWSP, 1P_SHFT_POSM, 1P_TPS12V, 1P_TPS5V, 1P_WaterOut, ECU_GND_BA32, ECU_GND_BA44, ECU_PWR_BA33, ECU_PWR_BA47
-3	Cable, 2 x 16 AWG	0	m	2P_PG16, 2P_SHFM
-4	Cable, 2 x 22 AWG	0	m	2P_CAN, 2P_FPT, 2P_IPT, 2P_KNK, 2P_OPT, 2P_PG22, 2P_Tpot, 2P_WIPT
+1	Cable, 1 x 16 AWG	0	m	1P_ClchGND, 1P_ClchPWR, 1P_InjPWR, PDMA_ChGND26, PDMB_ChGND18
+2	Cable, 1 x 22 AWG	0	m	1PBrkL, 1PInj1, 1PInj2, 1PInj3, 1PInj4, 1P_CAMSync, 1P_ClchPos, 1P_CrankTrig, 1P_CrankTrigGND, 1P_ET, 1P_LRShk, 1P_LRWSP, 1P_RFAN, 1P_RRShk, 1P_RRWSP, 1P_SHFT_POSM, 1P_TPS12V, 1P_TPS5V, 1P_WaterOut, CNTR_GND_BA40, CNTR_PWR_BA39, ECU_GND_BA32, ECU_GND_BA44, ECU_PWR_BA33, ECU_PWR_BA47, ET_GND_BA26, ET_PWR_BA24, TPS_GND_BA29
+3	Cable, 2 x 16 AWG	0	m	2P_SHFM
+4	Cable, 2 x 22 AWG	0	m	2P_CAN, 2P_FPT, 2P_IPT, 2P_KNK, 2P_OPT, 2P_Tpot, 2P_WIPT
 5	Connector, AMPHENOL HDP 47P, male, 47 pins	1		BULKHEAD_A
-6	Connector, MoTeC ECUA 34P, female, 34 pins	1		ECUA
-7	Connector, MoTeC ECUB 26P, female, 26 pins	1		ECUB
-8	Connector, MoTeC ECUC 34P, female, 34 pins	1		ECUC
-9	Connector, MoTeC ECUD 26P, female, 26 pins	1		ECUD
-10	Connector, MoTeC PDMA 34P, female, 34 pins	1		PDMA
-11	Connector, MoTeC PDMB, female, 26 pins	1		PDMB
+6	Connector, Chassis Ground, 1 pins	1		CHAS_GND
+7	Connector, MoTeC ECUA 34P, female, 34 pins	1		ECUA
+8	Connector, MoTeC ECUB 26P, female, 26 pins	1		ECUB
+9	Connector, MoTeC ECUC 34P, female, 34 pins	1		ECUC
+10	Connector, MoTeC ECUD 26P, female, 26 pins	1		ECUD
+11	Connector, MoTeC PDMA 34P, female, 34 pins	1		PDMA
+12	Connector, MoTeC PDMB, female, 26 pins	1		PDMB
