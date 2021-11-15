@@ -15,57 +15,81 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">Deutsch HDP26-18-14SE</td>
    <td balign="left">female</td>
-   <td balign="left">8-pin</td>
+   <td balign="left">14-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td>C1P</td>
+    <td>C1PWR</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td>C1I</td>
+    <td>C1IGN</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
-    <td>C2P</td>
+    <td>C2PWR</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
-    <td>C2I</td>
+    <td>C2IGN</td>
     <td port="p4r">4</td>
    </tr>
    <tr>
-    <td>C3P</td>
+    <td>C3PWR</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
-    <td>C3I</td>
+    <td>C3IGN</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
-    <td>C4P</td>
+    <td>C4PWR</td>
     <td port="p7r">7</td>
    </tr>
    <tr>
-    <td>C3I</td>
+    <td>C3IGN</td>
     <td port="p8r">8</td>
    </tr>
+   <tr>
+    <td>EMPTY</td>
+    <td port="p9r">9</td>
+   </tr>
+   <tr>
+    <td>EMPTY</td>
+    <td port="p10r">10</td>
+   </tr>
+   <tr>
+    <td>EMPTY</td>
+    <td port="p11r">11</td>
+   </tr>
+   <tr>
+    <td>EMPTY</td>
+    <td port="p12r">12</td>
+   </tr>
+   <tr>
+    <td>EMPTY</td>
+    <td port="p13r">13</td>
+   </tr>
+   <tr>
+    <td>EMPTY</td>
+    <td port="p14r">14</td>
+   </tr>
   </table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Wiring for the 4 spark plugs</td>
+   <td balign="left">Coils</td>
   </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	DNS_1 [label=<
+	COIL1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">DNS_1</td>
+   <td balign="left">COIL1</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -88,11 +112,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	DNS_2 [label=<
+	COIL2 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">DNS_2</td>
+   <td balign="left">COIL2</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -115,11 +139,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	DNS_3 [label=<
+	COIL3 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">DNS_3</td>
+   <td balign="left">COIL3</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -142,11 +166,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	DNS_4 [label=<
+	COIL4 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">DNS_4</td>
+   <td balign="left">COIL4</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -171,10 +195,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	BULKHEAD_16G:p1r:e -- "2PC1":w1:w
-	"2PC1":w1:e -- DNS_1:p1l:w
+	"2PC1":w1:e -- COIL1:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
 	BULKHEAD_16G:p2r:e -- "2PC1":w2:w
-	"2PC1":w2:e -- DNS_1:p2l:w
+	"2PC1":w2:e -- COIL1:p2l:w
 	"2PC1" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -192,11 +216,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD_16G:1:C1P</td>
+    <td>BULKHEAD_16G:1:C1PWR</td>
     <td>
      1:RD
     </td>
-    <td>DNS_1:1:PWR</td>
+    <td>COIL1:1:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -208,11 +232,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD_16G:2:C1I</td>
+    <td>BULKHEAD_16G:2:C1IGN</td>
     <td>
      2:VT
     </td>
-    <td>DNS_1:2:IGN</td>
+    <td>COIL1:2:IGN</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -230,10 +254,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	BULKHEAD_16G:p3r:e -- "2PC2":w1:w
-	"2PC2":w1:e -- DNS_2:p1l:w
+	"2PC2":w1:e -- COIL2:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
 	BULKHEAD_16G:p4r:e -- "2PC2":w2:w
-	"2PC2":w2:e -- DNS_2:p2l:w
+	"2PC2":w2:e -- COIL2:p2l:w
 	"2PC2" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -251,11 +275,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD_16G:3:C2P</td>
+    <td>BULKHEAD_16G:3:C2PWR</td>
     <td>
      1:RD
     </td>
-    <td>DNS_2:1:PWR</td>
+    <td>COIL2:1:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -267,11 +291,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD_16G:4:C2I</td>
+    <td>BULKHEAD_16G:4:C2IGN</td>
     <td>
      2:VT
     </td>
-    <td>DNS_2:2:IGN</td>
+    <td>COIL2:2:IGN</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -289,10 +313,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	BULKHEAD_16G:p5r:e -- "2PC3":w1:w
-	"2PC3":w1:e -- DNS_3:p1l:w
+	"2PC3":w1:e -- COIL3:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
 	BULKHEAD_16G:p6r:e -- "2PC3":w2:w
-	"2PC3":w2:e -- DNS_3:p2l:w
+	"2PC3":w2:e -- COIL3:p2l:w
 	"2PC3" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -310,11 +334,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD_16G:5:C3P</td>
+    <td>BULKHEAD_16G:5:C3PWR</td>
     <td>
      1:RD
     </td>
-    <td>DNS_3:1:PWR</td>
+    <td>COIL3:1:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -326,11 +350,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD_16G:6:C3I</td>
+    <td>BULKHEAD_16G:6:C3IGN</td>
     <td>
      2:VT
     </td>
-    <td>DNS_3:2:IGN</td>
+    <td>COIL3:2:IGN</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -348,10 +372,10 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	BULKHEAD_16G:p7r:e -- "2PC4":w1:w
-	"2PC4":w1:e -- DNS_4:p1l:w
+	"2PC4":w1:e -- COIL4:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
 	BULKHEAD_16G:p8r:e -- "2PC4":w2:w
-	"2PC4":w2:e -- DNS_4:p2l:w
+	"2PC4":w2:e -- COIL4:p2l:w
 	"2PC4" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -369,11 +393,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD_16G:7:C4P</td>
+    <td>BULKHEAD_16G:7:C4PWR</td>
     <td>
      1:RD
     </td>
-    <td>DNS_4:1:PWR</td>
+    <td>COIL4:1:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -385,11 +409,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD_16G:8:C3I</td>
+    <td>BULKHEAD_16G:8:C3IGN</td>
     <td>
      2:VT
     </td>
-    <td>DNS_4:2:IGN</td>
+    <td>COIL4:2:IGN</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
