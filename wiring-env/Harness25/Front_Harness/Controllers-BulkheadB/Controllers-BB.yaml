@@ -9,7 +9,7 @@ templates:
 
 connectors:
   BULKHEAD_B:
-    pinlabels: [C1PWR, C1IGN, C2PWR, C2IGN, C3PWR, C3IGN, C4PWR, C3IGN, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY]
+    pinlabels: [PWR, GND, PWR, GND, PWR, Empty, Empty, IGN, PWR, IGN, PWR, IGN, IGN, PWR]
     type: Deutsch HDP26-18-14SE
     subtype: male
     notes: Bulkhead Connector B (Driver Side)
@@ -42,8 +42,102 @@ connectors:
     type: Chassis Ground
 
 cables:
+# Coils PWR
+  CPWR_1: &coil_pwr
+    wirecount: 1
+    gauge: 16 AWG
+    colors: [RD]
+  CPWR_2:
+    <<: *coil_pwr
+  CPWR_3:
+    <<: *coil_pwr
+  CPWR_4:
+    <<: *coil_pwr
 
+# BOSCH IGNITION CONTROL MODULE NEEDED
+# Coils Ignition
+  CIGN_1: &coil_ign
+    wirecount: 1
+    gauge: 16 AWG
+    colors: [VT]
+  CIGN_2:
+    <<: *coil_ign
+  CIGN_3:
+    <<: *coil_ign
+  CIGN_4:
+    <<: *coil_ign
+
+# Fuel Pump
+  1P_FlPWR: &temp_fuel
+    wirecount: 1
+    gauge: 16 AWG
+    colors: [RD]
+  1P_FlGND:
+    <<: *temp_fuel
+    colors: [BK]
+# Water Pump
+  1P_WtrPWR: &temp_wtr
+    wirecount: 1
+    gauge: 16 AWG
+    colors: [RD]
+  1P_WtrGND:
+    <<: *temp_wtr
+    colors: [BK]
 
 connections:
+#Coil 1 PWR & IGN
+-
+  - PDMB: [3]
+  - CPWR_1: [1]
+  - BULKHEAD_B: [5]
+-
+  - ECUC: [3]
+  - CIGN_1: [1]
+  - BULKHEAD_B: [8]
+#Coil 2 PWR & IGN
+-
+  - PDMB: [5]
+  - CPWR_2: [1]
+  - BULKHEAD_B: [11]
+-
+  - ECUC: [4]
+  - CIGN_2: [1]
+  - BULKHEAD_B: [10]
+#Coil 3 PWR & IGN
+-
+  - PDMB: [5]
+  - CPWR_3: [1]
+  - BULKHEAD_B: [14]
+-
+  - ECUC: [5]
+  - CIGN_3: [1]
+  - BULKHEAD_B: [12]
+#Coil 4 PWR & IGN
+-
+  - PDMB: [3]
+  - CPWR_4: [1]
+  - BULKHEAD_B: [9]
+-
+  - ECUC: [6]
+  - CIGN_4: [1]
+  - BULKHEAD_B: [13]
 
+# Fuel Pump PWR/GND
+-
+  - PDMA: [3]
+  - 1P_FlPWR: [1]
+  - BULKHEAD_B: [1]
+-
+  - CHAS_GND: [1]
+  - 1P_FlGND: [1]
+  - BULKHEAD_B: [2]
 
+# Water Pump PWR/GND
+-
+  - PDMA: [4]
+  - 1P_WtrPWR: [1]
+  - BULKHEAD_B: [3]
+-
+  - CHAS_GND: [1]
+  - 1P_WtrGND: [1]
+  - BULKHEAD_B: [4]

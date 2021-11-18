@@ -4,11 +4,11 @@ graph {
 	graph [bgcolor="#FFFFFF" fontname=arial nodesep=0.33 rankdir=LR ranksep=2]
 	node [fillcolor="#FFFFFF" fontname=arial height=0 margin=0 shape=none style=filled width=0]
 	edge [fontname=arial style=bold]
-	BULKHEAD_16G [label=<
+	BULKHEAD_B [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">BULKHEAD_16G</td>
+   <td balign="left">BULKHEAD_B</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -21,59 +21,59 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td>C1PWR</td>
+    <td>PWR</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td>C1IGN</td>
+    <td>GND</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
-    <td>C2PWR</td>
+    <td>PWR</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
-    <td>C2IGN</td>
+    <td>GND</td>
     <td port="p4r">4</td>
    </tr>
    <tr>
-    <td>C3PWR</td>
+    <td>PWR</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
-    <td>C3IGN</td>
+    <td>Empty</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
-    <td>C4PWR</td>
+    <td>Empty</td>
     <td port="p7r">7</td>
    </tr>
    <tr>
-    <td>C3IGN</td>
+    <td>IGN</td>
     <td port="p8r">8</td>
    </tr>
    <tr>
-    <td>EMPTY</td>
+    <td>PWR</td>
     <td port="p9r">9</td>
    </tr>
    <tr>
-    <td>EMPTY</td>
+    <td>IGN</td>
     <td port="p10r">10</td>
    </tr>
    <tr>
-    <td>EMPTY</td>
+    <td>PWR</td>
     <td port="p11r">11</td>
    </tr>
    <tr>
-    <td>EMPTY</td>
+    <td>IGN</td>
     <td port="p12r">12</td>
    </tr>
    <tr>
-    <td>EMPTY</td>
+    <td>IGN</td>
     <td port="p13r">13</td>
    </tr>
    <tr>
-    <td>EMPTY</td>
+    <td>PWR</td>
     <td port="p14r">14</td>
    </tr>
   </table>
@@ -193,11 +193,67 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	Fuel_Pump [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Fuel_Pump</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Deutsch DT04_2P</td>
+   <td balign="left">female</td>
+   <td balign="left">2-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	Water_Pump [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Water_Pump</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Deutsch DT04_2P</td>
+   <td balign="left">female</td>
+   <td balign="left">2-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD_16G:p1r:e -- "2PC1":w1:w
+	BULKHEAD_B:p5r:e -- "2PC1":w1:w
 	"2PC1":w1:e -- COIL1:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD_16G:p2r:e -- "2PC1":w2:w
+	BULKHEAD_B:p8r:e -- "2PC1":w2:w
 	"2PC1":w2:e -- COIL1:p2l:w
 	"2PC1" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -216,7 +272,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD_16G:1:C1PWR</td>
+    <td>BULKHEAD_B:5:PWR</td>
     <td>
      1:RD
     </td>
@@ -232,7 +288,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD_16G:2:C1IGN</td>
+    <td>BULKHEAD_B:8:IGN</td>
     <td>
      2:VT
     </td>
@@ -253,10 +309,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD_16G:p3r:e -- "2PC2":w1:w
+	BULKHEAD_B:p11r:e -- "2PC2":w1:w
 	"2PC2":w1:e -- COIL2:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD_16G:p4r:e -- "2PC2":w2:w
+	BULKHEAD_B:p10r:e -- "2PC2":w2:w
 	"2PC2":w2:e -- COIL2:p2l:w
 	"2PC2" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -275,7 +331,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD_16G:3:C2PWR</td>
+    <td>BULKHEAD_B:11:PWR</td>
     <td>
      1:RD
     </td>
@@ -291,7 +347,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD_16G:4:C2IGN</td>
+    <td>BULKHEAD_B:10:IGN</td>
     <td>
      2:VT
     </td>
@@ -312,10 +368,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD_16G:p5r:e -- "2PC3":w1:w
+	BULKHEAD_B:p14r:e -- "2PC3":w1:w
 	"2PC3":w1:e -- COIL3:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD_16G:p6r:e -- "2PC3":w2:w
+	BULKHEAD_B:p12r:e -- "2PC3":w2:w
 	"2PC3":w2:e -- COIL3:p2l:w
 	"2PC3" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -334,7 +390,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD_16G:5:C3PWR</td>
+    <td>BULKHEAD_B:14:PWR</td>
     <td>
      1:RD
     </td>
@@ -350,7 +406,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD_16G:6:C3IGN</td>
+    <td>BULKHEAD_B:12:IGN</td>
     <td>
      2:VT
     </td>
@@ -371,10 +427,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD_16G:p7r:e -- "2PC4":w1:w
+	BULKHEAD_B:p9r:e -- "2PC4":w1:w
 	"2PC4":w1:e -- COIL4:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD_16G:p8r:e -- "2PC4":w2:w
+	BULKHEAD_B:p13r:e -- "2PC4":w2:w
 	"2PC4":w2:e -- COIL4:p2l:w
 	"2PC4" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -393,7 +449,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD_16G:7:C4PWR</td>
+    <td>BULKHEAD_B:9:PWR</td>
     <td>
      1:RD
     </td>
@@ -409,7 +465,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD_16G:8:C3IGN</td>
+    <td>BULKHEAD_B:13:IGN</td>
     <td>
      2:VT
     </td>
@@ -420,6 +476,124 @@ graph {
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	BULKHEAD_B:p2r:e -- "2P_FuelPmp":w1:w
+	"2P_FuelPmp":w1:e -- Fuel_Pump:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	BULKHEAD_B:p1r:e -- "2P_FuelPmp":w2:w
+	"2P_FuelPmp":w2:e -- Fuel_Pump:p2l:w
+	"2P_FuelPmp" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_FuelPmp</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>BULKHEAD_B:2:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>Fuel_Pump:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_B:1:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>Fuel_Pump:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	BULKHEAD_B:p4r:e -- "2P_WaterPmp":w1:w
+	"2P_WaterPmp":w1:e -- Water_Pump:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	BULKHEAD_B:p3r:e -- "2P_WaterPmp":w2:w
+	"2P_WaterPmp":w2:e -- Water_Pump:p2l:w
+	"2P_WaterPmp" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_WaterPmp</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>BULKHEAD_B:4:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>Water_Pump:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_B:3:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>Water_Pump:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

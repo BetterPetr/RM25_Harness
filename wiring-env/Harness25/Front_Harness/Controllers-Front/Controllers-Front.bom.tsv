@@ -1,0 +1,12 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 1 x 22 AWG	0	m	1P_DashGND, 1P_DashPWR, 1P_LFCntrGND, 1P_LFCntrPWR, 1P_LFShkGND, 1P_LFShkPWR, 1P_LFShkSIG, 1P_LFWSP, 1P_RFCntrGND, 1P_RFCntrPWR, 1P_RFShkGND, 1P_RFShkPWR, 1P_RFShkSIG, 1P_RFWSP, DASH_CANHi1, DASH_CANLo1
+2	Connector, Binder 4P, female, 4 pins	2		LFShock, RFShock
+3	Connector, Chassis Ground, 1 pins	1		CHAS_GND
+4	Connector, Deutsch DT04_6P, female, 6 pins	2		LFCenter, RFCenter
+5	Connector, MoTeC DASH 34P, female, 34 pins	1		DASH
+6	Connector, MoTeC ECUA 34P, female, 34 pins	1		ECUA
+7	Connector, MoTeC ECUB 26P, female, 26 pins	1		ECUB
+8	Connector, MoTeC ECUC 34P, female, 34 pins	1		ECUC
+9	Connector, MoTeC ECUD 26P, female, 26 pins	1		ECUD
+10	Connector, MoTeC PDMA 34P, female, 34 pins	1		PDMA
+11	Connector, MoTeC PDMB, female, 26 pins	1		PDMB

@@ -1,6 +1,11 @@
+templates:
+  - &DT2P_f
+    type: Deutsch DT04_2P
+    subtype: female
+
 connectors:
-  BULKHEAD_16G: 
-    pinlabels: [C1PWR, C1IGN, C2PWR, C2IGN, C3PWR, C3IGN, C4PWR, C3IGN, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY]
+  BULKHEAD_B: 
+    pinlabels: [PWR, GND, PWR, GND, PWR, Empty, Empty, IGN, PWR, IGN, PWR, IGN, IGN, PWR]
     type: Deutsch HDP26-18-14SE
     subtype: female
     notes: Coils
@@ -20,6 +25,14 @@ connectors:
   COIL4:
     pinlabels: [PWR, IGN]
     type: Denso_2P
+  
+  Fuel_Pump:
+    <<: *DT2P_f
+    pinlabels: [GND, PWR]
+  
+  Water_Pump:
+    <<: *DT2P_f
+    pinlabels: [GND, PWR]
 
 cables:
   2PC1: &template_cbl2
@@ -32,26 +45,42 @@ cables:
     <<: *template_cbl2
   2PC4:
     <<: *template_cbl2
+  2P_FuelPmp:
+    colors: [BK, RD]
+    wirecount: 2
+    gauge: 16 AWG
+  2P_WaterPmp:
+    colors: [BK, RD]
+    wirecount: 2
+    gauge: 16 AWG
 
 connections:
 -
-  - BULKHEAD_16G: [1-2]
+  - BULKHEAD_B: [5, 8]
   - 2PC1: [1-2]
   - COIL1: [1-2]
 
 -
-  - BULKHEAD_16G: [3-4]
+  - BULKHEAD_B: [11, 10]
   - 2PC2: [1-2]
   - COIL2: [1-2]
 
 -
-  - BULKHEAD_16G: [5-6]
+  - BULKHEAD_B: [14, 12]
   - 2PC3: [1-2]
   - COIL3: [1-2]
 
 -
-  - BULKHEAD_16G: [7-8]
+  - BULKHEAD_B: [9, 13]
   - 2PC4: [1-2]
   - COIL4: [1-2]
 
-  
+-
+  - BULKHEAD_B: [2, 1]
+  - 2P_FuelPmp: [1-2]
+  - Fuel_Pump: [1-2]
+
+-
+  - BULKHEAD_B: [4, 3]
+  - 2P_WaterPmp: [1-2]
+  - Water_Pump: [1-2]

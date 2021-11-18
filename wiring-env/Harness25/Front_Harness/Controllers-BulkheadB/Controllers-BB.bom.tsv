@@ -1,0 +1,10 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 1 x 16 AWG	0	m	1P_FlGND, 1P_FlPWR, 1P_WtrGND, 1P_WtrPWR, CIGN_1, CIGN_2, CIGN_3, CIGN_4, CPWR_1, CPWR_2, CPWR_3, CPWR_4
+2	Connector, Chassis Ground, 1 pins	1		CHAS_GND
+3	Connector, Deutsch HDP26-18-14SE, male, 14 pins	1		BULKHEAD_B
+4	Connector, MoTeC ECUA 34P, female, 34 pins	1		ECUA
+5	Connector, MoTeC ECUB 26P, female, 26 pins	1		ECUB
+6	Connector, MoTeC ECUC 34P, female, 34 pins	1		ECUC
+7	Connector, MoTeC ECUD 26P, female, 26 pins	1		ECUD
+8	Connector, MoTeC PDMA 34P, female, 34 pins	1		PDMA
+9	Connector, MoTeC PDMB, female, 26 pins	1		PDMB

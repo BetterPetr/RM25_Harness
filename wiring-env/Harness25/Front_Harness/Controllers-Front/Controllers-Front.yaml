@@ -1,0 +1,255 @@
+templates:
+  - &template_cbl2
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [OG, BK]
+  - &temp_cbl1
+    wirecount: 1
+    gauge: 22 AWG
+  - &DT2P_f
+    type: Deutsch DT04_2P
+    subtype: female
+  - &DT6P_f
+    type: Deutsch DT04_6P
+    subtype: female
+  - &DT4P_f
+    type: Deutsch DT04_4P
+    subtype: female
+  - &Bndr4P_f
+    type: Binder 4P
+    subtype: female
+
+connectors:
+  DASH:
+    pinlabels: [E-TX-, E-TX+, AV1, AV2, AV3, AV4, 8V, 5V, SEN-0V, E-RX-, E-RX+, AV5, AV6, DIG1, DIG2, AT1, AT2, CAN1L, CAN1H, RS232-1 TX, SPD1, SPD2, SPD3, VID1, RS232-2 RX, CAN2L, CAN2H, RS232-1 RX, AUX1, AUX2, AUX3, AUX4, BAT+, BAT-]
+    type: MoTeC DASH 34P
+    subtype: female
+    notes: MoTeC C125 Dash Logger
+  ECUA:
+    pinlabels: [AT5, AT6, AV15, AV16, AV17, IGN_LS9, IGN_LS10, IGN_LS11, IGN_LS12, SEN_5V0_C1, LA-NB1, LA-NB2, KNOCK3, KNOCK4, DIG2, DIG3, DIG4, SEN_5V0_C2, SEN_5V0_B2, LIN, RS232_RX, RS232_TX, DIG1, BAT_NEG3, BAT_NEG4, SEN_0V_C1, SEN_0V_C2, CAN3_HI, CAN3_LO, CAN2_HI, CAN2_LO, BAT_NEG5, SEN_0V_B1, SEN_0V_A1]
+    type: MoTeC ECUA 34P
+    subtype: female
+  ECUB:
+    pinlabels: [OUT_HB9, OUT_HB9, UDIG8, UDIG9, UDIG10, UDIG11, UDIG12, INJ_LS5, INJ_LS3, AV9, AV10, AV11, BAT_POS, INJ_LS6, INJ_LS4, AV12, AV13, AV14, BAT_POS, OUT_HB7, OUT_HB8, INJ_PH9, INJ_PH10, INJ_PH11, INJ_PH12, SEN_5V0_A]
+    type: MoTeC ECUB 26P
+    subtype: female
+  ECUC:
+    pinlabels: [OUT_HB2, SEN-5V0_A, IGN_LS1, IGN_LS2, IGN_LS3, IGN_LS4, IGN_LS5, IGN_LS6, SEN_5V0_B, BAT_NEG1, BAT_NEG2, IGN_LS7, IGN_LS8, AV1, AV2, AV3, AV4, OUT_HB1, INJ_PH1, INJ_PH2, INJ_PH3, INJ_PH4, INJ_LS1, INJ_LS2, AV5, BAT_POS, INJ_PH5, INJ_PH6, INJ_PH7, INJ_PH8, OUT_HB3, OUT_HB4, OUT_HB5, OUT_HB6]
+    type: MoTeC ECUC 34P
+    subtype: female
+  ECUD:
+    pinlabels: [UDIG1, UDIG2, AT1, AT2, AT3, AT4, KNOCK1, UDIG3, UDIG4, UDIG5, UDIG6, BAT_BAK, KNOCK2, UDIG7, SEN_0V_A, SEN_0V_B, CAN1_HI, CAN1_LO, SEN_6V3, AV6, AV7, AV8, ETH_TX+, ETH_TX-, ETH_RX+, ETH_RX-]
+    type: MoTeC ECUD 26P
+    subtype: female
+  PDMA:
+    pinlabels: [OUT1, OUT9, OUT2, OUT10, OUT3, OUT11, OUT4, OUT12, OUT5, OUT1, OUT13, OUT2, OUT14, OUT3, OUT15, OUT4, OUT5, NA, DIG2, NA, DIG4, NA, DIG7, NA, NA, VBATT-, DIG1, GND, DIG3, DIG5, DIG6, DIG8, DIG9, DIG10]
+    type: MoTeC PDMA 34P
+    subtype: female
+  PDMB:
+    pinlabels: [NA, NA, OUT6, NA, OUT7, NA, OUT8, NA, OUT6, NA, OUT7, NA, OUT8, NA, DIG13, NA, DIG15, VBATT-, NA, DIG11, DIG12, GND, DIG14, DIG16, CAN Lo, CAN Hi]
+    type: MoTeC PDMB
+    subtype: female
+  CHAS_GND:
+    pinlabels: [GND]
+    type: Chassis Ground
+  RFShock: &FShock
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+  LFShock:
+    <<: *FShock
+# LF Wheel Center
+  LFCenter: # lrcenter
+    <<: *DT6P_f
+    pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
+    notes: Strain Gauge + LF WhlSpd
+# RF Wheel Center
+  RFCenter:
+    <<: *DT6P_f
+    pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
+    notes: Strain Gauge + RF WhlSpd
+
+cables:
+# DASH CAN
+  DASH_CANLo1: &dash_can
+    wirecount: 1
+    gauge: 22 AWG
+    colors: [GY]
+  DASH_CANHi1:
+    <<: *dash_can
+# DASH PWR/GND                                       ************************************check whether this should be 16 or 22AWG
+  1P_DashPWR: &dash_pwr
+    wirecount: 1
+    gauge: 22 AWG
+    colors: [RD]
+  1P_DashGND:
+    <<: *dash_pwr
+    colors: [BK]
+# LFShock
+  1P_LFShkSIG: &temp_shk
+    wirecount: 1
+    gauge: 22 AWG
+    colors: [GY]
+  1P_LFShkPWR:
+    <<: *temp_shk
+    colors: [RD]
+  1P_LFShkGND:
+    <<: *temp_shk
+    colors: [BK]
+# RFShock
+  1P_RFShkSIG:
+    <<: *temp_shk
+  1P_RFShkPWR:
+    <<: *temp_shk
+    colors: [RD]
+  1P_RFShkGND:
+    <<: *temp_shk
+    colors: [BK]
+# LF Wheel Speed
+  1P_LFWSP: &temp_whlspd
+    wirecount: 1
+    gauge: 22 AWG
+    colors: [GY]
+# LF Wheel Center
+  1P_LFCntrPWR: &temp_whlcntrpwr
+    wirecount: 1
+    gauge: 22 AWG
+    colors: [RD]
+  1P_LFCntrGND:
+    <<: *temp_whlcntrpwr
+    colors: [BK]
+# RF Wheel Speed
+  1P_RFWSP:
+    <<: *temp_whlspd
+# RF Wheel Center
+  1P_RFCntrPWR:
+    <<: *temp_whlcntrpwr
+  1P_RFCntrGND:
+    <<: *temp_whlcntrpwr
+    colors: [BK]
+
+
+
+
+connections:
+# PDM to ECU PWR/GND
+
+# ECU to PDM CAN
+
+# Starter Relay
+
+# E-Stop (emergency) Button
+
+#ECU to DASH CANLo1
+-
+  - ECUA: [29]
+  - DASH_CANLo1: [1]
+  - DASH: [18]
+#ECU to DASH CANHi1
+-
+  - ECUA: [28]
+  - DASH_CANHi1: [1]
+  - DASH: [19]
+# Dash PWR/GND
+-
+  - PDMA: [5]
+  - 1P_DashPWR: [1]
+  - DASH: [33]
+-
+  - CHAS_GND: [1]
+  - 1P_DashGND: [1]
+  - DASH: [34]
+
+# All Steering Wheel Commands (Shifting, clutch, etc.)
+# PDM ports for this as well
+# Crank Button
+# Launch Control?
+# Shifting
+# Throttle Map Selector
+# Tune Selector
+# Steering Position
+# GPS Module 
+# Lap Beacon Receiver
+
+
+# Transponder (Front Wing on 24)
+
+#LFShock
+-
+  - ECUB: [12]
+  - 1P_LFShkSIG: [1]
+  - LFShock: [3]
+-
+  - ECUB: [26]
+  - 1P_LFShkPWR: [1]
+  - LFShock: [2]
+-
+  - ECUA: [34]
+  - 1P_LFShkGND: [1]
+  - LFShock: [1]
+#RFShock
+-
+  - ECUB: [16]
+  - 1P_RFShkSIG: [1]
+  - RFShock: [3]
+-
+  - ECUB: [26]
+  - 1P_RFShkPWR: [1]
+  - RFShock: [2]
+-
+  - ECUA: [34]
+  - 1P_RFShkGND: [1]
+  - RFShock: [1]
+#LFCenter PWR
+-
+  - PDMA: [8]
+  - 1P_LFCntrPWR: [1]
+  - LFCenter: [2]
+-
+  - CHAS_GND: [1]
+  - 1P_LFCntrGND: [1]
+  - LFCenter: [1]
+#LF WhlSpd
+-
+  - ECUB: [3]
+  - 1P_LFWSP: [1]
+  - LFCenter: [5]
+#LF Strain Gauge/CAN
+
+#RFCenter PWR
+-
+  - PDMA: [8]
+  - 1P_RFCntrPWR: [1]
+  - RFCenter: [2]
+-
+  - CHAS_GND: [1]
+  - 1P_RFCntrGND: [1]
+  - RFCenter: [1]
+#RF WhlSpd
+-
+  - ECUD: [10]
+  - 1P_RFWSP: [1]
+  - RFCenter: [5]
+#RF Strain Gauge
+
+#APPS PDM ports
+#Accel Pedal Sensor 1
+
+#Accel Pedal Sensor 2
+
+#Front Brake Pressure
+
+#Exhaust Lambda Sensor, CAN Module with this too
+
+#Wireless Comms
+
+# BSPD
+
+# BOTS
+
+# Accelerometer
+
+# AnalogX not needed anymore???
+# AnalogX 1 (Analog-CAN)
+# AnalogX 2 (Analog-CAN)
+
+
