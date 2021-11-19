@@ -32,11 +32,11 @@ templates:
     subtype: female
 
 connectors:
-  BULKHEAD: &ahdp47
+  BULKHEAD_A: &ahdp47
     pinlabels: [HB, AV, AT, PWR, GND, HB, AV, AT, AV, AT, AV, AT, SIG, SIG, SIG, SIG, PWR, SIG, SIG, AT, SIG, AV, AV, PWR, UDIG, GND, 12V, 5V, GND, GND, UDIG, GND, PWR, SIG, SIG, SIG, SIG, SIG, PWR, GND, CANHi, CANLo, SIG, 0VECUGND, SIG, SIG, 5VECUPWR]
     type: AMPHENOL HDP 47P
     subtype: female
-    notes: Bulkhead Connector (Engine Side)
+    notes: BULKHEAD_A Connector (Engine Side)
 
   SHIFT_POSM:
     <<: *DT4P_f
@@ -206,102 +206,102 @@ cables:
 
 connections:
 -
-  - BULKHEAD: [40, 21]
+  - BULKHEAD_A: [40, 21]
   - 2P_CAMSync: [1-2]
   - CAM_Sync: [1-2]
 -
-  - BULKHEAD: [32, 33, 38]
+  - BULKHEAD_A: [32, 33, 38]
   - 3P_SHFT_POSM: [1-3]
   - SHIFT_POSM: [1-3]
 -
-  - BULKHEAD: [40, 39, 41, 42, 43]
+  - BULKHEAD_A: [40, 39, 41, 42, 43]
   - 5P_LRCntr: [1-5]
   - LRCenter: [1-5]
 -
-  - BULKHEAD: [40, 39, 41, 42, 45]
+  - BULKHEAD_A: [40, 39, 41, 42, 45]
   - 5P_RRCntr: [1-5]
   - RRCenter: [1-5]
 -
-  - BULKHEAD: [17, 13]
+  - BULKHEAD_A: [17, 13]
   - 2PInj1: [1-2]
   - Inj1: [1-2]
 -
-  - BULKHEAD: [17, 14]
+  - BULKHEAD_A: [17, 14]
   - 2PInj2: [1-2]
   - Inj2: [1-2]
 -
-  - BULKHEAD: [17, 15]
+  - BULKHEAD_A: [17, 15]
   - 2PInj3: [1-2]
   - Inj3: [1-2]
 -
-  - BULKHEAD: [17, 16]
+  - BULKHEAD_A: [17, 16]
   - 2PInj4: [1-2]
   - Inj4: [1-2]
 -
-  - BULKHEAD: [44, 47, 2, 3]
+  - BULKHEAD_A: [44, 47, 2, 3]
   - 4P_FPT: [1-4]
   - Fuel_PT: [1-4]
 -
-  - BULKHEAD: [44, 47, 7, 8]
+  - BULKHEAD_A: [44, 47, 7, 8]
   - 4P_OPT: [1-4]
   - Oil_PT: [1-4]
 -
-  - BULKHEAD: [44, 47, 11, 12]
+  - BULKHEAD_A: [44, 47, 11, 12]
   - 4P_WIPT: [1-4]
   - WaterIn_PT: [1-4]
 -
-  - BULKHEAD: [44, 47, 9, 10]
+  - BULKHEAD_A: [44, 47, 9, 10]
   - 4P_IPT: [1-4]
   - Intake_PT: [1-4]
 -
-  - BULKHEAD: [26, 24, 25]
+  - BULKHEAD_A: [26, 24, 25]
   - 3P_ET: [1-3] 
   - T_Motor: [1-3]
 -
-  - BULKHEAD: [29, 27, 28]
+  - BULKHEAD_A: [29, 27, 28]
   - 3P_TPS: [1-3]
   - TPS: [1-3]
 -
-  - BULKHEAD: [22, 23]
+  - BULKHEAD_A: [22, 23]
   - 2P_Tpot: [1-2]
   - TPS_Pot: [1-2]
 -
-  - BULKHEAD: [33, 46]
+  - BULKHEAD_A: [33, 46]
   - 2PBrkL: [1-2]
   - BrakeL: [1-2]
 -
-  - BULKHEAD: [1, 6]
+  - BULKHEAD_A: [1, 6]
   - 2P_SHFM: [1-2]
   - Shift_Motor: [1-2]
 -
-  - BULKHEAD: [47, 18, 19]
+  - BULKHEAD_A: [47, 18, 19]
   - 3P_KNK: [1-3]
   - Knock: [1-3]
 -
-  - BULKHEAD: [5, 4]
+  - BULKHEAD_A: [5, 4]
   - 2P_ClchPWR: [1-2]
   - Clutch_PWR: [1-2]
 -
-  - BULKHEAD: [32, 33, 35]
+  - BULKHEAD_A: [32, 33, 35]
   - 3P_ClchPos: [1-3]
   - Clutch_POS: [1-3]
 -
-  - BULKHEAD: [32, 33, 36]
+  - BULKHEAD_A: [32, 33, 36]
   - 3P_LRShk: [1-3]
   - LRShock: [1-3]
 -
-  - BULKHEAD: [32, 33, 37]
+  - BULKHEAD_A: [32, 33, 37]
   - 3P_RRShk: [1-3]
   - RRShock: [1-3]
 -
-  - BULKHEAD: [34]
+  - BULKHEAD_A: [34]
   - 1P_RFAN: [1]
   - RAD_FAN: [1]
 -
-  - BULKHEAD: [30, 31]
+  - BULKHEAD_A: [30, 31]
   - 2P_CrankTrig: [1-2]
   - Crank_Trig: [1-2]
 -
-  - BULKHEAD: [44, 20]
+  - BULKHEAD_A: [44, 20]
   - 2P_WaterOut: [1-2]
   - WaterOut: [1-2]

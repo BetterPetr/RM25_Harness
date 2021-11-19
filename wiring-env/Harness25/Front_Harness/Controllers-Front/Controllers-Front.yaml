@@ -6,6 +6,9 @@ templates:
   - &temp_cbl1
     wirecount: 1
     gauge: 22 AWG
+  - &temp_cbl5
+    wirecount: 5
+    gauge: 22 AWG
   - &DT2P_f
     type: Deutsch DT04_2P
     subtype: female
@@ -20,6 +23,9 @@ templates:
     subtype: female
 
 connectors:
+  NOTES:
+    pincolors: [GN]
+    notes: All ECU ATemps need 1k pullup to SEN_5V (check M150 datasheet)
   DASH:
     pinlabels: [E-TX-, E-TX+, AV1, AV2, AV3, AV4, 8V, 5V, SEN-0V, E-RX-, E-RX+, AV5, AV6, DIG1, DIG2, AT1, AT2, CAN1L, CAN1H, RS232-1 TX, SPD1, SPD2, SPD3, VID1, RS232-2 RX, CAN2L, CAN2H, RS232-1 RX, AUX1, AUX2, AUX3, AUX4, BAT+, BAT-]
     type: MoTeC DASH 34P
@@ -67,8 +73,51 @@ connectors:
     <<: *DT6P_f
     pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
     notes: Strain Gauge + RF WhlSpd
+# Emergency Stop Button
+  EStop:
+    <<: *DT2P_f
+    pinlabels: [GND, SIG]
+# Break Over-Travel Switch
+  BOTS:
+    <<: *DT2P_f
+    pinlabels: [GND, SIG]
+# Crank Button
+  Crank_Button:
+    <<: *DT2P_f
+    pinlabels: [GND, SIG]
+# Accelerometer
+  Accelerometer:
+    <<: *DT6P_f
+    pinlabels: [GND, PWR, SIG, SIG, SIG, NA]
+    notes: Bosch Accelerometer AM 600
+
 
 cables:
+# ECU PWR/GND
+  1P_ECUPWR13B: &ECUPWR
+    wirecount: 1
+    gauge: 16 AWG
+    colors: [RD]
+  1P_ECUPWR26C:
+    <<: *ECUPWR
+  1P_ECUPWRB19:
+    <<: *ECUPWR
+  1P_ECUGND24A: &ECUGND
+    <<: *ECUPWR
+    colors: [BK]
+  1P_ECUGND25A:
+    <<: *ECUGND
+  1P_ECUGND32A:
+    <<: *ECUGND
+  1P_ECUGND10C:
+    <<: *ECUGND
+  1P_ECUGND11C:
+    <<: *ECUGND
+  1P_PDMGND26A: &PDMGND
+    <<: *ECUGND
+  1P_PDMGND18B:
+    <<: *PDMGND
+
 # DASH CAN
   DASH_CANLo1: &dash_can
     wirecount: 1
@@ -126,18 +175,96 @@ cables:
   1P_RFCntrGND:
     <<: *temp_whlcntrpwr
     colors: [BK]
-
+# Emergency Stop (signal color may be wrong)
+  2P_EStop:
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [BK, GY]
+# LF Wheel Center CAN (strain gauge)
+  2P_LFCAN: &WhlCntr_CAN
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [BN, WH]
+    notes: CAN BUS
+# RF Wheel Center CAN (strain gauge)
+  2P_RFCAN:
+    <<: *WhlCntr_CAN
+# BOTS
+  2P_BOTS:
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [BK, GY]
+# Crank_Button
+  2P_CrankBut:
+    wirecount: 2
+    gauge: 22 AWG
+    colors: [BK, GY]
+# Accelerometer
+  5P_Accelmtr:
+    <<: *temp_cbl5
+    colors: [BK, RD, GY, GY, GY]
 
 
 
 connections:
 # PDM to ECU PWR/GND
+-
+  - PDMA: [1]
+  - 1P_ECUPWR13B: [1]
+  - ECUB: [13]
+-
+  - PDMA: [1]
+  - 1P_ECUPWR26C: [1]
+  - ECUC: [26]
+-
+  - PDMA: [1]
+  - 1P_ECUPWRB19: [1]
+  - ECUB: [19]
+-
+  - CHAS_GND: [1]
+  - 1P_ECUGND24A: [1]
+  - ECUA: [24]
+-
+  - CHAS_GND: [1]
+  - 1P_ECUGND25A: [1]
+  - ECUA: [25]
+-
+  - CHAS_GND: [1]
+  - 1P_ECUGND32A: [1]
+  - ECUA: [32]
+-
+  - CHAS_GND: [1]
+  - 1P_ECUGND10C: [1]
+  - ECUC: [10]
+-
+  - CHAS_GND: [1]
+  - 1P_ECUGND11C: [1]
+  - ECUC: [11]
+# PDM GND
+-
+  - CHAS_GND: [1]
+  - 1P_PDMGND26A: [1]
+  - PDMA: [26]
+-
+  - CHAS_GND: [1]
+  - 1P_PDMGND18B: [1]
+  - PDMB: [18]
 
 # ECU to PDM CAN
 
 # Starter Relay
 
 # E-Stop (emergency) Button
+-
+  - PDMA: [26, 19]
+  - 2P_EStop: [1-2]
+  - EStop: [1-2]
+
+# BOTS
+-
+  - PDMA: [26, 28]
+  - 2P_BOTS: [1-2]
+  - BOTS: [1-2]
 
 #ECU to DASH CANLo1
 -
@@ -162,6 +289,10 @@ connections:
 # All Steering Wheel Commands (Shifting, clutch, etc.)
 # PDM ports for this as well
 # Crank Button
+-
+  - PDMA: [26, 21]
+  - 2P_CrankBut: [1-2]
+  - Crank_Button: [1-2]
 # Launch Control?
 # Shifting
 # Throttle Map Selector
@@ -169,7 +300,11 @@ connections:
 # Steering Position
 # GPS Module 
 # Lap Beacon Receiver
-
+# Accelerometer
+-
+  - DASH: [9, 8, 3, 4, 5]
+  - 5P_Accelmtr: [1-5]
+  - Accelerometer: [1-5]
 
 # Transponder (Front Wing on 24)
 
@@ -214,7 +349,10 @@ connections:
   - 1P_LFWSP: [1]
   - LFCenter: [5]
 #LF Strain Gauge/CAN
-
+-
+  - ECUD: [18, 17]
+  - 2P_LFCAN: [1-2]
+  - LFCenter: [4, 3]
 #RFCenter PWR
 -
   - PDMA: [8]
@@ -229,8 +367,11 @@ connections:
   - ECUD: [10]
   - 1P_RFWSP: [1]
   - RFCenter: [5]
-#RF Strain Gauge
-
+#RF Strain Gauge/CAN
+-
+  - ECUD: [18, 17]
+  - 2P_RFCAN: [1-2]
+  - RFCenter: [4, 3]
 #APPS PDM ports
 #Accel Pedal Sensor 1
 
@@ -243,10 +384,6 @@ connections:
 #Wireless Comms
 
 # BSPD
-
-# BOTS
-
-# Accelerometer
 
 # AnalogX not needed anymore???
 # AnalogX 1 (Analog-CAN)

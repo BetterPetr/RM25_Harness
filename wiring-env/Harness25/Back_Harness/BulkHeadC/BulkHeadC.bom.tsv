@@ -1,0 +1,6 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 3 x 22 AWG	0	m	3P_RBrkP
+2	Cable, 4 x 22 AWG	0	m	4P_DashComms, 4P_ECUComms
+3	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD_C
+4	Connector, Binder 4P, female, 4 pins	2		Comms_Dash, Comms_ECU
+5	Connector, Deutsch DT04_4P, female, 4 pins	1		RBreakPressure
