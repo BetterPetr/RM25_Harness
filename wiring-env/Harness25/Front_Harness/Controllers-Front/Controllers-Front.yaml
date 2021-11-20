@@ -6,6 +6,9 @@ templates:
   - &temp_cbl1
     wirecount: 1
     gauge: 22 AWG
+  - &temp_cbl3
+    wirecount: 3
+    gauge: 22 AWG
   - &temp_cbl5
     wirecount: 5
     gauge: 22 AWG
@@ -21,10 +24,17 @@ templates:
   - &Bndr4P_f
     type: Binder 4P
     subtype: female
+  - &TESuper3P_f
+    type: TE AMP Superseal 3P
+    subtype: female
+  - &MP1503P_f
+    type: Metri-Pack 150 3P
+    subtype: female
 
 connectors:
   NOTES:
     pincolors: [GN]
+    show_pincount: false
     notes: All ECU ATemps need 1k pullup to SEN_5V (check M150 datasheet)
   DASH:
     pinlabels: [E-TX-, E-TX+, AV1, AV2, AV3, AV4, 8V, 5V, SEN-0V, E-RX-, E-RX+, AV5, AV6, DIG1, DIG2, AT1, AT2, CAN1L, CAN1H, RS232-1 TX, SPD1, SPD2, SPD3, VID1, RS232-2 RX, CAN2L, CAN2H, RS232-1 RX, AUX1, AUX2, AUX3, AUX4, BAT+, BAT-]
@@ -90,6 +100,25 @@ connectors:
     <<: *DT6P_f
     pinlabels: [GND, PWR, SIG, SIG, SIG, NA]
     notes: Bosch Accelerometer AM 600
+# APPS 1
+  APPS1: &apps
+    <<: *TESuper3P_f
+    pinlabels: [GND, PWR, SIG]
+# APPS 2
+  APPS2:
+    <<: *apps
+# GPS
+  GPS:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+# Front Brake Pressure
+  FBrake_Pressure:
+    <<: *MP1503P_f
+    pinlabels: [GND, PWR, SIG]
+# Lap Beacon
+  Lap_Beacon:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
 
 
 cables:
@@ -203,6 +232,39 @@ cables:
   5P_Accelmtr:
     <<: *temp_cbl5
     colors: [BK, RD, GY, GY, GY]
+# APPS 1
+  2P_APPS1PG: &apps_pg
+    <<: *template_cbl2
+    colors: [BK, RD]
+  1P_APPS1AV: &apps_av
+    <<: *temp_cbl1
+    colors: [GY]
+# APPS 2
+  2P_APPS2PG:
+    <<: *apps_pg
+  1P_APPS2AV:
+    <<: *apps_av
+# GPS
+  3P_GPS:
+    <<: *temp_cbl3
+    colors: [BK, RD, WH]
+# Front Brake Pressure
+  1P_FBrkPGND:
+    <<: *temp_cbl1
+    colors: [BK]
+  1P_FBrkPPWR:
+    <<: *temp_cbl1
+    colors: [RD]
+  1P_FBrkPSIG:
+    <<: *temp_cbl1
+    colors: [GY]
+# Lap Beacon
+  1P_BeaconSIG:
+    <<: *temp_cbl1
+    colors: [GY]
+  2P_BeaconPG:
+    <<: *template_cbl2
+    colors: [BK, RD]
 
 
 
@@ -299,13 +361,24 @@ connections:
 # Tune Selector
 # Steering Position
 # GPS Module 
+-
+  - DASH: [34, 8, 25]
+  - 3P_GPS: [1-3]
+  - GPS: [1-3]
 # Lap Beacon Receiver
+-
+  - ECUB: [5]
+  - 1P_BeaconSIG: [1]
+  - Lap_Beacon: [3]
+-
+  - PDMA: [26, 5]
+  - 2P_BeaconPG: [1-2]
+  - Lap_Beacon: [1-2]
 # Accelerometer
 -
   - DASH: [9, 8, 3, 4, 5]
   - 5P_Accelmtr: [1-5]
   - Accelerometer: [1-5]
-
 # Transponder (Front Wing on 24)
 
 #LFShock
@@ -372,12 +445,38 @@ connections:
   - ECUD: [18, 17]
   - 2P_RFCAN: [1-2]
   - RFCenter: [4, 3]
-#APPS PDM ports
 #Accel Pedal Sensor 1
-
+-
+  - PDMA: [26, 8]
+  - 2P_APPS1PG: [1-2]
+  - APPS1: [1-2]
+-
+  - ECUB: [9]
+  - 1P_APPS1AV: [1]
+  - APPS1: [3]
 #Accel Pedal Sensor 2
-
+-
+  - PDMA: [26, 8]
+  - 2P_APPS2PG: [1-2]
+  - APPS2: [1-2]
+-
+  - ECUB: [10]
+  - 1P_APPS2AV: [1]
+  - APPS2: [3]
 #Front Brake Pressure
+-
+  - ECUA: [27]
+  - 1P_FBrkPGND: [1]
+  - FBrake_Pressure: [1]
+-
+  - ECUB: [26]
+  - 1P_FBrkPPWR: [1]
+  - FBrake_Pressure: [2]
+-
+  - ECUB: [17]
+  - 1P_FBrkPSIG: [1]
+  - FBrake_Pressure: [3]
+# Lambda Module
 
 #Exhaust Lambda Sensor, CAN Module with this too
 
