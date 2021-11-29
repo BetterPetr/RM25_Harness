@@ -89,23 +89,23 @@ graph {
     <td port="p17r">17</td>
    </tr>
    <tr>
-    <td>18</td>
+    <td>AV</td>
     <td port="p18r">18</td>
    </tr>
    <tr>
-    <td>19</td>
+    <td>AV</td>
     <td port="p19r">19</td>
    </tr>
    <tr>
-    <td>20</td>
+    <td>GND</td>
     <td port="p20r">20</td>
    </tr>
    <tr>
-    <td>21</td>
+    <td>12V</td>
     <td port="p21r">21</td>
    </tr>
    <tr>
-    <td>22</td>
+    <td>5VAV</td>
     <td port="p22r">22</td>
    </tr>
    <tr>
@@ -298,7 +298,71 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Deutsch DT04_4P</td>
+   <td balign="left">Metri-Pack 150 3P</td>
+   <td balign="left">female</td>
+   <td balign="left">3-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>SIG</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	CrankCase_Pressure [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CrankCase_Pressure</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Honda CE3001 Connector 3P</td>
+   <td balign="left">female</td>
+   <td balign="left">3-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>SIG</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	ShiftdrumPos [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ShiftdrumPos</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Binder 4P</td>
    <td balign="left">female</td>
    <td balign="left">4-pin</td>
   </tr></table>
@@ -316,6 +380,42 @@ graph {
    <tr>
     <td port="p3l">3</td>
     <td>SIG</td>
+   </tr>
+   <tr>
+    <td port="p4l">4</td>
+    <td>NA</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	ShiftLeverPos [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ShiftLeverPos</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Binder 4P</td>
+   <td balign="left">female</td>
+   <td balign="left">4-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>12V</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>5VAV</td>
    </tr>
    <tr>
     <td port="p4l">4</td>
@@ -453,7 +553,7 @@ graph {
    <tr>
     <td>BULKHEAD_C:11:RX-</td>
     <td>
-     1:WH
+     1
     </td>
     <td>Comms_ECU:1:RX-</td>
    </tr>
@@ -469,7 +569,7 @@ graph {
    <tr>
     <td>BULKHEAD_C:12:RX+</td>
     <td>
-     2:WH
+     2
     </td>
     <td>Comms_ECU:2:RX+</td>
    </tr>
@@ -485,7 +585,7 @@ graph {
    <tr>
     <td>BULKHEAD_C:13:TX-</td>
     <td>
-     3:WH
+     3
     </td>
     <td>Comms_ECU:3:TX-</td>
    </tr>
@@ -501,7 +601,7 @@ graph {
    <tr>
     <td>BULKHEAD_C:14:TX+</td>
     <td>
-     4:WH
+     4
     </td>
     <td>Comms_ECU:4:TX+</td>
    </tr>
@@ -588,6 +688,282 @@ graph {
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	BULKHEAD_C:p16r:e -- "2P_CrnkCsP_PWR":w1:w
+	"2P_CrnkCsP_PWR":w1:e -- CrankCase_Pressure:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	BULKHEAD_C:p17r:e -- "2P_CrnkCsP_PWR":w2:w
+	"2P_CrnkCsP_PWR":w2:e -- CrankCase_Pressure:p2l:w
+	"2P_CrnkCsP_PWR" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_CrnkCsP_PWR</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>BULKHEAD_C:16:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>CrankCase_Pressure:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_C:17:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>CrankCase_Pressure:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffff00:#000000"]
+	BULKHEAD_C:p18r:e -- "1P_CrnkCsP_SIG":w1:w
+	"1P_CrnkCsP_SIG":w1:e -- CrankCase_Pressure:p3l:w
+	"1P_CrnkCsP_SIG" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_CrnkCsP_SIG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>BULKHEAD_C:18:AV</td>
+    <td>
+     1:YE
+    </td>
+    <td>CrankCase_Pressure:3:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	BULKHEAD_C:p16r:e -- "2P_ShftDrmPos_PWR":w1:w
+	"2P_ShftDrmPos_PWR":w1:e -- ShiftdrumPos:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	BULKHEAD_C:p17r:e -- "2P_ShftDrmPos_PWR":w2:w
+	"2P_ShftDrmPos_PWR":w2:e -- ShiftdrumPos:p2l:w
+	"2P_ShftDrmPos_PWR" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_ShftDrmPos_PWR</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>BULKHEAD_C:16:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>ShiftdrumPos:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_C:17:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>ShiftdrumPos:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffff00:#000000"]
+	BULKHEAD_C:p19r:e -- "1P_ShftDrmPos_SIG":w1:w
+	"1P_ShftDrmPos_SIG":w1:e -- ShiftdrumPos:p3l:w
+	"1P_ShftDrmPos_SIG" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_ShftDrmPos_SIG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>BULKHEAD_C:19:AV</td>
+    <td>
+     1:YE
+    </td>
+    <td>ShiftdrumPos:3:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	BULKHEAD_C:p20r:e -- "3P_ShftLevPos":w1:w
+	"3P_ShftLevPos":w1:e -- ShiftLeverPos:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	BULKHEAD_C:p21r:e -- "3P_ShftLevPos":w2:w
+	"3P_ShftLevPos":w2:e -- ShiftLeverPos:p2l:w
+	edge [color="#000000:#ffff00:#000000"]
+	BULKHEAD_C:p22r:e -- "3P_ShftLevPos":w3:w
+	"3P_ShftLevPos":w3:e -- ShiftLeverPos:p3l:w
+	"3P_ShftLevPos" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3P_ShftLevPos</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>BULKHEAD_C:20:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>ShiftLeverPos:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_C:21:12V</td>
+    <td>
+     2:RD
+    </td>
+    <td>ShiftLeverPos:2:12V</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_C:22:5VAV</td>
+    <td>
+     3:YE
+    </td>
+    <td>ShiftLeverPos:3:5VAV</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

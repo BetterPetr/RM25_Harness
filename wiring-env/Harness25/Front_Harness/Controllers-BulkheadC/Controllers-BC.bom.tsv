@@ -1,10 +1,14 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, 1 x 22 AWG	0	m	1P_RBrkP
-2	Cable, 2 x 22 AWG	0	m	2P_RBrkP_GP
-3	Cable, 4 x 22 AWG	0	m	4P_DashComms, 4P_ECUComms
-4	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD_C
-5	Connector, MoTeC DASH 34P, female, 34 pins	1		DASH
-6	Connector, MoTeC ECUA 34P, female, 34 pins	1		ECUA
-7	Connector, MoTeC ECUB 26P, female, 26 pins	1		ECUB
-8	Connector, MoTeC ECUC 34P, female, 34 pins	1		ECUC
-9	Connector, MoTeC ECUD 26P, female, 26 pins	1		ECUD
+1	Cable, 1 x 16 AWG	0	m	PDMA_ChGND26
+2	Cable, 1 x 22 AWG	0	m	1P_CrnkCsPSig, 1P_RBrkP, 1P_ShftDrmPos, 1P_ShftLevPos
+3	Cable, 2 x 22 AWG	0	m	2P_Sens1Cmn_GP, 2P_ShftPos_PWR
+4	Cable, 4 x 22 AWG	0	m	4P_DashComms, 4P_ECUComms
+5	Connector	1		NOTES
+6	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD_C
+7	Connector, Chassis Ground, 1 pins	1		CHAS_GND
+8	Connector, MoTeC DASH 34P, female, 34 pins	1		DASH
+9	Connector, MoTeC ECUA 34P, female, 34 pins	1		ECUA
+10	Connector, MoTeC ECUB 26P, female, 26 pins	1		ECUB
+11	Connector, MoTeC ECUC 34P, female, 34 pins	1		ECUC
+12	Connector, MoTeC ECUD 26P, female, 26 pins	1		ECUD
+13	Connector, MoTeC PDMA 34P, female, 34 pins	1		PDMA

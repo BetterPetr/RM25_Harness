@@ -300,11 +300,11 @@ connections:
   - PDMA: [6]
   - 1P_TPS12V: [1]
   - BULKHEAD_A: [27]
-#TPS 5V AV
--
-  - ECUC: [25]
-  - 1P_TPS5V: [1]
-  - BULKHEAD_A: [28]
+#TPS 5V AV ******************************************** Need to be changed (C25 needed for Shift Motor Pos)
+# -
+#   - ECUC: [25]
+#   - 1P_TPS5V: [1]
+#   - BULKHEAD_A: [28]
 # SERVO POT In & Out
 -
   - ECUC: [15-16]
@@ -337,7 +337,7 @@ connections:
 #Clutch Position
 -
   - ECUA: [11]
-  - 1P_ClchPos: [1]
+  - 1P_ClchPosOut: [1]
   - BULKHEAD_A: [35]
 
 #LRShock

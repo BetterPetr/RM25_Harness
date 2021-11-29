@@ -476,6 +476,8 @@ connections:
   - ECUB: [17]
   - 1P_FBrkPSIG: [1]
   - FBrake_Pressure: [3]
+# Front Brake Temperature
+
 # Lambda Module
 
 #Exhaust Lambda Sensor, CAN Module with this too

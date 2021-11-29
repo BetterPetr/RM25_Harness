@@ -4,6 +4,33 @@ graph {
 	graph [bgcolor="#FFFFFF" fontname=arial nodesep=0.33 rankdir=LR ranksep=2]
 	node [fillcolor="#FFFFFF" fontname=arial height=0 margin=0 shape=none style=filled width=0]
 	edge [fontname=arial style=bold]
+	NOTES [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">NOTES</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td sides="tbl">GN</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#00FF00" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">AV for TPS conflicts with Shift Motor Position sensor currently, not enough AV inputs on ECU</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	BULKHEAD_C [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -90,23 +117,23 @@ graph {
    </tr>
    <tr>
     <td port="p18l">18</td>
-    <td>18</td>
+    <td>AV</td>
    </tr>
    <tr>
     <td port="p19l">19</td>
-    <td>19</td>
+    <td>AV</td>
    </tr>
    <tr>
     <td port="p20l">20</td>
-    <td>20</td>
+    <td>GND</td>
    </tr>
    <tr>
     <td port="p21l">21</td>
-    <td>21</td>
+    <td>12V</td>
    </tr>
    <tr>
     <td port="p22l">22</td>
-    <td>22</td>
+    <td>5VAV</td>
    </tr>
    <tr>
     <td port="p23l">23</td>
@@ -675,140 +702,140 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td port="p1l">1</td>
     <td>OUT_HB2</td>
+    <td port="p1r">1</td>
    </tr>
    <tr>
-    <td port="p2l">2</td>
     <td>SEN-5V0_A</td>
+    <td port="p2r">2</td>
    </tr>
    <tr>
-    <td port="p3l">3</td>
     <td>IGN_LS1</td>
+    <td port="p3r">3</td>
    </tr>
    <tr>
-    <td port="p4l">4</td>
     <td>IGN_LS2</td>
+    <td port="p4r">4</td>
    </tr>
    <tr>
-    <td port="p5l">5</td>
     <td>IGN_LS3</td>
+    <td port="p5r">5</td>
    </tr>
    <tr>
-    <td port="p6l">6</td>
     <td>IGN_LS4</td>
+    <td port="p6r">6</td>
    </tr>
    <tr>
-    <td port="p7l">7</td>
     <td>IGN_LS5</td>
+    <td port="p7r">7</td>
    </tr>
    <tr>
-    <td port="p8l">8</td>
     <td>IGN_LS6</td>
+    <td port="p8r">8</td>
    </tr>
    <tr>
-    <td port="p9l">9</td>
     <td>SEN_5V0_B</td>
+    <td port="p9r">9</td>
    </tr>
    <tr>
-    <td port="p10l">10</td>
     <td>BAT_NEG1</td>
+    <td port="p10r">10</td>
    </tr>
    <tr>
-    <td port="p11l">11</td>
     <td>BAT_NEG2</td>
+    <td port="p11r">11</td>
    </tr>
    <tr>
-    <td port="p12l">12</td>
     <td>IGN_LS7</td>
+    <td port="p12r">12</td>
    </tr>
    <tr>
-    <td port="p13l">13</td>
     <td>IGN_LS8</td>
+    <td port="p13r">13</td>
    </tr>
    <tr>
-    <td port="p14l">14</td>
     <td>AV1</td>
+    <td port="p14r">14</td>
    </tr>
    <tr>
-    <td port="p15l">15</td>
     <td>AV2</td>
+    <td port="p15r">15</td>
    </tr>
    <tr>
-    <td port="p16l">16</td>
     <td>AV3</td>
+    <td port="p16r">16</td>
    </tr>
    <tr>
-    <td port="p17l">17</td>
     <td>AV4</td>
+    <td port="p17r">17</td>
    </tr>
    <tr>
-    <td port="p18l">18</td>
     <td>OUT_HB1</td>
+    <td port="p18r">18</td>
    </tr>
    <tr>
-    <td port="p19l">19</td>
     <td>INJ_PH1</td>
+    <td port="p19r">19</td>
    </tr>
    <tr>
-    <td port="p20l">20</td>
     <td>INJ_PH2</td>
+    <td port="p20r">20</td>
    </tr>
    <tr>
-    <td port="p21l">21</td>
     <td>INJ_PH3</td>
+    <td port="p21r">21</td>
    </tr>
    <tr>
-    <td port="p22l">22</td>
     <td>INJ_PH4</td>
+    <td port="p22r">22</td>
    </tr>
    <tr>
-    <td port="p23l">23</td>
     <td>INJ_LS1</td>
+    <td port="p23r">23</td>
    </tr>
    <tr>
-    <td port="p24l">24</td>
     <td>INJ_LS2</td>
+    <td port="p24r">24</td>
    </tr>
    <tr>
-    <td port="p25l">25</td>
     <td>AV5</td>
+    <td port="p25r">25</td>
    </tr>
    <tr>
-    <td port="p26l">26</td>
     <td>BAT_POS</td>
+    <td port="p26r">26</td>
    </tr>
    <tr>
-    <td port="p27l">27</td>
     <td>INJ_PH5</td>
+    <td port="p27r">27</td>
    </tr>
    <tr>
-    <td port="p28l">28</td>
     <td>INJ_PH6</td>
+    <td port="p28r">28</td>
    </tr>
    <tr>
-    <td port="p29l">29</td>
     <td>INJ_PH7</td>
+    <td port="p29r">29</td>
    </tr>
    <tr>
-    <td port="p30l">30</td>
     <td>INJ_PH8</td>
+    <td port="p30r">30</td>
    </tr>
    <tr>
-    <td port="p31l">31</td>
     <td>OUT_HB3</td>
+    <td port="p31r">31</td>
    </tr>
    <tr>
-    <td port="p32l">32</td>
     <td>OUT_HB4</td>
+    <td port="p32r">32</td>
    </tr>
    <tr>
-    <td port="p33l">33</td>
     <td>OUT_HB5</td>
+    <td port="p33r">33</td>
    </tr>
    <tr>
-    <td port="p34l">34</td>
     <td>OUT_HB6</td>
+    <td port="p34r">34</td>
    </tr>
   </table>
  </td></tr>
@@ -935,6 +962,264 @@ graph {
     <td port="p26r">26</td>
    </tr>
   </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	PDMA [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">PDMA</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">MoTeC PDMA 34P</td>
+   <td balign="left">female</td>
+   <td balign="left">34-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>OUT1</td>
+    <td port="p1r">1</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>OUT9</td>
+    <td port="p2r">2</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>OUT2</td>
+    <td port="p3r">3</td>
+   </tr>
+   <tr>
+    <td port="p4l">4</td>
+    <td>OUT10</td>
+    <td port="p4r">4</td>
+   </tr>
+   <tr>
+    <td port="p5l">5</td>
+    <td>OUT3</td>
+    <td port="p5r">5</td>
+   </tr>
+   <tr>
+    <td port="p6l">6</td>
+    <td>OUT11</td>
+    <td port="p6r">6</td>
+   </tr>
+   <tr>
+    <td port="p7l">7</td>
+    <td>OUT4</td>
+    <td port="p7r">7</td>
+   </tr>
+   <tr>
+    <td port="p8l">8</td>
+    <td>OUT12</td>
+    <td port="p8r">8</td>
+   </tr>
+   <tr>
+    <td port="p9l">9</td>
+    <td>OUT5</td>
+    <td port="p9r">9</td>
+   </tr>
+   <tr>
+    <td port="p10l">10</td>
+    <td>OUT1</td>
+    <td port="p10r">10</td>
+   </tr>
+   <tr>
+    <td port="p11l">11</td>
+    <td>OUT13</td>
+    <td port="p11r">11</td>
+   </tr>
+   <tr>
+    <td port="p12l">12</td>
+    <td>OUT2</td>
+    <td port="p12r">12</td>
+   </tr>
+   <tr>
+    <td port="p13l">13</td>
+    <td>OUT14</td>
+    <td port="p13r">13</td>
+   </tr>
+   <tr>
+    <td port="p14l">14</td>
+    <td>OUT3</td>
+    <td port="p14r">14</td>
+   </tr>
+   <tr>
+    <td port="p15l">15</td>
+    <td>OUT15</td>
+    <td port="p15r">15</td>
+   </tr>
+   <tr>
+    <td port="p16l">16</td>
+    <td>OUT4</td>
+    <td port="p16r">16</td>
+   </tr>
+   <tr>
+    <td port="p17l">17</td>
+    <td>OUT5</td>
+    <td port="p17r">17</td>
+   </tr>
+   <tr>
+    <td port="p18l">18</td>
+    <td>NA</td>
+    <td port="p18r">18</td>
+   </tr>
+   <tr>
+    <td port="p19l">19</td>
+    <td>DIG2</td>
+    <td port="p19r">19</td>
+   </tr>
+   <tr>
+    <td port="p20l">20</td>
+    <td>NA</td>
+    <td port="p20r">20</td>
+   </tr>
+   <tr>
+    <td port="p21l">21</td>
+    <td>DIG4</td>
+    <td port="p21r">21</td>
+   </tr>
+   <tr>
+    <td port="p22l">22</td>
+    <td>NA</td>
+    <td port="p22r">22</td>
+   </tr>
+   <tr>
+    <td port="p23l">23</td>
+    <td>DIG7</td>
+    <td port="p23r">23</td>
+   </tr>
+   <tr>
+    <td port="p24l">24</td>
+    <td>NA</td>
+    <td port="p24r">24</td>
+   </tr>
+   <tr>
+    <td port="p25l">25</td>
+    <td>NA</td>
+    <td port="p25r">25</td>
+   </tr>
+   <tr>
+    <td port="p26l">26</td>
+    <td>VBATT-</td>
+    <td port="p26r">26</td>
+   </tr>
+   <tr>
+    <td port="p27l">27</td>
+    <td>DIG1</td>
+    <td port="p27r">27</td>
+   </tr>
+   <tr>
+    <td port="p28l">28</td>
+    <td>GND</td>
+    <td port="p28r">28</td>
+   </tr>
+   <tr>
+    <td port="p29l">29</td>
+    <td>DIG3</td>
+    <td port="p29r">29</td>
+   </tr>
+   <tr>
+    <td port="p30l">30</td>
+    <td>DIG5</td>
+    <td port="p30r">30</td>
+   </tr>
+   <tr>
+    <td port="p31l">31</td>
+    <td>DIG6</td>
+    <td port="p31r">31</td>
+   </tr>
+   <tr>
+    <td port="p32l">32</td>
+    <td>DIG8</td>
+    <td port="p32r">32</td>
+   </tr>
+   <tr>
+    <td port="p33l">33</td>
+    <td>DIG9</td>
+    <td port="p33r">33</td>
+   </tr>
+   <tr>
+    <td port="p34l">34</td>
+    <td>DIG10</td>
+    <td port="p34r">34</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	CHAS_GND [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CHAS_GND</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Chassis Ground</td>
+   <td balign="left">1-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td>GND</td>
+    <td port="p1r">1</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	CHAS_GND:p1r:e -- PDMA_ChGND26:w1:w
+	PDMA_ChGND26:w1:e -- PDMA:p26l:w
+	PDMA_ChGND26 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">PDMA_ChGND26</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>CHAS_GND:1:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>PDMA:26:VBATT-</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Just for reference, in Controllers-BA</td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -1133,16 +1418,16 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	ECUA:p27r:e -- "2P_RBrkP_GP":w1:w
-	"2P_RBrkP_GP":w1:e -- BULKHEAD_C:p16l:w
+	ECUA:p27r:e -- "2P_Sens1Cmn_GP":w1:w
+	"2P_Sens1Cmn_GP":w1:e -- BULKHEAD_C:p16l:w
 	edge [color="#000000:#ff0000:#000000"]
-	ECUA:p10r:e -- "2P_RBrkP_GP":w2:w
-	"2P_RBrkP_GP":w2:e -- BULKHEAD_C:p17l:w
-	"2P_RBrkP_GP" [label=<
+	ECUA:p10r:e -- "2P_Sens1Cmn_GP":w2:w
+	"2P_Sens1Cmn_GP":w2:e -- BULKHEAD_C:p17l:w
+	"2P_Sens1Cmn_GP" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">2P_RBrkP_GP</td>
+   <td balign="left">2P_Sens1Cmn_GP</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1222,6 +1507,185 @@ graph {
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffff00:#000000"]
+	ECUC:p14r:e -- "1P_CrnkCsPSig":w1:w
+	"1P_CrnkCsPSig":w1:e -- BULKHEAD_C:p18l:w
+	"1P_CrnkCsPSig" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_CrnkCsPSig</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUC:14:AV1</td>
+    <td>
+     1:YE
+    </td>
+    <td>BULKHEAD_C:18:AV</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffff00:#000000"]
+	ECUC:p17r:e -- "1P_ShftDrmPos":w1:w
+	"1P_ShftDrmPos":w1:e -- BULKHEAD_C:p19l:w
+	"1P_ShftDrmPos" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_ShftDrmPos</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUC:17:AV4</td>
+    <td>
+     1:YE
+    </td>
+    <td>BULKHEAD_C:19:AV</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	PDMA:p26r:e -- "2P_ShftPos_PWR":w1:w
+	"2P_ShftPos_PWR":w1:e -- BULKHEAD_C:p20l:w
+	edge [color="#000000:#ff0000:#000000"]
+	PDMA:p15r:e -- "2P_ShftPos_PWR":w2:w
+	"2P_ShftPos_PWR":w2:e -- BULKHEAD_C:p21l:w
+	"2P_ShftPos_PWR" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_ShftPos_PWR</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>PDMA:26:VBATT-</td>
+    <td>
+     1:BK
+    </td>
+    <td>BULKHEAD_C:20:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>PDMA:15:OUT15</td>
+    <td>
+     2:RD
+    </td>
+    <td>BULKHEAD_C:21:12V</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ffff00:#000000"]
+	ECUC:p25r:e -- "1P_ShftLevPos":w1:w
+	"1P_ShftLevPos":w1:e -- BULKHEAD_C:p22l:w
+	"1P_ShftLevPos" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_ShftLevPos</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUC:25:AV5</td>
+    <td>
+     1:YE
+    </td>
+    <td>BULKHEAD_C:22:5VAV</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

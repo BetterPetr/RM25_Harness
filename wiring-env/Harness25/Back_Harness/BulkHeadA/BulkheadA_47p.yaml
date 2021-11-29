@@ -281,6 +281,7 @@ connections:
   - BULKHEAD_A: [5, 4]
   - 2P_ClchPWR: [1-2]
   - Clutch_PWR: [1-2]
+# **************************** Missing Clutch PWM input Signal
 -
   - BULKHEAD_A: [32, 33, 35]
   - 3P_ClchPos: [1-3]

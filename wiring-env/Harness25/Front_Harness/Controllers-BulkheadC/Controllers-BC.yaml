@@ -1,6 +1,3 @@
-# Need to determine type of BulkHead Connector
-# Things missing: Pannel Comms (6-8p), oil cooler fan, rear brake pressure, crankcase pressure, rear brake rotor temp?
-# crank position, 
 templates:
   - &template_cbl2
     wirecount: 2
@@ -10,8 +7,12 @@ templates:
     gauge: 22 AWG
 
 connectors:
+  NOTES:
+    pincolors: [GN]
+    show_pincount: false
+    notes: AV for TPS conflicts with Shift Motor Position sensor currently, not enough AV inputs on ECU
   BULKHEAD_C: &ahdp47
-    pinlabels: [1_16G,2,3,4_16G,5_16G,6_16G, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43,44,45,46,47]
+    pinlabels: [1_16G,2,3,4_16G,5_16G,6_16G, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV,23,24,25,26,27,28,29,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43,44,45,46,47]
     type: AMPHENOL HDP 47P
     subtype: female
     notes: BULKHEAD_C Connector (Driver Side)
@@ -36,8 +37,21 @@ connectors:
     pinlabels: [UDIG1, UDIG2, AT1, AT2, AT3, AT4, KNOCK1, UDIG3, UDIG4, UDIG5, UDIG6, BAT_BAK, KNOCK2, UDIG7, SEN_0V_A, SEN_0V_B, CAN1_HI, CAN1_LO, SEN_6V3, AV6, AV7, AV8, ETH_TX+, ETH_TX-, ETH_RX+, ETH_RX-]
     type: MoTeC ECUD 26P
     subtype: female
+  PDMA:
+    pinlabels: [OUT1, OUT9, OUT2, OUT10, OUT3, OUT11, OUT4, OUT12, OUT5, OUT1, OUT13, OUT2, OUT14, OUT3, OUT15, OUT4, OUT5, NA, DIG2, NA, DIG4, NA, DIG7, NA, NA, VBATT-, DIG1, GND, DIG3, DIG5, DIG6, DIG8, DIG9, DIG10]
+    type: MoTeC PDMA 34P
+    subtype: female
+  CHAS_GND:
+    pinlabels: [GND]
+    type: Chassis Ground
+
 
 cables:
+  PDMA_ChGND26: &PDM_ChGND
+    wirecount: 1
+    gauge: 16 AWG
+    colors: [BK]
+    notes: Just for reference, in Controllers-BA
 # Dash Comms
   4P_DashComms: &temp_cbl4
     wirecount: 4
@@ -45,19 +59,37 @@ cables:
     colors: [WH, WH, WH, WH]
   4P_ECUComms:
     <<: *temp_cbl4
-  2P_RBrkP_GP:
+  2P_Sens1Cmn_GP:
     <<: *template_cbl2
     colors: [BK, RD]
   1P_RBrkP:
     <<: *temp_cbl1
     colors: [GY]
+# Make sure that AV's are supposed to be yellow
+  1P_CrnkCsPSig:
+    <<: *temp_cbl1
+    colors: [YE]
+  1P_ShftDrmPos:
+    <<: *temp_cbl1
+    colors: [YE]
+  2P_ShftPos_PWR:
+    <<: *template_cbl2
+    colors: [BK, RD]
+  1P_ShftLevPos:
+    <<: *temp_cbl1
+    colors: [YE]
 
 
 connections:
-# Common GND/PWR - Rear BRKP
+#PDM Chassis GND (Already in the Controllers-BA Harness, just for reference)
+-
+  - CHAS_GND: [1]
+  - PDMA_ChGND26: [1]
+  - PDMA: [26]
+# Common GND/PWR - Rear BRKP, CrankCase Pressure, Shiftdrum Position
 -
   - ECUA: [27, 10]
-  - 2P_RBrkP_GP: [1-2]
+  - 2P_Sens1Cmn_GP: [1-2]
   - BULKHEAD_C: [16-17]
 # DASH Comms
 -
@@ -75,8 +107,32 @@ connections:
   - 1P_RBrkP: [1]
   - BULKHEAD_C: [15]
 # Oil Cooler Fan
+# GND, PWR, SIG
 
-# Crankcase Pressure
+# Crankcase Pressure (GND, PWR, SIG)
+-
+  - ECUC: [14]
+  - 1P_CrnkCsPSig: [1]
+  - BULKHEAD_C: [18]
 
-# Crank Position?
+# Shiftdrum Position (Gear Display for DASH: GND, PWR, SIG)
+-
+  - ECUC: [17]
+  - 1P_ShftDrmPos: [1]
+  - BULKHEAD_C: [19]
+
+# Shift Lever Position (Physical Mechanism)  ----- Assuming a Honeywell Hall Effect (contactless) Sensor for the time being
+-
+  - PDMA: [26, 15]
+  - 2P_ShftPos_PWR: [1-2]
+  - BULKHEAD_C: [20-21]
+-
+  - ECUC: [25]
+  - 1P_ShftLevPos: [1]
+  - BULKHEAD_C: [22]
+
+# Rear Brake Temp (AnalogX)
+# GND, PWR, SIG
+
+# Crank Position? Don't think this is needed/a thing
 
