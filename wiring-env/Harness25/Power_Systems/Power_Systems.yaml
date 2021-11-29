@@ -9,13 +9,23 @@ cables:
 
 connections:
 # Stator
+# 3 Connections (3-Phase I'm guessing)
+
 
 # Rectifier
+# 3 Connections to Stator
+# DC PWR Connections from the Rectifier to the Battery (for charging)
+
 
 # Master Switch
+# Connections to relay then to the battery
+
 
 # Starter Relay (Front Harness really)
 
+
 # Rad Fan
+# PWM input from the BulkheadA Harness also needed (Why you make this garbage Katie)
+# Should be 12AWG at least for PWR/GND connections
 
 

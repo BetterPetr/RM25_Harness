@@ -57,6 +57,7 @@ connectors:
   ShiftLeverPos:
     <<: *Bndr4P_f
     pinlabels: [GND, 12V, 5VAV, NA]
+    notes: Assumed a Honeywell Hall Effect (contactless) Sensor for now
 
 cables:
   4P_DashComms: 
