@@ -948,6 +948,95 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	BSCH_IGN [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">BSCH_IGN</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Bosch 0 227 100 211 (Ignition Module)</td>
+   <td balign="left">5-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>in1-out1</td>
+    <td port="p1r">1</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>in2-out2</td>
+    <td port="p2r">2</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>GND</td>
+    <td port="p3r">3</td>
+   </tr>
+   <tr>
+    <td port="p4l">4</td>
+    <td>in3-out3</td>
+    <td port="p4r">4</td>
+   </tr>
+   <tr>
+    <td port="p5l">5</td>
+    <td>in4-out4</td>
+    <td port="p5r">5</td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">GND input terminal, Input and Output go to DT 6P</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	CHAS_GND:p1r:e -- BIGN_GND:w1:w
+	BIGN_GND:w1:e -- BSCH_IGN:p3l:w
+	BIGN_GND [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">BIGN_GND</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>CHAS_GND:1:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>BSCH_IGN:3:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	PDMB:p3r:e -- CPWR_1:w1:w
 	CPWR_1:w1:e -- BULKHEAD_B:p5l:w
@@ -1109,7 +1198,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#8000ff:#000000"]
-	ECUC:p3r:e -- CIGN_1:w1:w
+	BSCH_IGN:p1r:e -- CIGN_1:w1:w
 	CIGN_1:w1:e -- BULKHEAD_B:p8l:w
 	CIGN_1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1128,7 +1217,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUC:3:IGN_LS1</td>
+    <td>BSCH_IGN:1:in1-out1</td>
     <td>
      1:VT
     </td>
@@ -1149,7 +1238,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#8000ff:#000000"]
-	ECUC:p4r:e -- CIGN_2:w1:w
+	BSCH_IGN:p2r:e -- CIGN_2:w1:w
 	CIGN_2:w1:e -- BULKHEAD_B:p10l:w
 	CIGN_2 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1168,7 +1257,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUC:4:IGN_LS2</td>
+    <td>BSCH_IGN:2:in2-out2</td>
     <td>
      1:VT
     </td>
@@ -1189,7 +1278,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#8000ff:#000000"]
-	ECUC:p5r:e -- CIGN_3:w1:w
+	BSCH_IGN:p4r:e -- CIGN_3:w1:w
 	CIGN_3:w1:e -- BULKHEAD_B:p12l:w
 	CIGN_3 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1208,7 +1297,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUC:5:IGN_LS3</td>
+    <td>BSCH_IGN:4:in3-out3</td>
     <td>
      1:VT
     </td>
@@ -1229,7 +1318,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#8000ff:#000000"]
-	ECUC:p6r:e -- CIGN_4:w1:w
+	BSCH_IGN:p5r:e -- CIGN_4:w1:w
 	CIGN_4:w1:e -- BULKHEAD_B:p13l:w
 	CIGN_4 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1248,11 +1337,171 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUC:6:IGN_LS4</td>
+    <td>BSCH_IGN:5:in4-out4</td>
     <td>
      1:VT
     </td>
     <td>BULKHEAD_B:13:IGN</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#8000ff:#000000"]
+	ECUC:p3r:e -- CIGN_1in:w1:w
+	CIGN_1in:w1:e -- BSCH_IGN:p1l:w
+	CIGN_1in [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CIGN_1in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUC:3:IGN_LS1</td>
+    <td>
+     1:VT
+    </td>
+    <td>BSCH_IGN:1:in1-out1</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#8000ff:#000000"]
+	ECUC:p4r:e -- CIGN_2in:w1:w
+	CIGN_2in:w1:e -- BSCH_IGN:p2l:w
+	CIGN_2in [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CIGN_2in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUC:4:IGN_LS2</td>
+    <td>
+     1:VT
+    </td>
+    <td>BSCH_IGN:2:in2-out2</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#8000ff:#000000"]
+	ECUC:p5r:e -- CIGN_3in:w1:w
+	CIGN_3in:w1:e -- BSCH_IGN:p4l:w
+	CIGN_3in [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CIGN_3in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUC:5:IGN_LS3</td>
+    <td>
+     1:VT
+    </td>
+    <td>BSCH_IGN:4:in3-out3</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#8000ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#8000ff:#000000"]
+	ECUC:p6r:e -- CIGN_4in:w1:w
+	CIGN_4in:w1:e -- BSCH_IGN:p5l:w
+	CIGN_4in [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">CIGN_4in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUC:6:IGN_LS4</td>
+    <td>
+     1:VT
+    </td>
+    <td>BSCH_IGN:5:in4-out4</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">

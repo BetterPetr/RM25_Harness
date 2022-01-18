@@ -40,8 +40,18 @@ connectors:
   CHAS_GND:
     pinlabels: [GND]
     type: Chassis Ground
+  BSCH_IGN:
+    pinlabels: [in1-out1, in2-out2, GND, in3-out3, in4-out4]
+    type: Bosch 0 227 100 211 (Ignition Module)
+    notes: GND input terminal, Input and Output go to DT 6P
+
 
 cables:
+# Ignition Module GND
+  BIGN_GND:
+    wirecount: 1
+    gauge: 16 AWG
+    colors: [BK]
 # Coils PWR
   CPWR_1: &coil_pwr
     wirecount: 1
@@ -54,7 +64,6 @@ cables:
   CPWR_4:
     <<: *coil_pwr
 
-# BOSCH IGNITION CONTROL MODULE NEEDED
 # Coils Ignition
   CIGN_1: &coil_ign
     wirecount: 1
@@ -65,6 +74,14 @@ cables:
   CIGN_3:
     <<: *coil_ign
   CIGN_4:
+    <<: *coil_ign
+  CIGN_1in:
+    <<: *coil_ign
+  CIGN_2in:
+    <<: *coil_ign
+  CIGN_3in:
+    <<: *coil_ign
+  CIGN_4in:
     <<: *coil_ign
 
 # Fuel Pump
@@ -85,6 +102,11 @@ cables:
     colors: [BK]
 
 connections:
+# Bosch Ignition Module Input GND
+-
+  - CHAS_GND: [1]
+  - BIGN_GND: [1]
+  - BSCH_IGN: [3]
 #Coil 1 PWR & IGN
 -
   - PDMB: [3]
@@ -92,6 +114,10 @@ connections:
   - BULKHEAD_B: [5]
 -
   - ECUC: [3]
+  - CIGN_1in: [1]
+  - BSCH_IGN: [1]
+-
+  - BSCH_IGN: [1]
   - CIGN_1: [1]
   - BULKHEAD_B: [8]
 #Coil 2 PWR & IGN
@@ -101,6 +127,10 @@ connections:
   - BULKHEAD_B: [11]
 -
   - ECUC: [4]
+  - CIGN_2in: [1]
+  - BSCH_IGN: [2]
+-
+  - BSCH_IGN: [2]
   - CIGN_2: [1]
   - BULKHEAD_B: [10]
 #Coil 3 PWR & IGN
@@ -110,6 +140,10 @@ connections:
   - BULKHEAD_B: [14]
 -
   - ECUC: [5]
+  - CIGN_3in: [1]
+  - BSCH_IGN: [4]
+-
+  - BSCH_IGN: [4]
   - CIGN_3: [1]
   - BULKHEAD_B: [12]
 #Coil 4 PWR & IGN
@@ -119,6 +153,10 @@ connections:
   - BULKHEAD_B: [9]
 -
   - ECUC: [6]
+  - CIGN_4in: [1]
+  - BSCH_IGN: [5]
+-
+  - BSCH_IGN: [5]
   - CIGN_4: [1]
   - BULKHEAD_B: [13]
 
