@@ -1,0 +1,11 @@
+Back Harness Notes:
+
+Crankcase pressure - This sensor was never put on RM24, so it was not immediately apparent as to where
+it should go. It goes in the top center hole of the head of the engine (will need an adapter to fit).
+This uses (as of writing this) a MoTeC pressure sensor connector.
+
+Shiftdrum Sensor - Just above the gearbox (right next to the starter motor). Uses a Honda specific
+connector. Uses RPM of the engine and wheel speed to determine gear being used (may want to check
+this, unsure exactly what it's looking at).
+
+

@@ -1,0 +1,13 @@
+Front Harness Notes:
+
+Need to fix the APPS sensor connection points to the ECU (currently shifted by 1)
+
+Need to adjust the wiring for the E-Throttle (moving back to Noah's design)
+
+
+
+
+
+
+
+

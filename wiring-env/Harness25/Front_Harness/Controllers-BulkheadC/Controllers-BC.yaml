@@ -131,8 +131,8 @@ connections:
   - 1P_ShftLevPos: [1]
   - BULKHEAD_C: [22]
 
-# Rear Brake Temp (AnalogX)
-# GND, PWR, SIG
-
-# Crank Position? Don't think this is needed/a thing
-
+# Accellerometer GND, PWR, Signals
+-
+  - DASH: [9, 8, 3, 4, 5]
+  - 3P_Accelmtr: [1-5]
+  - BULKHEAD_C: [23-27]

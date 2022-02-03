@@ -109,23 +109,23 @@ graph {
     <td port="p22r">22</td>
    </tr>
    <tr>
-    <td>23</td>
+    <td>GND</td>
     <td port="p23r">23</td>
    </tr>
    <tr>
-    <td>24</td>
+    <td>PWR</td>
     <td port="p24r">24</td>
    </tr>
    <tr>
-    <td>25</td>
+    <td>SIG</td>
     <td port="p25r">25</td>
    </tr>
    <tr>
-    <td>26</td>
+    <td>SIG</td>
     <td port="p26r">26</td>
    </tr>
    <tr>
-    <td>27</td>
+    <td>SIG</td>
     <td port="p27r">27</td>
    </tr>
    <tr>
@@ -419,6 +419,55 @@ graph {
    </tr>
    <tr>
     <td port="p4l">4</td>
+    <td>NA</td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Assumed a Honeywell Hall Effect (contactless) Sensor for now</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	Accelmtr [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Accelmtr</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Deutsch DT04_6P</td>
+   <td balign="left">female</td>
+   <td balign="left">6-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>SIG</td>
+   </tr>
+   <tr>
+    <td port="p4l">4</td>
+    <td>SIG</td>
+   </tr>
+   <tr>
+    <td port="p5l">5</td>
+    <td>SIG</td>
+   </tr>
+   <tr>
+    <td port="p6l">6</td>
     <td>NA</td>
    </tr>
   </table>
@@ -964,6 +1013,122 @@ graph {
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	BULKHEAD_C:p23r:e -- "5P_Accelmtr":w1:w
+	"5P_Accelmtr":w1:e -- Accelmtr:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	BULKHEAD_C:p24r:e -- "5P_Accelmtr":w2:w
+	"5P_Accelmtr":w2:e -- Accelmtr:p2l:w
+	edge [color="#000000:#999999:#000000"]
+	BULKHEAD_C:p25r:e -- "5P_Accelmtr":w3:w
+	"5P_Accelmtr":w3:e -- Accelmtr:p3l:w
+	edge [color="#000000:#999999:#000000"]
+	BULKHEAD_C:p26r:e -- "5P_Accelmtr":w4:w
+	"5P_Accelmtr":w4:e -- Accelmtr:p4l:w
+	edge [color="#000000:#999999:#000000"]
+	BULKHEAD_C:p27r:e -- "5P_Accelmtr":w5:w
+	"5P_Accelmtr":w5:e -- Accelmtr:p5l:w
+	"5P_Accelmtr" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">5P_Accelmtr</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">5x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>BULKHEAD_C:23:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>Accelmtr:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_C:24:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>Accelmtr:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_C:25:SIG</td>
+    <td>
+     3:GY
+    </td>
+    <td>Accelmtr:3:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_C:26:SIG</td>
+    <td>
+     4:GY
+    </td>
+    <td>Accelmtr:4:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_C:27:SIG</td>
+    <td>
+     5:GY
+    </td>
+    <td>Accelmtr:5:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

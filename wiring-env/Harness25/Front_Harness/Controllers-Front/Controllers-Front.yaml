@@ -478,6 +478,8 @@ connections:
   - FBrake_Pressure: [3]
 # Front Brake Temperature
 
+# Rear Brake Pressure
+
 # Lambda Module
 
 #Exhaust Lambda Sensor, CAN Module with this too
