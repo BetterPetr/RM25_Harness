@@ -111,6 +111,7 @@ cables:
   1P_TPS5V:
     <<: *temp_cbl1
     colors: [YE]
+    notes: Needs to be adjusted to Noah's design
   2P_KNK:
     <<: *template_cbl2
     colors: [OG, OG]
@@ -145,7 +146,7 @@ cables:
   1P_LRShk:
     <<: *temp_cbl1
     colors: [GY]
-  1P_ClchPos:
+  1P_ClchPosOut:
     <<: *temp_cbl1
     colors: [OG]
   1P_ClchGND:

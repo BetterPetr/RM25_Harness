@@ -1,8 +1,23 @@
 templates:
-
+  - &temp_cbl1
+    wirecount: 1
+    gauge: 12 AWG #check to make sure that this gauge is correct***************
 
 connectors:
+  PDM:
 
+  Battery:
+
+  Strtr_Relay:
+
+  Master_SW:
+
+  Strtr_Mtr:
+
+  Rectifier:
+
+  Stator:
+  
 
 cables:
 

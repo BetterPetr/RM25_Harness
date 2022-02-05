@@ -1,5 +1,7 @@
 Back Harness Notes:
 
+All sensors/components can be found under the "RM24 Component List" sheet within the RM24 Wiring Spreadsheet.
+
 Crankcase pressure - This sensor was never put on RM24, so it was not immediately apparent as to where
 it should go. It goes in the top center hole of the head of the engine (will need an adapter to fit).
 This uses (as of writing this) a MoTeC pressure sensor connector.

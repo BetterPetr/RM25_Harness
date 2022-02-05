@@ -3,6 +3,9 @@ templates:
     wirecount: 2
     gauge: 22 AWG
     colors: [BK, OG]
+  - &temp_cbl4
+    wirecount: 4
+    gauge: 22 AWG
   - &DT2P_f
     type: Deutsch DT04_2P
     subtype: female
@@ -47,14 +50,25 @@ connectors:
     <<: *DT2P_f
     pinlabels: [GND, SIG]
 
-  LRCenter: # lrcenter
-    <<: *DT6P_f
-    pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
-    notes: Strain Gauge + LR WhlSpd
+# LRCenter
+  LRCenter:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, CANHi, CANLo]
+    notes: Strain Gauges
+  LR_WhlSpd:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+    notes: LR Wheel Speed
+
+# RRCenter
   RRCenter:
-    <<: *DT6P_f
-    pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
-    notes: Strain Gauge + RR WhlSpd
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, CANHi, CANLo]
+    notes: Strain Gauge
+  RR_WhlSpd:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+    notes: RR Wheel Speed
 
   Inj1:
     <<: *BSH2P_f
@@ -183,15 +197,18 @@ cables:
     colors: [BK, RD, GY]
   3P_LRShk:
     <<: *RShk
-  5P_LRCntr: &temp_cbl5
-    wirecount: 5
-    gauge: 22 AWG
-    colors: [BK, RD, WH, BN, GY]
-  5P_RRCntr:
-    <<: *temp_cbl5
-  4P_FPT: &temp_cbl4
-    wirecount: 4
-    gauge: 22 AWG
+  4P_LRCntr: &cntr
+    <<: *temp_cbl4
+    colors: [BK, RD, WH, BN]
+  3P_LRWhlSpd: &whlspd
+    <<: *temp_cbl3
+    colors: [BK, RD, GY]
+  4P_RRCntr:
+    <<: *cntr
+  3P_RRWhlSpd:
+    <<: *whlspd
+  4P_FPT:
+    <<: *temp_cbl4
     colors: [BK, RD, YE, GN]
   4P_OPT:
     <<: *temp_cbl4
@@ -214,13 +231,21 @@ connections:
   - 3P_SHFT_POSM: [1-3]
   - SHIFT_POSM: [1-3]
 -
-  - BULKHEAD_A: [40, 39, 41, 42, 43]
-  - 5P_LRCntr: [1-5]
-  - LRCenter: [1-5]
+  - BULKHEAD_A: [40, 39, 41, 42]
+  - 4P_LRCntr: [1-4]
+  - LRCenter: [1-4]
 -
-  - BULKHEAD_A: [40, 39, 41, 42, 45]
-  - 5P_RRCntr: [1-5]
-  - RRCenter: [1-5]
+  - BULKHEAD_A: [40, 39, 43]
+  - 3P_LRWhlSpd: [1-3]
+  - LR_WhlSpd: [1-3]
+-
+  - BULKHEAD_A: [40, 39, 41, 42]
+  - 4P_RRCntr: [1-4]
+  - RRCenter: [1-4]
+-
+  - BULKHEAD_A: [40, 39, 45]
+  - 3P_RRWhlSpd: [1-3]
+  - RR_WhlSpd: [1-3]
 -
   - BULKHEAD_A: [17, 13]
   - 2PInj1: [1-2]
@@ -281,7 +306,6 @@ connections:
   - BULKHEAD_A: [5, 4]
   - 2P_ClchPWR: [1-2]
   - Clutch_PWR: [1-2]
-# **************************** Missing Clutch PWM input Signal
 -
   - BULKHEAD_A: [32, 33, 35]
   - 3P_ClchPos: [1-3]

@@ -64,6 +64,8 @@ connectors:
   Accelmtr:
     <<: *DT6P_f
     pinlabels: [GND, PWR, SIG, SIG, SIG, NA]
+    notes: Bosch Accelerometer AM 600
+    
 
 cables:
   4P_DashComms: 

@@ -4,11 +4,11 @@ graph {
 	graph [bgcolor="#FFFFFF" fontname=arial nodesep=0.33 rankdir=LR ranksep=2]
 	node [fillcolor="#FFFFFF" fontname=arial height=0 margin=0 shape=none style=filled width=0]
 	edge [fontname=arial style=bold]
-	BULKHEAD [label=<
+	BULKHEAD_A [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">BULKHEAD</td>
+   <td balign="left">BULKHEAD_A</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -212,7 +212,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Bulkhead Connector (Engine Side)</td>
+   <td balign="left">BULKHEAD_A Connector (Engine Side)</td>
   </tr></table>
  </td></tr>
 </table>
@@ -295,9 +295,9 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Deutsch DT04_6P</td>
+   <td balign="left">Binder 4P</td>
    <td balign="left">female</td>
-   <td balign="left">6-pin</td>
+   <td balign="left">4-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -318,19 +318,52 @@ graph {
     <td port="p4l">4</td>
     <td>CANLo</td>
    </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Strain Gauges</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	LR_WhlSpd [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">LR_WhlSpd</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Binder 4P</td>
+   <td balign="left">female</td>
+   <td balign="left">4-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td port="p5l">5</td>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
     <td>SIG</td>
    </tr>
    <tr>
-    <td port="p6l">6</td>
+    <td port="p4l">4</td>
     <td>NA</td>
    </tr>
   </table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Strain Gauge + LR WhlSpd</td>
+   <td balign="left">LR Wheel Speed</td>
   </tr></table>
  </td></tr>
 </table>
@@ -344,9 +377,9 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Deutsch DT04_6P</td>
+   <td balign="left">Binder 4P</td>
    <td balign="left">female</td>
-   <td balign="left">6-pin</td>
+   <td balign="left">4-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -367,19 +400,52 @@ graph {
     <td port="p4l">4</td>
     <td>CANLo</td>
    </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Strain Gauge</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	RR_WhlSpd [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">RR_WhlSpd</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Binder 4P</td>
+   <td balign="left">female</td>
+   <td balign="left">4-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td port="p5l">5</td>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
     <td>SIG</td>
    </tr>
    <tr>
-    <td port="p6l">6</td>
+    <td port="p4l">4</td>
     <td>NA</td>
    </tr>
   </table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Strain Gauge + RR WhlSpd</td>
+   <td balign="left">RR Wheel Speed</td>
   </tr></table>
  </td></tr>
 </table>
@@ -1051,10 +1117,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p40r:e -- "2P_CAMSync":w1:w
+	BULKHEAD_A:p40r:e -- "2P_CAMSync":w1:w
 	"2P_CAMSync":w1:e -- CAM_Sync:p1l:w
 	edge [color="#000000:#ff8000:#000000"]
-	BULKHEAD:p21r:e -- "2P_CAMSync":w2:w
+	BULKHEAD_A:p21r:e -- "2P_CAMSync":w2:w
 	"2P_CAMSync":w2:e -- CAM_Sync:p2l:w
 	"2P_CAMSync" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1073,7 +1139,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:40:GND</td>
+    <td>BULKHEAD_A:40:GND</td>
     <td>
      1:BK
     </td>
@@ -1089,7 +1155,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:21:SIG</td>
+    <td>BULKHEAD_A:21:SIG</td>
     <td>
      2:OG
     </td>
@@ -1110,10 +1176,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p17r:e -- "2PInj1":w1:w
+	BULKHEAD_A:p17r:e -- "2PInj1":w1:w
 	"2PInj1":w1:e -- Inj1:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD:p13r:e -- "2PInj1":w2:w
+	BULKHEAD_A:p13r:e -- "2PInj1":w2:w
 	"2PInj1":w2:e -- Inj1:p2l:w
 	"2PInj1" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1132,7 +1198,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:17:PWR</td>
+    <td>BULKHEAD_A:17:PWR</td>
     <td>
      1:RD
     </td>
@@ -1148,7 +1214,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:13:SIG</td>
+    <td>BULKHEAD_A:13:SIG</td>
     <td>
      2:VT
     </td>
@@ -1169,10 +1235,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p17r:e -- "2PInj2":w1:w
+	BULKHEAD_A:p17r:e -- "2PInj2":w1:w
 	"2PInj2":w1:e -- Inj2:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD:p14r:e -- "2PInj2":w2:w
+	BULKHEAD_A:p14r:e -- "2PInj2":w2:w
 	"2PInj2":w2:e -- Inj2:p2l:w
 	"2PInj2" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1191,7 +1257,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:17:PWR</td>
+    <td>BULKHEAD_A:17:PWR</td>
     <td>
      1:RD
     </td>
@@ -1207,7 +1273,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:14:SIG</td>
+    <td>BULKHEAD_A:14:SIG</td>
     <td>
      2:VT
     </td>
@@ -1228,10 +1294,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p17r:e -- "2PInj3":w1:w
+	BULKHEAD_A:p17r:e -- "2PInj3":w1:w
 	"2PInj3":w1:e -- Inj3:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD:p15r:e -- "2PInj3":w2:w
+	BULKHEAD_A:p15r:e -- "2PInj3":w2:w
 	"2PInj3":w2:e -- Inj3:p2l:w
 	"2PInj3" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1250,7 +1316,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:17:PWR</td>
+    <td>BULKHEAD_A:17:PWR</td>
     <td>
      1:RD
     </td>
@@ -1266,7 +1332,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:15:SIG</td>
+    <td>BULKHEAD_A:15:SIG</td>
     <td>
      2:VT
     </td>
@@ -1287,10 +1353,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p17r:e -- "2PInj4":w1:w
+	BULKHEAD_A:p17r:e -- "2PInj4":w1:w
 	"2PInj4":w1:e -- Inj4:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD:p16r:e -- "2PInj4":w2:w
+	BULKHEAD_A:p16r:e -- "2PInj4":w2:w
 	"2PInj4":w2:e -- Inj4:p2l:w
 	"2PInj4" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1309,7 +1375,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:17:PWR</td>
+    <td>BULKHEAD_A:17:PWR</td>
     <td>
      1:RD
     </td>
@@ -1325,7 +1391,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:16:SIG</td>
+    <td>BULKHEAD_A:16:SIG</td>
     <td>
      2:VT
     </td>
@@ -1346,10 +1412,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p33r:e -- "2PBrkL":w1:w
+	BULKHEAD_A:p33r:e -- "2PBrkL":w1:w
 	"2PBrkL":w1:e -- BrakeL:p1l:w
 	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p46r:e -- "2PBrkL":w2:w
+	BULKHEAD_A:p46r:e -- "2PBrkL":w2:w
 	"2PBrkL":w2:e -- BrakeL:p2l:w
 	"2PBrkL" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1368,7 +1434,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:33:PWR</td>
+    <td>BULKHEAD_A:33:PWR</td>
     <td>
      1:RD
     </td>
@@ -1384,7 +1450,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:46:SIG</td>
+    <td>BULKHEAD_A:46:SIG</td>
     <td>
      2:YE
     </td>
@@ -1405,10 +1471,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p22r:e -- "2P_Tpot":w1:w
+	BULKHEAD_A:p22r:e -- "2P_Tpot":w1:w
 	"2P_Tpot":w1:e -- TPS_Pot:p1l:w
 	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p23r:e -- "2P_Tpot":w2:w
+	BULKHEAD_A:p23r:e -- "2P_Tpot":w2:w
 	"2P_Tpot":w2:e -- TPS_Pot:p2l:w
 	"2P_Tpot" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1427,7 +1493,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:22:AV</td>
+    <td>BULKHEAD_A:22:AV</td>
     <td>
      1:YE
     </td>
@@ -1443,7 +1509,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:23:AV</td>
+    <td>BULKHEAD_A:23:AV</td>
     <td>
      2:YE
     </td>
@@ -1464,10 +1530,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD:p1r:e -- "2P_SHFM":w1:w
+	BULKHEAD_A:p1r:e -- "2P_SHFM":w1:w
 	"2P_SHFM":w1:e -- Shift_Motor:p1l:w
 	edge [color="#000000:#8000ff:#000000"]
-	BULKHEAD:p6r:e -- "2P_SHFM":w2:w
+	BULKHEAD_A:p6r:e -- "2P_SHFM":w2:w
 	"2P_SHFM":w2:e -- Shift_Motor:p2l:w
 	"2P_SHFM" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1486,7 +1552,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:1:HB</td>
+    <td>BULKHEAD_A:1:HB</td>
     <td>
      1:VT
     </td>
@@ -1502,7 +1568,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:6:HB</td>
+    <td>BULKHEAD_A:6:HB</td>
     <td>
      2:VT
     </td>
@@ -1523,10 +1589,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p5r:e -- "2P_ClchPWR":w1:w
+	BULKHEAD_A:p5r:e -- "2P_ClchPWR":w1:w
 	"2P_ClchPWR":w1:e -- Clutch_PWR:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p4r:e -- "2P_ClchPWR":w2:w
+	BULKHEAD_A:p4r:e -- "2P_ClchPWR":w2:w
 	"2P_ClchPWR":w2:e -- Clutch_PWR:p2l:w
 	"2P_ClchPWR" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1545,7 +1611,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:5:GND</td>
+    <td>BULKHEAD_A:5:GND</td>
     <td>
      1:BK
     </td>
@@ -1561,7 +1627,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:4:PWR</td>
+    <td>BULKHEAD_A:4:PWR</td>
     <td>
      2:RD
     </td>
@@ -1582,10 +1648,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p30r:e -- "2P_CrankTrig":w1:w
+	BULKHEAD_A:p30r:e -- "2P_CrankTrig":w1:w
 	"2P_CrankTrig":w1:e -- Crank_Trig:p1l:w
 	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p31r:e -- "2P_CrankTrig":w2:w
+	BULKHEAD_A:p31r:e -- "2P_CrankTrig":w2:w
 	"2P_CrankTrig":w2:e -- Crank_Trig:p2l:w
 	"2P_CrankTrig" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1604,7 +1670,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:30:GND</td>
+    <td>BULKHEAD_A:30:GND</td>
     <td>
      1:BK
     </td>
@@ -1620,7 +1686,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:31:UDIG</td>
+    <td>BULKHEAD_A:31:UDIG</td>
     <td>
      2:YE
     </td>
@@ -1641,10 +1707,10 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p44r:e -- "2P_WaterOut":w1:w
+	BULKHEAD_A:p44r:e -- "2P_WaterOut":w1:w
 	"2P_WaterOut":w1:e -- WaterOut:p1l:w
 	edge [color="#000000:#00ff00:#000000"]
-	BULKHEAD:p20r:e -- "2P_WaterOut":w2:w
+	BULKHEAD_A:p20r:e -- "2P_WaterOut":w2:w
 	"2P_WaterOut":w2:e -- WaterOut:p2l:w
 	"2P_WaterOut" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1663,7 +1729,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:44:0VECUGND</td>
+    <td>BULKHEAD_A:44:0VECUGND</td>
     <td>
      1:BK
     </td>
@@ -1679,7 +1745,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:20:AT</td>
+    <td>BULKHEAD_A:20:AT</td>
     <td>
      2:GN
     </td>
@@ -1700,13 +1766,13 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p32r:e -- "3P_SHFT_POSM":w1:w
+	BULKHEAD_A:p32r:e -- "3P_SHFT_POSM":w1:w
 	"3P_SHFT_POSM":w1:e -- SHIFT_POSM:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p33r:e -- "3P_SHFT_POSM":w2:w
+	BULKHEAD_A:p33r:e -- "3P_SHFT_POSM":w2:w
 	"3P_SHFT_POSM":w2:e -- SHIFT_POSM:p2l:w
 	edge [color="#000000:#ff8000:#000000"]
-	BULKHEAD:p38r:e -- "3P_SHFT_POSM":w3:w
+	BULKHEAD_A:p38r:e -- "3P_SHFT_POSM":w3:w
 	"3P_SHFT_POSM":w3:e -- SHIFT_POSM:p3l:w
 	"3P_SHFT_POSM" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1725,7 +1791,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:32:GND</td>
+    <td>BULKHEAD_A:32:GND</td>
     <td>
      1:BK
     </td>
@@ -1741,7 +1807,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:33:PWR</td>
+    <td>BULKHEAD_A:33:PWR</td>
     <td>
      2:RD
     </td>
@@ -1757,7 +1823,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:38:SIG</td>
+    <td>BULKHEAD_A:38:SIG</td>
     <td>
      3:OG
     </td>
@@ -1778,13 +1844,13 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p26r:e -- "3P_ET":w1:w
+	BULKHEAD_A:p26r:e -- "3P_ET":w1:w
 	"3P_ET":w1:e -- T_Motor:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p24r:e -- "3P_ET":w2:w
+	BULKHEAD_A:p24r:e -- "3P_ET":w2:w
 	"3P_ET":w2:e -- T_Motor:p2l:w
 	edge [color="#000000:#999999:#000000"]
-	BULKHEAD:p25r:e -- "3P_ET":w3:w
+	BULKHEAD_A:p25r:e -- "3P_ET":w3:w
 	"3P_ET":w3:e -- T_Motor:p3l:w
 	"3P_ET" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1803,7 +1869,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:26:GND</td>
+    <td>BULKHEAD_A:26:GND</td>
     <td>
      1:BK
     </td>
@@ -1819,7 +1885,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:24:PWR</td>
+    <td>BULKHEAD_A:24:PWR</td>
     <td>
      2:RD
     </td>
@@ -1835,7 +1901,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:25:UDIG</td>
+    <td>BULKHEAD_A:25:UDIG</td>
     <td>
      3:GY
     </td>
@@ -1856,13 +1922,13 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p29r:e -- "3P_TPS":w1:w
+	BULKHEAD_A:p29r:e -- "3P_TPS":w1:w
 	"3P_TPS":w1:e -- TPS:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p27r:e -- "3P_TPS":w2:w
+	BULKHEAD_A:p27r:e -- "3P_TPS":w2:w
 	"3P_TPS":w2:e -- TPS:p2l:w
 	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p28r:e -- "3P_TPS":w3:w
+	BULKHEAD_A:p28r:e -- "3P_TPS":w3:w
 	"3P_TPS":w3:e -- TPS:p3l:w
 	"3P_TPS" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1881,7 +1947,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:29:GND</td>
+    <td>BULKHEAD_A:29:GND</td>
     <td>
      1:BK
     </td>
@@ -1897,7 +1963,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:27:12V</td>
+    <td>BULKHEAD_A:27:12V</td>
     <td>
      2:RD
     </td>
@@ -1913,7 +1979,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:28:5V</td>
+    <td>BULKHEAD_A:28:5V</td>
     <td>
      3:YE
     </td>
@@ -1934,13 +2000,13 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p47r:e -- "3P_KNK":w1:w
+	BULKHEAD_A:p47r:e -- "3P_KNK":w1:w
 	"3P_KNK":w1:e -- Knock:p1l:w
 	edge [color="#000000:#ff8000:#000000"]
-	BULKHEAD:p18r:e -- "3P_KNK":w2:w
+	BULKHEAD_A:p18r:e -- "3P_KNK":w2:w
 	"3P_KNK":w2:e -- Knock:p2l:w
 	edge [color="#000000:#ff8000:#000000"]
-	BULKHEAD:p19r:e -- "3P_KNK":w3:w
+	BULKHEAD_A:p19r:e -- "3P_KNK":w3:w
 	"3P_KNK":w3:e -- Knock:p3l:w
 	"3P_KNK" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -1959,7 +2025,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:47:5VECUPWR</td>
+    <td>BULKHEAD_A:47:5VECUPWR</td>
     <td>
      1:RD
     </td>
@@ -1975,7 +2041,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:18:SIG</td>
+    <td>BULKHEAD_A:18:SIG</td>
     <td>
      2:OG
     </td>
@@ -1991,7 +2057,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:19:SIG</td>
+    <td>BULKHEAD_A:19:SIG</td>
     <td>
      3:OG
     </td>
@@ -2012,13 +2078,13 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p32r:e -- "3P_ClchPos":w1:w
+	BULKHEAD_A:p32r:e -- "3P_ClchPos":w1:w
 	"3P_ClchPos":w1:e -- Clutch_POS:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p33r:e -- "3P_ClchPos":w2:w
+	BULKHEAD_A:p33r:e -- "3P_ClchPos":w2:w
 	"3P_ClchPos":w2:e -- Clutch_POS:p2l:w
 	edge [color="#000000:#ff8000:#000000"]
-	BULKHEAD:p35r:e -- "3P_ClchPos":w3:w
+	BULKHEAD_A:p35r:e -- "3P_ClchPos":w3:w
 	"3P_ClchPos":w3:e -- Clutch_POS:p3l:w
 	"3P_ClchPos" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2037,7 +2103,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:32:GND</td>
+    <td>BULKHEAD_A:32:GND</td>
     <td>
      1:BK
     </td>
@@ -2053,7 +2119,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:33:PWR</td>
+    <td>BULKHEAD_A:33:PWR</td>
     <td>
      2:RD
     </td>
@@ -2069,7 +2135,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:35:SIG</td>
+    <td>BULKHEAD_A:35:SIG</td>
     <td>
      3:OG
     </td>
@@ -2090,13 +2156,13 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p32r:e -- "3P_RRShk":w1:w
+	BULKHEAD_A:p32r:e -- "3P_RRShk":w1:w
 	"3P_RRShk":w1:e -- RRShock:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p33r:e -- "3P_RRShk":w2:w
+	BULKHEAD_A:p33r:e -- "3P_RRShk":w2:w
 	"3P_RRShk":w2:e -- RRShock:p2l:w
 	edge [color="#000000:#999999:#000000"]
-	BULKHEAD:p37r:e -- "3P_RRShk":w3:w
+	BULKHEAD_A:p37r:e -- "3P_RRShk":w3:w
 	"3P_RRShk":w3:e -- RRShock:p3l:w
 	"3P_RRShk" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2115,7 +2181,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:32:GND</td>
+    <td>BULKHEAD_A:32:GND</td>
     <td>
      1:BK
     </td>
@@ -2131,7 +2197,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:33:PWR</td>
+    <td>BULKHEAD_A:33:PWR</td>
     <td>
      2:RD
     </td>
@@ -2147,7 +2213,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:37:SIG</td>
+    <td>BULKHEAD_A:37:SIG</td>
     <td>
      3:GY
     </td>
@@ -2168,13 +2234,13 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p32r:e -- "3P_LRShk":w1:w
+	BULKHEAD_A:p32r:e -- "3P_LRShk":w1:w
 	"3P_LRShk":w1:e -- LRShock:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p33r:e -- "3P_LRShk":w2:w
+	BULKHEAD_A:p33r:e -- "3P_LRShk":w2:w
 	"3P_LRShk":w2:e -- LRShock:p2l:w
 	edge [color="#000000:#999999:#000000"]
-	BULKHEAD:p36r:e -- "3P_LRShk":w3:w
+	BULKHEAD_A:p36r:e -- "3P_LRShk":w3:w
 	"3P_LRShk":w3:e -- LRShock:p3l:w
 	"3P_LRShk" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2193,7 +2259,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:32:GND</td>
+    <td>BULKHEAD_A:32:GND</td>
     <td>
      1:BK
     </td>
@@ -2209,7 +2275,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:33:PWR</td>
+    <td>BULKHEAD_A:33:PWR</td>
     <td>
      2:RD
     </td>
@@ -2225,7 +2291,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:36:SIG</td>
+    <td>BULKHEAD_A:36:SIG</td>
     <td>
      3:GY
     </td>
@@ -2246,30 +2312,27 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p40r:e -- "5P_LRCntr":w1:w
-	"5P_LRCntr":w1:e -- LRCenter:p1l:w
+	BULKHEAD_A:p40r:e -- "4P_LRCntr":w1:w
+	"4P_LRCntr":w1:e -- LRCenter:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p39r:e -- "5P_LRCntr":w2:w
-	"5P_LRCntr":w2:e -- LRCenter:p2l:w
+	BULKHEAD_A:p39r:e -- "4P_LRCntr":w2:w
+	"4P_LRCntr":w2:e -- LRCenter:p2l:w
 	edge [color="#000000:#ffffff:#000000"]
-	BULKHEAD:p41r:e -- "5P_LRCntr":w3:w
-	"5P_LRCntr":w3:e -- LRCenter:p3l:w
+	BULKHEAD_A:p41r:e -- "4P_LRCntr":w3:w
+	"4P_LRCntr":w3:e -- LRCenter:p3l:w
 	edge [color="#000000:#895956:#000000"]
-	BULKHEAD:p42r:e -- "5P_LRCntr":w4:w
-	"5P_LRCntr":w4:e -- LRCenter:p4l:w
-	edge [color="#000000:#999999:#000000"]
-	BULKHEAD:p43r:e -- "5P_LRCntr":w5:w
-	"5P_LRCntr":w5:e -- LRCenter:p5l:w
-	"5P_LRCntr" [label=<
+	BULKHEAD_A:p42r:e -- "4P_LRCntr":w4:w
+	"4P_LRCntr":w4:e -- LRCenter:p4l:w
+	"4P_LRCntr" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5P_LRCntr</td>
+   <td balign="left">4P_LRCntr</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5x</td>
+   <td balign="left">4x</td>
    <td balign="left">22 AWG</td>
   </tr></table>
  </td></tr>
@@ -2277,7 +2340,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:40:GND</td>
+    <td>BULKHEAD_A:40:GND</td>
     <td>
      1:BK
     </td>
@@ -2293,7 +2356,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:39:PWR</td>
+    <td>BULKHEAD_A:39:PWR</td>
     <td>
      2:RD
     </td>
@@ -2309,7 +2372,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:41:CANHi</td>
+    <td>BULKHEAD_A:41:CANHi</td>
     <td>
      3:WH
     </td>
@@ -2325,7 +2388,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:42:CANLo</td>
+    <td>BULKHEAD_A:42:CANLo</td>
     <td>
      4:BN
     </td>
@@ -2340,15 +2403,77 @@ graph {
      </table>
     </td>
    </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	BULKHEAD_A:p40r:e -- "3P_LRWhlSpd":w1:w
+	"3P_LRWhlSpd":w1:e -- LR_WhlSpd:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	BULKHEAD_A:p39r:e -- "3P_LRWhlSpd":w2:w
+	"3P_LRWhlSpd":w2:e -- LR_WhlSpd:p2l:w
+	edge [color="#000000:#999999:#000000"]
+	BULKHEAD_A:p43r:e -- "3P_LRWhlSpd":w3:w
+	"3P_LRWhlSpd":w3:e -- LR_WhlSpd:p3l:w
+	"3P_LRWhlSpd" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3P_LRWhlSpd</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:43:SIG</td>
+    <td>BULKHEAD_A:40:GND</td>
     <td>
-     5:GY
+     1:BK
     </td>
-    <td>LRCenter:5:SIG</td>
+    <td>LR_WhlSpd:1:GND</td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_A:39:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>LR_WhlSpd:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_A:43:SIG</td>
+    <td>
+     3:GY
+    </td>
+    <td>LR_WhlSpd:3:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
@@ -2362,30 +2487,27 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p40r:e -- "5P_RRCntr":w1:w
-	"5P_RRCntr":w1:e -- RRCenter:p1l:w
+	BULKHEAD_A:p40r:e -- "4P_RRCntr":w1:w
+	"4P_RRCntr":w1:e -- RRCenter:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p39r:e -- "5P_RRCntr":w2:w
-	"5P_RRCntr":w2:e -- RRCenter:p2l:w
+	BULKHEAD_A:p39r:e -- "4P_RRCntr":w2:w
+	"4P_RRCntr":w2:e -- RRCenter:p2l:w
 	edge [color="#000000:#ffffff:#000000"]
-	BULKHEAD:p41r:e -- "5P_RRCntr":w3:w
-	"5P_RRCntr":w3:e -- RRCenter:p3l:w
+	BULKHEAD_A:p41r:e -- "4P_RRCntr":w3:w
+	"4P_RRCntr":w3:e -- RRCenter:p3l:w
 	edge [color="#000000:#895956:#000000"]
-	BULKHEAD:p42r:e -- "5P_RRCntr":w4:w
-	"5P_RRCntr":w4:e -- RRCenter:p4l:w
-	edge [color="#000000:#999999:#000000"]
-	BULKHEAD:p45r:e -- "5P_RRCntr":w5:w
-	"5P_RRCntr":w5:e -- RRCenter:p5l:w
-	"5P_RRCntr" [label=<
+	BULKHEAD_A:p42r:e -- "4P_RRCntr":w4:w
+	"4P_RRCntr":w4:e -- RRCenter:p4l:w
+	"4P_RRCntr" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5P_RRCntr</td>
+   <td balign="left">4P_RRCntr</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5x</td>
+   <td balign="left">4x</td>
    <td balign="left">22 AWG</td>
   </tr></table>
  </td></tr>
@@ -2393,7 +2515,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:40:GND</td>
+    <td>BULKHEAD_A:40:GND</td>
     <td>
      1:BK
     </td>
@@ -2409,7 +2531,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:39:PWR</td>
+    <td>BULKHEAD_A:39:PWR</td>
     <td>
      2:RD
     </td>
@@ -2425,7 +2547,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:41:CANHi</td>
+    <td>BULKHEAD_A:41:CANHi</td>
     <td>
      3:WH
     </td>
@@ -2441,7 +2563,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:42:CANLo</td>
+    <td>BULKHEAD_A:42:CANLo</td>
     <td>
      4:BN
     </td>
@@ -2456,15 +2578,77 @@ graph {
      </table>
     </td>
    </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	BULKHEAD_A:p40r:e -- "3P_RRWhlSpd":w1:w
+	"3P_RRWhlSpd":w1:e -- RR_WhlSpd:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	BULKHEAD_A:p39r:e -- "3P_RRWhlSpd":w2:w
+	"3P_RRWhlSpd":w2:e -- RR_WhlSpd:p2l:w
+	edge [color="#000000:#999999:#000000"]
+	BULKHEAD_A:p45r:e -- "3P_RRWhlSpd":w3:w
+	"3P_RRWhlSpd":w3:e -- RR_WhlSpd:p3l:w
+	"3P_RRWhlSpd" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3P_RRWhlSpd</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:45:SIG</td>
+    <td>BULKHEAD_A:40:GND</td>
     <td>
-     5:GY
+     1:BK
     </td>
-    <td>RRCenter:5:SIG</td>
+    <td>RR_WhlSpd:1:GND</td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_A:39:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>RR_WhlSpd:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>BULKHEAD_A:45:SIG</td>
+    <td>
+     3:GY
+    </td>
+    <td>RR_WhlSpd:3:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
@@ -2478,16 +2662,16 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p44r:e -- "4P_FPT":w1:w
+	BULKHEAD_A:p44r:e -- "4P_FPT":w1:w
 	"4P_FPT":w1:e -- Fuel_PT:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p47r:e -- "4P_FPT":w2:w
+	BULKHEAD_A:p47r:e -- "4P_FPT":w2:w
 	"4P_FPT":w2:e -- Fuel_PT:p2l:w
 	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p2r:e -- "4P_FPT":w3:w
+	BULKHEAD_A:p2r:e -- "4P_FPT":w3:w
 	"4P_FPT":w3:e -- Fuel_PT:p3l:w
 	edge [color="#000000:#00ff00:#000000"]
-	BULKHEAD:p3r:e -- "4P_FPT":w4:w
+	BULKHEAD_A:p3r:e -- "4P_FPT":w4:w
 	"4P_FPT":w4:e -- Fuel_PT:p4l:w
 	"4P_FPT" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2506,7 +2690,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:44:0VECUGND</td>
+    <td>BULKHEAD_A:44:0VECUGND</td>
     <td>
      1:BK
     </td>
@@ -2522,7 +2706,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:47:5VECUPWR</td>
+    <td>BULKHEAD_A:47:5VECUPWR</td>
     <td>
      2:RD
     </td>
@@ -2538,7 +2722,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:2:AV</td>
+    <td>BULKHEAD_A:2:AV</td>
     <td>
      3:YE
     </td>
@@ -2554,7 +2738,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:3:AT</td>
+    <td>BULKHEAD_A:3:AT</td>
     <td>
      4:GN
     </td>
@@ -2574,17 +2758,17 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p44r:e -- "4P_OPT":w1:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p44r:e -- "4P_OPT":w1:w
 	"4P_OPT":w1:e -- Oil_PT:p1l:w
-	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p47r:e -- "4P_OPT":w2:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p47r:e -- "4P_OPT":w2:w
 	"4P_OPT":w2:e -- Oil_PT:p2l:w
-	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p7r:e -- "4P_OPT":w3:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p7r:e -- "4P_OPT":w3:w
 	"4P_OPT":w3:e -- Oil_PT:p3l:w
-	edge [color="#000000:#00ff00:#000000"]
-	BULKHEAD:p8r:e -- "4P_OPT":w4:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p8r:e -- "4P_OPT":w4:w
 	"4P_OPT":w4:e -- Oil_PT:p4l:w
 	"4P_OPT" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2603,9 +2787,9 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:44:0VECUGND</td>
+    <td>BULKHEAD_A:44:0VECUGND</td>
     <td>
-     1:BK
+     1
     </td>
     <td>Oil_PT:1:GND</td>
    </tr>
@@ -2613,15 +2797,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:47:5VECUPWR</td>
+    <td>BULKHEAD_A:47:5VECUPWR</td>
     <td>
-     2:RD
+     2
     </td>
     <td>Oil_PT:2:PWR</td>
    </tr>
@@ -2629,15 +2813,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:7:AV</td>
+    <td>BULKHEAD_A:7:AV</td>
     <td>
-     3:YE
+     3
     </td>
     <td>Oil_PT:3:SIGY</td>
    </tr>
@@ -2645,15 +2829,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:8:AT</td>
+    <td>BULKHEAD_A:8:AT</td>
     <td>
-     4:GN
+     4
     </td>
     <td>Oil_PT:4:SIGGn</td>
    </tr>
@@ -2661,7 +2845,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2671,17 +2855,17 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p44r:e -- "4P_WIPT":w1:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p44r:e -- "4P_WIPT":w1:w
 	"4P_WIPT":w1:e -- WaterIn_PT:p1l:w
-	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p47r:e -- "4P_WIPT":w2:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p47r:e -- "4P_WIPT":w2:w
 	"4P_WIPT":w2:e -- WaterIn_PT:p2l:w
-	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p11r:e -- "4P_WIPT":w3:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p11r:e -- "4P_WIPT":w3:w
 	"4P_WIPT":w3:e -- WaterIn_PT:p3l:w
-	edge [color="#000000:#00ff00:#000000"]
-	BULKHEAD:p12r:e -- "4P_WIPT":w4:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p12r:e -- "4P_WIPT":w4:w
 	"4P_WIPT":w4:e -- WaterIn_PT:p4l:w
 	"4P_WIPT" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2700,9 +2884,9 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:44:0VECUGND</td>
+    <td>BULKHEAD_A:44:0VECUGND</td>
     <td>
-     1:BK
+     1
     </td>
     <td>WaterIn_PT:1:GND</td>
    </tr>
@@ -2710,15 +2894,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:47:5VECUPWR</td>
+    <td>BULKHEAD_A:47:5VECUPWR</td>
     <td>
-     2:RD
+     2
     </td>
     <td>WaterIn_PT:2:PWR</td>
    </tr>
@@ -2726,15 +2910,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:11:AV</td>
+    <td>BULKHEAD_A:11:AV</td>
     <td>
-     3:YE
+     3
     </td>
     <td>WaterIn_PT:3:SIGY</td>
    </tr>
@@ -2742,15 +2926,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:12:AT</td>
+    <td>BULKHEAD_A:12:AT</td>
     <td>
-     4:GN
+     4
     </td>
     <td>WaterIn_PT:4:SIGGn</td>
    </tr>
@@ -2758,7 +2942,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2768,17 +2952,17 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#000000:#000000"]
-	BULKHEAD:p44r:e -- "4P_IPT":w1:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p44r:e -- "4P_IPT":w1:w
 	"4P_IPT":w1:e -- Intake_PT:p1l:w
-	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD:p47r:e -- "4P_IPT":w2:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p47r:e -- "4P_IPT":w2:w
 	"4P_IPT":w2:e -- Intake_PT:p2l:w
-	edge [color="#000000:#ffff00:#000000"]
-	BULKHEAD:p9r:e -- "4P_IPT":w3:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p9r:e -- "4P_IPT":w3:w
 	"4P_IPT":w3:e -- Intake_PT:p3l:w
-	edge [color="#000000:#00ff00:#000000"]
-	BULKHEAD:p10r:e -- "4P_IPT":w4:w
+	edge [color="#000000:#ffffff:#000000"]
+	BULKHEAD_A:p10r:e -- "4P_IPT":w4:w
 	"4P_IPT":w4:e -- Intake_PT:p4l:w
 	"4P_IPT" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2797,9 +2981,9 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:44:0VECUGND</td>
+    <td>BULKHEAD_A:44:0VECUGND</td>
     <td>
-     1:BK
+     1
     </td>
     <td>Intake_PT:1:GND</td>
    </tr>
@@ -2807,15 +2991,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:47:5VECUPWR</td>
+    <td>BULKHEAD_A:47:5VECUPWR</td>
     <td>
-     2:RD
+     2
     </td>
     <td>Intake_PT:2:PWR</td>
    </tr>
@@ -2823,15 +3007,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:9:AV</td>
+    <td>BULKHEAD_A:9:AV</td>
     <td>
-     3:YE
+     3
     </td>
     <td>Intake_PT:3:SIGY</td>
    </tr>
@@ -2839,15 +3023,15 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>BULKHEAD:10:AT</td>
+    <td>BULKHEAD_A:10:AT</td>
     <td>
-     4:GN
+     4
     </td>
     <td>Intake_PT:4:SIGGn</td>
    </tr>
@@ -2855,7 +3039,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2866,7 +3050,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#999999:#000000"]
-	BULKHEAD:p34r:e -- "1P_RFAN":w1:w
+	BULKHEAD_A:p34r:e -- "1P_RFAN":w1:w
 	"1P_RFAN":w1:e -- RAD_FAN:p1l:w
 	"1P_RFAN" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -2885,7 +3069,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>BULKHEAD:34:SIG</td>
+    <td>BULKHEAD_A:34:SIG</td>
     <td>
      1:GY
     </td>

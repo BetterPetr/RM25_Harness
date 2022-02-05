@@ -78,7 +78,10 @@ cables:
   1P_ShftLevPos:
     <<: *temp_cbl1
     colors: [YE]
-
+# Accelerometer
+  5P_Accelmtr:
+    <<: *temp_cbl5
+    colors: [BK, RD, GY, GY, GY]
 
 connections:
 #PDM Chassis GND (Already in the Controllers-BA Harness, just for reference)

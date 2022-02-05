@@ -4,7 +4,8 @@ Need to fix the APPS sensor connection points to the ECU (currently shifted by 1
 
 Need to adjust the wiring for the E-Throttle (moving back to Noah's design)
 
-
+See more notes about the CAN Bus termination resistors in the PDM15 and ECU M150 manuals.
+(Image in this Folder as reference for how resistors are attached)
 
 
 

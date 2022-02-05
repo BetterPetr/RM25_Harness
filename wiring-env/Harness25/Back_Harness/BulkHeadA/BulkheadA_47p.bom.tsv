@@ -2,17 +2,15 @@ Id	Description	Qty	Unit	Designators
 1	Cable, 1 x 16 AWG	0	m	1P_RFAN
 2	Cable, 2 x 16 AWG	0	m	2P_ClchPWR, 2P_SHFM
 3	Cable, 2 x 22 AWG	0	m	2PBrkL, 2PInj1, 2PInj2, 2PInj3, 2PInj4, 2P_CAMSync, 2P_CrankTrig, 2P_Tpot, 2P_WaterOut
-4	Cable, 3 x 22 AWG	0	m	3P_ClchPos, 3P_ET, 3P_KNK, 3P_LRShk, 3P_RRShk, 3P_SHFT_POSM, 3P_TPS
-5	Cable, 4 x 22 AWG	0	m	4P_FPT, 4P_IPT, 4P_OPT, 4P_WIPT
-6	Cable, 5 x 22 AWG	0	m	5P_LRCntr, 5P_RRCntr
-7	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD
-8	Connector, Binder 4P, female, 4 pins	2		LRShock, RRShock
-9	Connector, Bosch 2P, female, 2 pins	4		Inj1, Inj2, Inj3, Inj4
-10	Connector, Deutsch DT04_2P, female, 2 pins	6		BrakeL, CAM_Sync, Clutch_PWR, Crank_Trig, Shift_Motor, WaterOut
-11	Connector, Deutsch DT04_4P, female, 2 pins	1		TPS_Pot
-12	Connector, Deutsch DT04_4P, female, 4 pins	3		Clutch_POS, SHIFT_POSM, T_Motor
-13	Connector, Deutsch DT04_6P, female, 6 pins	2		LRCenter, RRCenter
-14	Connector, Honda CE3001 Connector 3P, female, 3 pins	1		Knock
-15	Connector, SPAL IX-SBL-YAZ-PT10 4P, female, 1 pins	1		RAD_FAN
-16	Connector, Sensata 4P, female, 4 pins	4		Fuel_PT, Intake_PT, Oil_PT, WaterIn_PT
-17	Connector, TE AMP Superseal 3P, female, 3 pins	1		TPS
+4	Cable, 3 x 22 AWG	0	m	3P_ClchPos, 3P_ET, 3P_KNK, 3P_LRShk, 3P_LRWhlSpd, 3P_RRShk, 3P_RRWhlSpd, 3P_SHFT_POSM, 3P_TPS
+5	Cable, 4 x 22 AWG	0	m	4P_FPT, 4P_IPT, 4P_LRCntr, 4P_OPT, 4P_RRCntr, 4P_WIPT
+6	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD_A
+7	Connector, Binder 4P, female, 4 pins	6		LRCenter, LRShock, LR_WhlSpd, RRCenter, RRShock, RR_WhlSpd
+8	Connector, Bosch 2P, female, 2 pins	4		Inj1, Inj2, Inj3, Inj4
+9	Connector, Deutsch DT04_2P, female, 2 pins	6		BrakeL, CAM_Sync, Clutch_PWR, Crank_Trig, Shift_Motor, WaterOut
+10	Connector, Deutsch DT04_4P, female, 2 pins	1		TPS_Pot
+11	Connector, Deutsch DT04_4P, female, 4 pins	3		Clutch_POS, SHIFT_POSM, T_Motor
+12	Connector, Honda CE3001 Connector 3P, female, 3 pins	1		Knock
+13	Connector, SPAL IX-SBL-YAZ-PT10 4P, female, 1 pins	1		RAD_FAN
+14	Connector, Sensata 4P, female, 4 pins	4		Fuel_PT, Intake_PT, Oil_PT, WaterIn_PT
+15	Connector, TE AMP Superseal 3P, female, 3 pins	1		TPS

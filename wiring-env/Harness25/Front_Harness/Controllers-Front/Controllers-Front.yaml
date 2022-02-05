@@ -75,14 +75,24 @@ connectors:
     <<: *FShock
 # LF Wheel Center
   LFCenter: # lrcenter
-    <<: *DT6P_f
-    pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
-    notes: Strain Gauge + LF WhlSpd
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, CANHi, CANLo]
+    notes: Strain Gauge
+# LF Wheel Speed
+  LF_WhlSpd:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+    notes: LF Wheel Speed
 # RF Wheel Center
   RFCenter:
-    <<: *DT6P_f
-    pinlabels: [GND, PWR, CANHi, CANLo, SIG, NA]
-    notes: Strain Gauge + RF WhlSpd
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, CANHi, CANLo]
+    notes: Strain Gauge
+# RF Wheel Speed
+  RF_WhlSpd:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+    notes: RF Wheel Speed
 # Emergency Stop Button
   EStop:
     <<: *DT2P_f
@@ -95,11 +105,6 @@ connectors:
   Crank_Button:
     <<: *DT2P_f
     pinlabels: [GND, SIG]
-# Accelerometer
-  Accelerometer:
-    <<: *DT6P_f
-    pinlabels: [GND, PWR, SIG, SIG, SIG, NA]
-    notes: Bosch Accelerometer AM 600
 # APPS 1
   APPS1: &apps
     <<: *TESuper3P_f
@@ -119,6 +124,10 @@ connectors:
   Lap_Beacon:
     <<: *Bndr4P_f
     pinlabels: [GND, PWR, SIG, NA]
+# Transponder
+  Transponder:
+    <<: *DT2P_f
+    pinlabels: [GND, PWR]
 
 
 cables:
@@ -208,6 +217,7 @@ cables:
   2P_EStop:
     wirecount: 2
     gauge: 22 AWG
+    length: 76 in
     colors: [BK, GY]
 # LF Wheel Center CAN (strain gauge)
   2P_LFCAN: &WhlCntr_CAN
@@ -228,10 +238,6 @@ cables:
     wirecount: 2
     gauge: 22 AWG
     colors: [BK, GY]
-# Accelerometer
-  5P_Accelmtr:
-    <<: *temp_cbl5
-    colors: [BK, RD, GY, GY, GY]
 # APPS 1
   2P_APPS1PG: &apps_pg
     <<: *template_cbl2
@@ -265,7 +271,12 @@ cables:
   2P_BeaconPG:
     <<: *template_cbl2
     colors: [BK, RD]
-
+# Transponder
+  2P_Transponder:
+    <<: *template_cbl2
+    colors: [BK, RD]
+    length: 92 in
+    gauge: 16 AWG
 
 
 connections:
@@ -374,12 +385,12 @@ connections:
   - PDMA: [26, 5]
   - 2P_BeaconPG: [1-2]
   - Lap_Beacon: [1-2]
-# Accelerometer
+
+# Transponder (Front Wing)
 -
-  - DASH: [9, 8, 3, 4, 5]
-  - 5P_Accelmtr: [1-5]
-  - Accelerometer: [1-5]
-# Transponder (Front Wing on 24)
+  - PDMA: [26, 8]
+  - 2P_Transponder: [1-2]
+  - Transponder: [1-2]
 
 #LFShock
 -
@@ -418,9 +429,17 @@ connections:
   - LFCenter: [1]
 #LF WhlSpd
 -
+  - CHAS_GND: [1]
+  - 1P_LFCntrGND: [1]
+  - LF_WhlSpd: [1]
+-
+  - PDMA: [8]
+  - 1P_LFCntrPWR: [1]
+  - LF_WhlSpd: [2]
+-
   - ECUB: [3]
   - 1P_LFWSP: [1]
-  - LFCenter: [5]
+  - LF_WhlSpd: [3]
 #LF Strain Gauge/CAN
 -
   - ECUD: [18, 17]
@@ -437,9 +456,17 @@ connections:
   - RFCenter: [1]
 #RF WhlSpd
 -
+  - PDMA: [8]
+  - 1P_RFCntrPWR: [1]
+  - RF_WhlSpd: [2]
+-
+  - CHAS_GND: [1]
+  - 1P_RFCntrGND: [1]
+  - RF_WhlSpd: [1]
+-
   - ECUD: [10]
   - 1P_RFWSP: [1]
-  - RFCenter: [5]
+  - RF_WhlSpd: [3]
 #RF Strain Gauge/CAN
 -
   - ECUD: [18, 17]
@@ -451,7 +478,7 @@ connections:
   - 2P_APPS1PG: [1-2]
   - APPS1: [1-2]
 -
-  - ECUB: [9]
+  - ECUB: [10]
   - 1P_APPS1AV: [1]
   - APPS1: [3]
 #Accel Pedal Sensor 2
@@ -460,7 +487,7 @@ connections:
   - 2P_APPS2PG: [1-2]
   - APPS2: [1-2]
 -
-  - ECUB: [10]
+  - ECUB: [11]
   - 1P_APPS2AV: [1]
   - APPS2: [3]
 #Front Brake Pressure

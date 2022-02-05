@@ -1264,9 +1264,9 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Deutsch DT04_6P</td>
+   <td balign="left">Binder 4P</td>
    <td balign="left">female</td>
-   <td balign="left">6-pin</td>
+   <td balign="left">4-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1287,19 +1287,52 @@ graph {
     <td port="p4l">4</td>
     <td>CANLo</td>
    </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Strain Gauge</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	LF_WhlSpd [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">LF_WhlSpd</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Binder 4P</td>
+   <td balign="left">female</td>
+   <td balign="left">4-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td port="p5l">5</td>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
     <td>SIG</td>
    </tr>
    <tr>
-    <td port="p6l">6</td>
+    <td port="p4l">4</td>
     <td>NA</td>
    </tr>
   </table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Strain Gauge + LF WhlSpd</td>
+   <td balign="left">LF Wheel Speed</td>
   </tr></table>
  </td></tr>
 </table>
@@ -1313,9 +1346,9 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Deutsch DT04_6P</td>
+   <td balign="left">Binder 4P</td>
    <td balign="left">female</td>
-   <td balign="left">6-pin</td>
+   <td balign="left">4-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1336,19 +1369,52 @@ graph {
     <td port="p4l">4</td>
     <td>CANLo</td>
    </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Strain Gauge</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	RF_WhlSpd [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">RF_WhlSpd</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Binder 4P</td>
+   <td balign="left">female</td>
+   <td balign="left">4-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td port="p5l">5</td>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
     <td>SIG</td>
    </tr>
    <tr>
-    <td port="p6l">6</td>
+    <td port="p4l">4</td>
     <td>NA</td>
    </tr>
   </table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Strain Gauge + RF WhlSpd</td>
+   <td balign="left">RF Wheel Speed</td>
   </tr></table>
  </td></tr>
 </table>
@@ -1434,55 +1500,6 @@ graph {
     <td>SIG</td>
    </tr>
   </table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
-	Accelerometer [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Accelerometer</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Deutsch DT04_6P</td>
-   <td balign="left">female</td>
-   <td balign="left">6-pin</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
-   <tr>
-    <td port="p1l">1</td>
-    <td>GND</td>
-   </tr>
-   <tr>
-    <td port="p2l">2</td>
-    <td>PWR</td>
-   </tr>
-   <tr>
-    <td port="p3l">3</td>
-    <td>SIG</td>
-   </tr>
-   <tr>
-    <td port="p4l">4</td>
-    <td>SIG</td>
-   </tr>
-   <tr>
-    <td port="p5l">5</td>
-    <td>SIG</td>
-   </tr>
-   <tr>
-    <td port="p6l">6</td>
-    <td>NA</td>
-   </tr>
-  </table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Bosch Accelerometer AM 600</td>
-  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -1649,6 +1666,34 @@ graph {
    <tr>
     <td port="p4l">4</td>
     <td>NA</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	Transponder [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Transponder</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Deutsch DT04_2P</td>
+   <td balign="left">female</td>
+   <td balign="left">2-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
    </tr>
   </table>
  </td></tr>
@@ -2456,7 +2501,7 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#999999:#000000"]
 	ECUB:p3r:e -- "1P_LFWSP":w1:w
-	"1P_LFWSP":w1:e -- LFCenter:p5l:w
+	"1P_LFWSP":w1:e -- LF_WhlSpd:p3l:w
 	"1P_LFWSP" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2478,7 +2523,7 @@ graph {
     <td>
      1:GY
     </td>
-    <td>LFCenter:5:SIG</td>
+    <td>LF_WhlSpd:3:SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2497,6 +2542,9 @@ graph {
 	edge [color="#000000:#ff0000:#000000"]
 	PDMA:p8r:e -- "1P_LFCntrPWR":w1:w
 	"1P_LFCntrPWR":w1:e -- LFCenter:p2l:w
+	edge [color="#000000:#ff0000:#000000"]
+	PDMA:p8r:e -- "1P_LFCntrPWR":w1:w
+	"1P_LFCntrPWR":w1:e -- LF_WhlSpd:p2l:w
 	"1P_LFCntrPWR" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2537,6 +2585,9 @@ graph {
 	edge [color="#000000:#000000:#000000"]
 	CHAS_GND:p1r:e -- "1P_LFCntrGND":w1:w
 	"1P_LFCntrGND":w1:e -- LFCenter:p1l:w
+	edge [color="#000000:#000000:#000000"]
+	CHAS_GND:p1r:e -- "1P_LFCntrGND":w1:w
+	"1P_LFCntrGND":w1:e -- LF_WhlSpd:p1l:w
 	"1P_LFCntrGND" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2576,7 +2627,7 @@ graph {
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#999999:#000000"]
 	ECUD:p10r:e -- "1P_RFWSP":w1:w
-	"1P_RFWSP":w1:e -- RFCenter:p5l:w
+	"1P_RFWSP":w1:e -- RF_WhlSpd:p3l:w
 	"1P_RFWSP" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2598,7 +2649,7 @@ graph {
     <td>
      1:GY
     </td>
-    <td>RFCenter:5:SIG</td>
+    <td>RF_WhlSpd:3:SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2617,6 +2668,9 @@ graph {
 	edge [color="#000000:#ff0000:#000000"]
 	PDMA:p8r:e -- "1P_RFCntrPWR":w1:w
 	"1P_RFCntrPWR":w1:e -- RFCenter:p2l:w
+	edge [color="#000000:#ff0000:#000000"]
+	PDMA:p8r:e -- "1P_RFCntrPWR":w1:w
+	"1P_RFCntrPWR":w1:e -- RF_WhlSpd:p2l:w
 	"1P_RFCntrPWR" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2657,6 +2711,9 @@ graph {
 	edge [color="#000000:#000000:#000000"]
 	CHAS_GND:p1r:e -- "1P_RFCntrGND":w1:w
 	"1P_RFCntrGND":w1:e -- RFCenter:p1l:w
+	edge [color="#000000:#000000:#000000"]
+	CHAS_GND:p1r:e -- "1P_RFCntrGND":w1:w
+	"1P_RFCntrGND":w1:e -- RF_WhlSpd:p1l:w
 	"1P_RFCntrGND" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2711,6 +2768,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">76.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3000,122 +3058,6 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	DASH:p9r:e -- "5P_Accelmtr":w1:w
-	"5P_Accelmtr":w1:e -- Accelerometer:p1l:w
-	edge [color="#000000:#ff0000:#000000"]
-	DASH:p8r:e -- "5P_Accelmtr":w2:w
-	"5P_Accelmtr":w2:e -- Accelerometer:p2l:w
-	edge [color="#000000:#999999:#000000"]
-	DASH:p3r:e -- "5P_Accelmtr":w3:w
-	"5P_Accelmtr":w3:e -- Accelerometer:p3l:w
-	edge [color="#000000:#999999:#000000"]
-	DASH:p4r:e -- "5P_Accelmtr":w4:w
-	"5P_Accelmtr":w4:e -- Accelerometer:p4l:w
-	edge [color="#000000:#999999:#000000"]
-	DASH:p5r:e -- "5P_Accelmtr":w5:w
-	"5P_Accelmtr":w5:e -- Accelerometer:p5l:w
-	"5P_Accelmtr" [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5P_Accelmtr</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5x</td>
-   <td balign="left">22 AWG</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellborder="0">
-   <tr><td>&nbsp;</td></tr>
-   <tr>
-    <td>DASH:9:SEN-0V</td>
-    <td>
-     1:BK
-    </td>
-    <td>Accelerometer:1:GND</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>DASH:8:5V</td>
-    <td>
-     2:RD
-    </td>
-    <td>Accelerometer:2:PWR</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>DASH:3:AV1</td>
-    <td>
-     3:GY
-    </td>
-    <td>Accelerometer:3:SIG</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>DASH:4:AV2</td>
-    <td>
-     4:GY
-    </td>
-    <td>Accelerometer:4:SIG</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>DASH:5:AV3</td>
-    <td>
-     5:GY
-    </td>
-    <td>Accelerometer:5:SIG</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr><td>&nbsp;</td></tr>
-  </table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#000000:#000000"]
 	PDMA:p26r:e -- "2P_APPS1PG":w1:w
 	"2P_APPS1PG":w1:e -- APPS1:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
@@ -3175,7 +3117,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#999999:#000000"]
-	ECUB:p9r:e -- "1P_APPS1AV":w1:w
+	ECUB:p10r:e -- "1P_APPS1AV":w1:w
 	"1P_APPS1AV":w1:e -- APPS1:p3l:w
 	"1P_APPS1AV" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -3194,7 +3136,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUB:9:INJ_LS3</td>
+    <td>ECUB:10:AV9</td>
     <td>
      1:GY
     </td>
@@ -3274,7 +3216,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#999999:#000000"]
-	ECUB:p10r:e -- "1P_APPS2AV":w1:w
+	ECUB:p11r:e -- "1P_APPS2AV":w1:w
 	"1P_APPS2AV":w1:e -- APPS2:p3l:w
 	"1P_APPS2AV" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
@@ -3293,7 +3235,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUB:10:AV9</td>
+    <td>ECUB:11:AV10</td>
     <td>
      1:GY
     </td>
@@ -3595,6 +3537,66 @@ graph {
      2:RD
     </td>
     <td>Lap_Beacon:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	PDMA:p26r:e -- "2P_Transponder":w1:w
+	"2P_Transponder":w1:e -- Transponder:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	PDMA:p8r:e -- "2P_Transponder":w2:w
+	"2P_Transponder":w2:e -- Transponder:p2l:w
+	"2P_Transponder" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_Transponder</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">16 AWG</td>
+   <td balign="left">92.0 in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>PDMA:26:VBATT-</td>
+    <td>
+     1:BK
+    </td>
+    <td>Transponder:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>PDMA:8:OUT12</td>
+    <td>
+     2:RD
+    </td>
+    <td>Transponder:2:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">

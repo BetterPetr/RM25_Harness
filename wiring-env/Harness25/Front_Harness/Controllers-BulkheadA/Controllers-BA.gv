@@ -212,7 +212,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Bulkhead Connector (Driver Side)</td>
+   <td balign="left">Bulkhead Connector A (Driver Side)</td>
   </tr></table>
  </td></tr>
 </table>
@@ -2072,9 +2072,6 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#ffff00:#000000"]
-	ECUC:p25r:e -- "1P_TPS5V":w1:w
-	"1P_TPS5V":w1:e -- BULKHEAD_A:p28l:w
 	"1P_TPS5V" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2092,11 +2089,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>ECUC:25:AV5</td>
+    <td><!-- 1_in --></td>
     <td>
      1:YE
     </td>
-    <td>BULKHEAD_A:28:5V</td>
+    <td><!-- 1_out --></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2566,13 +2563,13 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff8000:#000000"]
-	ECUA:p11r:e -- "1P_ClchPos":w1:w
-	"1P_ClchPos":w1:e -- BULKHEAD_A:p35l:w
-	"1P_ClchPos" [label=<
+	ECUA:p11r:e -- "1P_ClchPosOut":w1:w
+	"1P_ClchPosOut":w1:e -- BULKHEAD_A:p35l:w
+	"1P_ClchPosOut" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">1P_ClchPos</td>
+   <td balign="left">1P_ClchPosOut</td>
   </tr></table>
  </td></tr>
  <tr><td>
