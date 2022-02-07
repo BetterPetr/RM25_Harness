@@ -1699,6 +1699,38 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	RBrake_Pressure [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">RBrake_Pressure</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Metri-Pack 150 3P</td>
+   <td balign="left">female</td>
+   <td balign="left">3-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>GND</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>PWR</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>SIG</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ff0000:#000000"]
 	PDMA:p1r:e -- "1P_ECUPWR13B":w1:w
 	"1P_ECUPWR13B":w1:e -- ECUB:p13l:w
@@ -2113,6 +2145,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">74.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2153,6 +2186,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">74.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2193,6 +2227,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">74.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2233,6 +2268,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">74.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2273,6 +2309,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2313,6 +2350,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2353,6 +2391,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2393,6 +2432,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2433,6 +2473,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2473,6 +2514,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2513,6 +2555,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2556,6 +2599,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2599,6 +2643,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2639,6 +2684,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2682,6 +2728,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2725,6 +2772,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2828,6 +2876,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2892,6 +2941,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3074,6 +3124,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">57.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3130,6 +3181,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">57.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3173,6 +3225,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">57.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3229,6 +3282,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">57.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3347,6 +3401,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3387,6 +3442,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3427,6 +3483,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">77.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -3438,6 +3495,129 @@ graph {
      1:GY
     </td>
     <td>FBrake_Pressure:3:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	ECUA:p27r:e -- "1P_RBrkPGND":w1:w
+	"1P_RBrkPGND":w1:e -- RBrake_Pressure:p1l:w
+	"1P_RBrkPGND" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_RBrkPGND</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+   <td balign="left">56.0 in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUA:27:SEN_0V_C2</td>
+    <td>
+     1:BK
+    </td>
+    <td>RBrake_Pressure:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#ff0000:#000000"]
+	ECUA:p10r:e -- "1P_RBrkPPWR":w1:w
+	"1P_RBrkPPWR":w1:e -- RBrake_Pressure:p2l:w
+	"1P_RBrkPPWR" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_RBrkPPWR</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+   <td balign="left">56.0 in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUA:10:SEN_5V0_C1</td>
+    <td>
+     1:RD
+    </td>
+    <td>RBrake_Pressure:2:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#999999:#000000"]
+	ECUB:p18r:e -- "1P_RBrkPSIG":w1:w
+	"1P_RBrkPSIG":w1:e -- RBrake_Pressure:p3l:w
+	"1P_RBrkPSIG" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_RBrkPSIG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+   <td balign="left">56.0 in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUB:18:AV14</td>
+    <td>
+     1:GY
+    </td>
+    <td>RBrake_Pressure:3:SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">

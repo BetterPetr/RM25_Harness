@@ -1,9 +1,9 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, 1 x 16 AWG	0	m	1P_RFAN
-2	Cable, 2 x 16 AWG	0	m	2P_ClchPWR, 2P_SHFM
-3	Cable, 2 x 22 AWG	0	m	2PBrkL, 2PInj1, 2PInj2, 2PInj3, 2PInj4, 2P_CAMSync, 2P_CrankTrig, 2P_Tpot, 2P_WaterOut
-4	Cable, 3 x 22 AWG	0	m	3P_ClchPos, 3P_ET, 3P_KNK, 3P_LRShk, 3P_LRWhlSpd, 3P_RRShk, 3P_RRWhlSpd, 3P_SHFT_POSM, 3P_TPS
-5	Cable, 4 x 22 AWG	0	m	4P_FPT, 4P_IPT, 4P_LRCntr, 4P_OPT, 4P_RRCntr, 4P_WIPT
+1	Cable, 1 x 16 AWG	34.0	in	1P_RFAN
+2	Cable, 2 x 16 AWG	60.0	in	2P_ClchPWR, 2P_SHFM
+3	Cable, 2 x 22 AWG	252.0	in	2PBrkL, 2PInj1, 2PInj2, 2PInj3, 2PInj4, 2P_CAMSync, 2P_CrankTrig, 2P_Tpot, 2P_WaterOut
+4	Cable, 3 x 22 AWG	345.0	in	3P_ClchPos, 3P_ET, 3P_KNK, 3P_LRShk, 3P_LRWhlSpd, 3P_RRShk, 3P_RRWhlSpd, 3P_SHFT_POSM, 3P_TPS
+5	Cable, 4 x 22 AWG	200.0	in	4P_FPT, 4P_IPT, 4P_LRCntr, 4P_OPT, 4P_RRCntr, 4P_WIPT
 6	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD_A
 7	Connector, Binder 4P, female, 4 pins	6		LRCenter, LRShock, LR_WhlSpd, RRCenter, RRShock, RR_WhlSpd
 8	Connector, Bosch 2P, female, 2 pins	4		Inj1, Inj2, Inj3, Inj4

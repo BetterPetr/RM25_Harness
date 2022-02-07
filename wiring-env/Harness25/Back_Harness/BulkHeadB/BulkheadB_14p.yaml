@@ -39,20 +39,27 @@ cables:
     colors: [RD, VT]
     wirecount: 2
     gauge: 16 AWG
+    length: 14 in
   2PC2:
     <<: *template_cbl2
+    length: 17 in
   2PC3:
     <<: *template_cbl2
+    length: 20 in
   2PC4:
     <<: *template_cbl2
+    length: 24 in
   2P_FuelPmp:
     colors: [BK, RD]
     wirecount: 2
     gauge: 16 AWG
+    length: 0 in
+    notes: length TBD
   2P_WaterPmp:
     colors: [BK, RD]
     wirecount: 2
     gauge: 16 AWG
+    length: 22 in
 
 connections:
 -

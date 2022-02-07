@@ -117,7 +117,7 @@ connectors:
     <<: *Bndr4P_f
     pinlabels: [GND, PWR, SIG, NA]
 # Front Brake Pressure
-  FBrake_Pressure:
+  FBrake_Pressure: &brakeP
     <<: *MP1503P_f
     pinlabels: [GND, PWR, SIG]
 # Lap Beacon
@@ -128,6 +128,9 @@ connectors:
   Transponder:
     <<: *DT2P_f
     pinlabels: [GND, PWR]
+# Rear Brake Pressure
+  RBrake_Pressure:
+    <<: *brakeP
 
 
 cables:
@@ -161,58 +164,74 @@ cables:
     wirecount: 1
     gauge: 22 AWG
     colors: [GY]
+    length: 74 in
   DASH_CANHi1:
     <<: *dash_can
+    length: 74 in
 # DASH PWR/GND                                       ************************************check whether this should be 16 or 22AWG
   1P_DashPWR: &dash_pwr
     wirecount: 1
     gauge: 22 AWG
     colors: [RD]
+    length: 74 in
   1P_DashGND:
     <<: *dash_pwr
     colors: [BK]
+    length: 74 in
 # LFShock
   1P_LFShkSIG: &temp_shk
     wirecount: 1
     gauge: 22 AWG
     colors: [GY]
+    length: 77 in
   1P_LFShkPWR:
     <<: *temp_shk
     colors: [RD]
+    length: 77 in
   1P_LFShkGND:
     <<: *temp_shk
     colors: [BK]
+    length: 77 in
 # RFShock
   1P_RFShkSIG:
     <<: *temp_shk
+    length: 77 in
   1P_RFShkPWR:
     <<: *temp_shk
     colors: [RD]
+    length: 77 in
   1P_RFShkGND:
     <<: *temp_shk
     colors: [BK]
+    length: 77 in
 # LF Wheel Speed
   1P_LFWSP: &temp_whlspd
     wirecount: 1
     gauge: 22 AWG
     colors: [GY]
+    length: 77 in
 # LF Wheel Center
   1P_LFCntrPWR: &temp_whlcntrpwr
     wirecount: 1
     gauge: 22 AWG
     colors: [RD]
+    length: 77 in
   1P_LFCntrGND:
     <<: *temp_whlcntrpwr
     colors: [BK]
+    length: 77 in
 # RF Wheel Speed
   1P_RFWSP:
     <<: *temp_whlspd
+    length: 77 in
 # RF Wheel Center
   1P_RFCntrPWR:
     <<: *temp_whlcntrpwr
+    length: 77 in
   1P_RFCntrGND:
     <<: *temp_whlcntrpwr
     colors: [BK]
+    length: 77 in
 # Emergency Stop (signal color may be wrong)
   2P_EStop:
     wirecount: 2
@@ -224,10 +243,12 @@ cables:
     wirecount: 2
     gauge: 22 AWG
     colors: [BN, WH]
+    length: 77 in
     notes: CAN BUS
 # RF Wheel Center CAN (strain gauge)
   2P_RFCAN:
     <<: *WhlCntr_CAN
+    length: 77 in
 # BOTS
   2P_BOTS:
     wirecount: 2
@@ -242,14 +263,18 @@ cables:
   2P_APPS1PG: &apps_pg
     <<: *template_cbl2
     colors: [BK, RD]
+    length: 57 in
   1P_APPS1AV: &apps_av
     <<: *temp_cbl1
     colors: [GY]
+    length: 57 in
 # APPS 2
   2P_APPS2PG:
     <<: *apps_pg
+    length: 57 in
   1P_APPS2AV:
     <<: *apps_av
+    length: 57 in
 # GPS
   3P_GPS:
     <<: *temp_cbl3
@@ -258,12 +283,28 @@ cables:
   1P_FBrkPGND:
     <<: *temp_cbl1
     colors: [BK]
+    length: 77 in
   1P_FBrkPPWR:
     <<: *temp_cbl1
     colors: [RD]
+    length: 77 in
   1P_FBrkPSIG:
     <<: *temp_cbl1
     colors: [GY]
+    length: 77 in
+# Rear Brake Pressure
+  1P_RBrkPGND:
+    <<: *temp_cbl1
+    colors: [BK]
+    length: 56 in
+  1P_RBrkPPWR:
+    <<: *temp_cbl1
+    colors: [RD]
+    length: 56 in
+  1P_RBrkPSIG:
+    <<: *temp_cbl1
+    colors: [GY]
+    length: 56 in
 # Lap Beacon
   1P_BeaconSIG:
     <<: *temp_cbl1
@@ -325,7 +366,6 @@ connections:
 
 # ECU to PDM CAN
 
-# Starter Relay
 
 # E-Stop (emergency) Button
 -
@@ -506,12 +546,25 @@ connections:
 # Front Brake Temperature
 
 # Rear Brake Pressure
-
+-
+  - ECUA: [27]
+  - 1P_RBrkPGND: [1]
+  - RBrake_Pressure: [1]
+-
+  - ECUA: [10]
+  - 1P_RBrkPPWR: [1]
+  - RBrake_Pressure: [2]
+-
+  - ECUB: [18]
+  - 1P_RBrkPSIG: [1]
+  - RBrake_Pressure: [3]
 # Lambda Module
 
-#Exhaust Lambda Sensor, CAN Module with this too
+# Exhaust Lambda Sensor, CAN Module with this too
+# EGT Module
 
-#Wireless Comms
+
+# Wireless Comms
 
 # BSPD
 

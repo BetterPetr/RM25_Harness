@@ -1,20 +1,21 @@
 Id	Description	Qty	Unit	Designators
 1	Cable, 1 x 16 AWG	0	m	1P_ECUGND10C, 1P_ECUGND11C, 1P_ECUGND24A, 1P_ECUGND25A, 1P_ECUGND32A, 1P_ECUPWR13B, 1P_ECUPWR26C, 1P_ECUPWRB19, 1P_PDMGND18B, 1P_PDMGND26A
-2	Cable, 1 x 22 AWG	0	m	1P_APPS1AV, 1P_APPS2AV, 1P_BeaconSIG, 1P_DashGND, 1P_DashPWR, 1P_FBrkPGND, 1P_FBrkPPWR, 1P_FBrkPSIG, 1P_LFCntrGND, 1P_LFCntrPWR, 1P_LFShkGND, 1P_LFShkPWR, 1P_LFShkSIG, 1P_LFWSP, 1P_RFCntrGND, 1P_RFCntrPWR, 1P_RFShkGND, 1P_RFShkPWR, 1P_RFShkSIG, 1P_RFWSP, DASH_CANHi1, DASH_CANLo1
-3	Cable, 2 x 16 AWG	92.0	in	2P_Transponder
-4	Cable, 2 x 22 AWG	76.0	in	2P_EStop
-5	Cable, 2 x 22 AWG	0	m	2P_APPS1PG, 2P_APPS2PG, 2P_BOTS, 2P_BeaconPG, 2P_CrankBut, 2P_LFCAN, 2P_RFCAN
-6	Cable, 3 x 22 AWG	0	m	3P_GPS
-7	Connector	1		NOTES
-8	Connector, Binder 4P, female, 4 pins	8		GPS, LFCenter, LFShock, LF_WhlSpd, Lap_Beacon, RFCenter, RFShock, RF_WhlSpd
-9	Connector, Chassis Ground, 1 pins	1		CHAS_GND
-10	Connector, Deutsch DT04_2P, female, 2 pins	4		BOTS, Crank_Button, EStop, Transponder
-11	Connector, Metri-Pack 150 3P, female, 3 pins	1		FBrake_Pressure
-12	Connector, MoTeC DASH 34P, female, 34 pins	1		DASH
-13	Connector, MoTeC ECUA 34P, female, 34 pins	1		ECUA
-14	Connector, MoTeC ECUB 26P, female, 26 pins	1		ECUB
-15	Connector, MoTeC ECUC 34P, female, 34 pins	1		ECUC
-16	Connector, MoTeC ECUD 26P, female, 26 pins	1		ECUD
-17	Connector, MoTeC PDMA 34P, female, 34 pins	1		PDMA
-18	Connector, MoTeC PDMB, female, 26 pins	1		PDMB
-19	Connector, TE AMP Superseal 3P, female, 3 pins	2		APPS1, APPS2
+2	Cable, 1 x 22 AWG	1733.0	in	1P_APPS1AV, 1P_APPS2AV, 1P_DashGND, 1P_DashPWR, 1P_FBrkPGND, 1P_FBrkPPWR, 1P_FBrkPSIG, 1P_LFCntrGND, 1P_LFCntrPWR, 1P_LFShkGND, 1P_LFShkPWR, 1P_LFShkSIG, 1P_LFWSP, 1P_RBrkPGND, 1P_RBrkPPWR, 1P_RBrkPSIG, 1P_RFCntrGND, 1P_RFCntrPWR, 1P_RFShkGND, 1P_RFShkPWR, 1P_RFShkSIG, 1P_RFWSP, DASH_CANHi1, DASH_CANLo1
+3	Cable, 1 x 22 AWG	0	m	1P_BeaconSIG
+4	Cable, 2 x 16 AWG	92.0	in	2P_Transponder
+5	Cable, 2 x 22 AWG	344.0	in	2P_APPS1PG, 2P_APPS2PG, 2P_EStop, 2P_LFCAN, 2P_RFCAN
+6	Cable, 2 x 22 AWG	0	m	2P_BOTS, 2P_BeaconPG, 2P_CrankBut
+7	Cable, 3 x 22 AWG	0	m	3P_GPS
+8	Connector	1		NOTES
+9	Connector, Binder 4P, female, 4 pins	8		GPS, LFCenter, LFShock, LF_WhlSpd, Lap_Beacon, RFCenter, RFShock, RF_WhlSpd
+10	Connector, Chassis Ground, 1 pins	1		CHAS_GND
+11	Connector, Deutsch DT04_2P, female, 2 pins	4		BOTS, Crank_Button, EStop, Transponder
+12	Connector, Metri-Pack 150 3P, female, 3 pins	2		FBrake_Pressure, RBrake_Pressure
+13	Connector, MoTeC DASH 34P, female, 34 pins	1		DASH
+14	Connector, MoTeC ECUA 34P, female, 34 pins	1		ECUA
+15	Connector, MoTeC ECUB 26P, female, 26 pins	1		ECUB
+16	Connector, MoTeC ECUC 34P, female, 34 pins	1		ECUC
+17	Connector, MoTeC ECUD 26P, female, 26 pins	1		ECUD
+18	Connector, MoTeC PDMA 34P, female, 34 pins	1		PDMA
+19	Connector, MoTeC PDMB, female, 26 pins	1		PDMB
+20	Connector, TE AMP Superseal 3P, female, 3 pins	2		APPS1, APPS2

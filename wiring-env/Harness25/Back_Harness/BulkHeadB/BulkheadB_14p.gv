@@ -266,6 +266,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">16 AWG</td>
+   <td balign="left">14.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -325,6 +326,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">16 AWG</td>
+   <td balign="left">17.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -384,6 +386,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">16 AWG</td>
+   <td balign="left">20.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -443,6 +446,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">16 AWG</td>
+   <td balign="left">24.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -542,6 +546,11 @@ graph {
    <tr><td>&nbsp;</td></tr>
   </table>
  </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">length TBD</td>
+  </tr></table>
+ </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
@@ -561,6 +570,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">16 AWG</td>
+   <td balign="left">22.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
