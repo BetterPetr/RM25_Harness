@@ -257,13 +257,13 @@
 <text text-anchor="start" x="498.5" y="-887.8" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="428" y="-868.8" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD_B:2:GND</text>
 <text text-anchor="start" x="578.5" y="-868.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:BK &#160;&#160;&#160;</text>
-<text text-anchor="start" x="649.5" y="-868.8" font-family="arial" font-size="14.00" fill="#000000">Fuel_Pump:1:GND</text>
+<text text-anchor="start" x="649" y="-868.8" font-family="arial" font-size="14.00" fill="#000000">Fuel_Pump:1:PWR</text>
 <polygon fill="#000000" stroke="transparent" points="425,-861 425,-863 776,-863 776,-861 425,-861"/>
 <polygon fill="#000000" stroke="transparent" points="425,-859 425,-861 776,-861 776,-859 425,-859"/>
 <polygon fill="#000000" stroke="transparent" points="425,-857 425,-859 776,-859 776,-857 425,-857"/>
 <text text-anchor="start" x="427" y="-843.8" font-family="arial" font-size="14.00" fill="#000000">BULKHEAD_B:1:PWR</text>
 <text text-anchor="start" x="578" y="-843.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;2:RD &#160;&#160;&#160;</text>
-<text text-anchor="start" x="649" y="-843.8" font-family="arial" font-size="14.00" fill="#000000">Fuel_Pump:2:PWR</text>
+<text text-anchor="start" x="649.5" y="-843.8" font-family="arial" font-size="14.00" fill="#000000">Fuel_Pump:2:GND</text>
 <polygon fill="#000000" stroke="transparent" points="425,-836 425,-838 776,-838 776,-836 425,-836"/>
 <polygon fill="#ff0000" stroke="transparent" points="425,-834 425,-836 776,-836 776,-834 425,-834"/>
 <polygon fill="#000000" stroke="transparent" points="425,-832 425,-834 776,-834 776,-832 425,-832"/>
@@ -417,11 +417,11 @@
 <polygon fill="none" stroke="#000000" points="924,-848 924,-871 1023,-871 1023,-848 924,-848"/>
 <text text-anchor="start" x="969" y="-855.8" font-family="arial" font-size="14.00" fill="#000000">1</text>
 <polygon fill="none" stroke="#000000" points="1023,-848 1023,-871 1146,-871 1146,-848 1023,-848"/>
-<text text-anchor="start" x="1068" y="-855.8" font-family="arial" font-size="14.00" fill="#000000">GND</text>
+<text text-anchor="start" x="1067.5" y="-855.8" font-family="arial" font-size="14.00" fill="#000000">PWR</text>
 <polygon fill="none" stroke="#000000" points="924,-825 924,-848 1023,-848 1023,-825 924,-825"/>
 <text text-anchor="start" x="969" y="-832.8" font-family="arial" font-size="14.00" fill="#000000">2</text>
 <polygon fill="none" stroke="#000000" points="1023,-825 1023,-848 1146,-848 1146,-825 1023,-825"/>
-<text text-anchor="start" x="1067.5" y="-832.8" font-family="arial" font-size="14.00" fill="#000000">PWR</text>
+<text text-anchor="start" x="1068" y="-832.8" font-family="arial" font-size="14.00" fill="#000000">GND</text>
 </g>
 <!-- Water_Pump -->
 <g id="node7" class="node">

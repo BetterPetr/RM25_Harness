@@ -4,6 +4,87 @@ graph {
 	graph [bgcolor="#FFFFFF" fontname=arial nodesep=0.33 rankdir=LR ranksep=2]
 	node [fillcolor="#FFFFFF" fontname=arial height=0 margin=0 shape=none style=filled width=0]
 	edge [fontname=arial style=bold]
+	NOTES_0Vs [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">NOTES_0Vs</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td sides="tbl">GN</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#00FF00" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ECU Common 0Vs= A26,27,34; D15,16</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	NOTES_ECU_PWRs [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">NOTES_ECU_PWRs</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td sides="tbl">GN</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#00FF00" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">ECU Common PWRs= A10,18; C2</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	NOTES_PDM_PWRs [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">NOTES_PDM_PWRs</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td sides="tbl">GN</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#00FF00" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">PDM Common PWRs= A5,6,8,15; B3,5</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	BULKHEAD_A [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2106,6 +2187,11 @@ graph {
    </tr>
    <tr><td>&nbsp;</td></tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Needs to be adjusted to Noah's design</td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]

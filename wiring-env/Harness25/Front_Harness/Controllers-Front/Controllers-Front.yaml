@@ -254,6 +254,7 @@ cables:
     wirecount: 2
     gauge: 22 AWG
     colors: [BK, GY]
+    length: 89 in
 # Crank_Button
   2P_CrankBut:
     wirecount: 2
@@ -263,18 +264,18 @@ cables:
   2P_APPS1PG: &apps_pg
     <<: *template_cbl2
     colors: [BK, RD]
-    length: 57 in
+    length: 87 in
   1P_APPS1AV: &apps_av
     <<: *temp_cbl1
     colors: [GY]
-    length: 57 in
+    length: 87 in
 # APPS 2
   2P_APPS2PG:
     <<: *apps_pg
-    length: 57 in
+    length: 87 in
   1P_APPS2AV:
     <<: *apps_av
-    length: 57 in
+    length: 87 in
 # GPS
   3P_GPS:
     <<: *temp_cbl3

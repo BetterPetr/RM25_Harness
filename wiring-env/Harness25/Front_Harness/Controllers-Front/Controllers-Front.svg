@@ -1029,7 +1029,7 @@
 <polygon fill="none" stroke="#000000" points="2739,-650 2739,-673 2841,-673 2841,-650 2739,-650"/>
 <text text-anchor="start" x="2763" y="-657.8" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
 <polygon fill="none" stroke="#000000" points="2841,-650 2841,-673 2933,-673 2933,-650 2841,-650"/>
-<text text-anchor="start" x="2865" y="-657.8" font-family="arial" font-size="14.00" fill="#000000">57.0 in</text>
+<text text-anchor="start" x="2865" y="-657.8" font-family="arial" font-size="14.00" fill="#000000">87.0 in</text>
 <text text-anchor="start" x="2720" y="-636.8" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="2676" y="-617.8" font-family="arial" font-size="14.00" fill="#000000">ECUB:10:AV9</text>
 <text text-anchor="start" x="2772" y="-617.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:GY &#160;&#160;&#160;</text>
@@ -1057,7 +1057,7 @@
 <polygon fill="none" stroke="#000000" points="2737,-1175 2737,-1198 2842,-1198 2842,-1175 2737,-1175"/>
 <text text-anchor="start" x="2762.5" y="-1182.8" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
 <polygon fill="none" stroke="#000000" points="2842,-1175 2842,-1198 2937,-1198 2937,-1175 2842,-1175"/>
-<text text-anchor="start" x="2867.5" y="-1182.8" font-family="arial" font-size="14.00" fill="#000000">57.0 in</text>
+<text text-anchor="start" x="2867.5" y="-1182.8" font-family="arial" font-size="14.00" fill="#000000">87.0 in</text>
 <text text-anchor="start" x="2720" y="-1161.8" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="2672" y="-1142.8" font-family="arial" font-size="14.00" fill="#000000">ECUB:11:AV10</text>
 <text text-anchor="start" x="2776" y="-1142.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:GY &#160;&#160;&#160;</text>
@@ -2004,10 +2004,12 @@
 <polygon fill="#ffffff" stroke="#000000" points="1895,-520 1611,-520 1611,-386 1895,-386 1895,-520"/>
 <polygon fill="none" stroke="#000000" points="1611,-497 1611,-520 1895,-520 1895,-497 1611,-497"/>
 <text text-anchor="start" x="1719.5" y="-504.8" font-family="arial" font-size="14.00" fill="#000000">2P_BOTS</text>
-<polygon fill="none" stroke="#000000" points="1611,-474 1611,-497 1734,-497 1734,-474 1611,-474"/>
-<text text-anchor="start" x="1664.5" y="-481.8" font-family="arial" font-size="14.00" fill="#000000">2x</text>
-<polygon fill="none" stroke="#000000" points="1734,-474 1734,-497 1895,-497 1895,-474 1734,-474"/>
-<text text-anchor="start" x="1787.5" y="-481.8" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
+<polygon fill="none" stroke="#000000" points="1611,-474 1611,-497 1684,-497 1684,-474 1611,-474"/>
+<text text-anchor="start" x="1639.5" y="-481.8" font-family="arial" font-size="14.00" fill="#000000">2x</text>
+<polygon fill="none" stroke="#000000" points="1684,-474 1684,-497 1795,-497 1795,-474 1684,-474"/>
+<text text-anchor="start" x="1712.5" y="-481.8" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
+<polygon fill="none" stroke="#000000" points="1795,-474 1795,-497 1895,-497 1895,-474 1795,-474"/>
+<text text-anchor="start" x="1823" y="-481.8" font-family="arial" font-size="14.00" fill="#000000">89.0 in</text>
 <text text-anchor="start" x="1669.5" y="-460.8" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="1613" y="-441.8" font-family="arial" font-size="14.00" fill="#000000">PDMA:26:VBATT&#45;</text>
 <text text-anchor="start" x="1734.5" y="-441.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:BK &#160;&#160;&#160;</text>
@@ -2087,7 +2089,7 @@
 <polygon fill="none" stroke="#000000" points="2193,-591 2193,-614 2307,-614 2307,-591 2193,-591"/>
 <text text-anchor="start" x="2223" y="-598.8" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
 <polygon fill="none" stroke="#000000" points="2307,-591 2307,-614 2410,-614 2410,-591 2307,-591"/>
-<text text-anchor="start" x="2336.5" y="-598.8" font-family="arial" font-size="14.00" fill="#000000">57.0 in</text>
+<text text-anchor="start" x="2336.5" y="-598.8" font-family="arial" font-size="14.00" fill="#000000">87.0 in</text>
 <text text-anchor="start" x="2175.5" y="-577.8" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="2119" y="-558.8" font-family="arial" font-size="14.00" fill="#000000">PDMA:26:VBATT&#45;</text>
 <text text-anchor="start" x="2240.5" y="-558.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:BK &#160;&#160;&#160;</text>
@@ -2128,7 +2130,7 @@
 <polygon fill="none" stroke="#000000" points="2733,-809 2733,-832 2847,-832 2847,-809 2733,-809"/>
 <text text-anchor="start" x="2763" y="-816.8" font-family="arial" font-size="14.00" fill="#000000">22 AWG</text>
 <polygon fill="none" stroke="#000000" points="2847,-809 2847,-832 2950,-832 2950,-809 2847,-809"/>
-<text text-anchor="start" x="2876.5" y="-816.8" font-family="arial" font-size="14.00" fill="#000000">57.0 in</text>
+<text text-anchor="start" x="2876.5" y="-816.8" font-family="arial" font-size="14.00" fill="#000000">87.0 in</text>
 <text text-anchor="start" x="2715.5" y="-795.8" font-family="arial" font-size="14.00" fill="#000000"> </text>
 <text text-anchor="start" x="2659" y="-776.8" font-family="arial" font-size="14.00" fill="#000000">PDMA:26:VBATT&#45;</text>
 <text text-anchor="start" x="2780.5" y="-776.8" font-family="arial" font-size="14.00" fill="#000000"> &#160;&#160;&#160;&#160;1:BK &#160;&#160;&#160;</text>

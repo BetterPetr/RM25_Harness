@@ -211,11 +211,11 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
     <td port="p1l">1</td>
-    <td>GND</td>
+    <td>PWR</td>
    </tr>
    <tr>
     <td port="p2l">2</td>
-    <td>PWR</td>
+    <td>GND</td>
    </tr>
   </table>
  </td></tr>
@@ -516,7 +516,7 @@ graph {
     <td>
      1:BK
     </td>
-    <td>Fuel_Pump:1:GND</td>
+    <td>Fuel_Pump:1:PWR</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -532,7 +532,7 @@ graph {
     <td>
      2:RD
     </td>
-    <td>Fuel_Pump:2:PWR</td>
+    <td>Fuel_Pump:2:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">

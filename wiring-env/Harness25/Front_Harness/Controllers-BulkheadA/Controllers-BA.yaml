@@ -8,6 +8,18 @@ templates:
     gauge: 22 AWG
 
 connectors:
+  NOTES_0Vs:
+    pincolors: [GN]
+    show_pincount: false
+    notes: ECU Common 0Vs= A26,27,34; D15,16
+  NOTES_ECU_PWRs:
+    pincolors: [GN]
+    show_pincount: false
+    notes: ECU Common PWRs= A10,18; C2
+  NOTES_PDM_PWRs:
+    pincolors: [GN]
+    show_pincount: false
+    notes: PDM Common PWRs= A5,6,8,15; B3,5
   BULKHEAD_A:
     pinlabels: [HB, AV, AT, PWR, GND, HB, AV, AT, AV, AT, AV, AT, SIG, SIG, SIG, SIG, PWR, SIG, SIG, AT, SIG, AV, AV, PWR, UDIG, GND, 12V, 5V, GND, GND, UDIG, GND, PWR, SIG, SIG, SIG, SIG, SIG, PWR, GND, CANHi, CANLo, SIG, 0VECUGND, SIG, SIG, 5VECUPWR]
     type: AMPHENOL HDP 47P

@@ -28,7 +28,7 @@ connectors:
   
   Fuel_Pump:
     <<: *DT2P_f
-    pinlabels: [GND, PWR]
+    pinlabels: [PWR, GND]
   
   Water_Pump:
     <<: *DT2P_f
