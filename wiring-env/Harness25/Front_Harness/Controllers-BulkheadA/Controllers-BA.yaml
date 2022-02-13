@@ -224,7 +224,7 @@ connections:
   - PDMA: [13]
   - 1P_InjPWR: [1]
   - BULKHEAD_A: [17]
-#INJECTORS Signals  ********************* To Bosch IGN Controller --> BA
+#INJECTORS Signals
 -
   - ECUB: [8]
   - 1PInj1: [1]

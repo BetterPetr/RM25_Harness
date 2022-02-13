@@ -62,9 +62,6 @@ cables:
   2P_Sens1Cmn_GP:
     <<: *template_cbl2
     colors: [BK, RD]
-  1P_RBrkP:
-    <<: *temp_cbl1
-    colors: [GY]
 # Make sure that AV's are supposed to be yellow
   1P_CrnkCsPSig:
     <<: *temp_cbl1
@@ -104,11 +101,6 @@ connections:
   - ECUD: [26, 25, 24, 23]
   - 4P_ECUComms: [1-4]
   - BULKHEAD_C: [11-14]
-# Rear Brake Pressure
--
-  - ECUB: [18]
-  - 1P_RBrkP: [1]
-  - BULKHEAD_C: [15]
 # Oil Cooler Fan
 # GND, PWR, SIG
 

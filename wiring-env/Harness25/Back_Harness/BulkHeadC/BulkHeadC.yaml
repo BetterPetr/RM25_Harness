@@ -48,9 +48,6 @@ connectors:
     pinlabels: [RX-, RX+, TX-, TX+]
   Comms_ECU:
     <<: *Comms
-  RBreakPressure:
-    <<: *MP1503P_f
-    pinlabels: [GND, PWR, SIG]
   CrankCase_Pressure:
     <<: *HndaCrnkCsP_f
     pinlabels: [GND, PWR, SIG]
@@ -71,29 +68,35 @@ cables:
   4P_DashComms: 
     <<: *temp_cbl4
     colors: [WH, WH, WH, WH]
+    length: 40 in
   4P_ECUComms:
     <<: *temp_cbl4
-  3P_RBrkP:
-    <<: *temp_cbl3
-    colors: [BK, RD, GY]
+    length: 40 in
+
   2P_CrnkCsP_PWR: 
     <<: *template_cbl2
     colors: [BK, RD]
+    length: 35 in
   1P_CrnkCsP_SIG:
     <<: *temp_cbl1
     colors: [YE]
+    length: 35 in
   2P_ShftDrmPos_PWR:
     <<: *template_cbl2
     colors: [BK, RD]
+    length: 32 in
   1P_ShftDrmPos_SIG:
     <<: *temp_cbl1
     colors: [YE]
+    length: 32 in
   3P_ShftLevPos:
     <<: *temp_cbl3
     colors: [BK, RD, YE]
+    length: 24 in
   5P_Accelmtr:
     <<: *temp_cbl5
     colors: [BK, RD, GY, GY, GY]
+    length: 22 in
 
 
 connections:
@@ -107,11 +110,6 @@ connections:
   - BULKHEAD_C: [11-14]
   - 4P_ECUComms: [1-4]
   - Comms_ECU: [1-4]
-# Rear Break Pressure
--
-  - BULKHEAD_C: [15-17]
-  - 3P_RBrkP: [1-3]
-  - RBreakPressure: [1-3]
 
 # Crankcase Pressure
 -

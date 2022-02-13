@@ -289,38 +289,6 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	RBreakPressure [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">RBreakPressure</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Metri-Pack 150 3P</td>
-   <td balign="left">female</td>
-   <td balign="left">3-pin</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
-   <tr>
-    <td port="p1l">1</td>
-    <td>GND</td>
-   </tr>
-   <tr>
-    <td port="p2l">2</td>
-    <td>PWR</td>
-   </tr>
-   <tr>
-    <td port="p3l">3</td>
-    <td>SIG</td>
-   </tr>
-  </table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
 	CrankCase_Pressure [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -502,6 +470,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">40.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -599,6 +568,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">40.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -674,84 +644,6 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	BULKHEAD_C:p15r:e -- "3P_RBrkP":w1:w
-	"3P_RBrkP":w1:e -- RBreakPressure:p1l:w
-	edge [color="#000000:#ff0000:#000000"]
-	BULKHEAD_C:p16r:e -- "3P_RBrkP":w2:w
-	"3P_RBrkP":w2:e -- RBreakPressure:p2l:w
-	edge [color="#000000:#999999:#000000"]
-	BULKHEAD_C:p17r:e -- "3P_RBrkP":w3:w
-	"3P_RBrkP":w3:e -- RBreakPressure:p3l:w
-	"3P_RBrkP" [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">3P_RBrkP</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">3x</td>
-   <td balign="left">22 AWG</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellborder="0">
-   <tr><td>&nbsp;</td></tr>
-   <tr>
-    <td>BULKHEAD_C:15:SIG</td>
-    <td>
-     1:BK
-    </td>
-    <td>RBreakPressure:1:GND</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>BULKHEAD_C:16:GND</td>
-    <td>
-     2:RD
-    </td>
-    <td>RBreakPressure:2:PWR</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>BULKHEAD_C:17:PWR</td>
-    <td>
-     3:GY
-    </td>
-    <td>RBreakPressure:3:SIG</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr><td>&nbsp;</td></tr>
-  </table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#000000:#000000"]
 	BULKHEAD_C:p16r:e -- "2P_CrnkCsP_PWR":w1:w
 	"2P_CrnkCsP_PWR":w1:e -- CrankCase_Pressure:p1l:w
 	edge [color="#000000:#ff0000:#000000"]
@@ -768,6 +660,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">35.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -824,6 +717,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">35.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -867,6 +761,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">2x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">32.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -923,6 +818,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">1x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">32.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -969,6 +865,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">3x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">24.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1053,6 +950,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">5x</td>
    <td balign="left">22 AWG</td>
+   <td balign="left">22.0 in</td>
   </tr></table>
  </td></tr>
  <tr><td>

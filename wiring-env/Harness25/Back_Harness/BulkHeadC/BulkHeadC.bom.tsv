@@ -1,11 +1,10 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, 1 x 22 AWG	0	m	1P_CrnkCsP_SIG, 1P_ShftDrmPos_SIG
-2	Cable, 2 x 22 AWG	0	m	2P_CrnkCsP_PWR, 2P_ShftDrmPos_PWR
-3	Cable, 3 x 22 AWG	0	m	3P_RBrkP, 3P_ShftLevPos
-4	Cable, 4 x 22 AWG	0	m	4P_DashComms, 4P_ECUComms
-5	Cable, 5 x 22 AWG	0	m	5P_Accelmtr
+1	Cable, 1 x 22 AWG	67.0	in	1P_CrnkCsP_SIG, 1P_ShftDrmPos_SIG
+2	Cable, 2 x 22 AWG	67.0	in	2P_CrnkCsP_PWR, 2P_ShftDrmPos_PWR
+3	Cable, 3 x 22 AWG	24.0	in	3P_ShftLevPos
+4	Cable, 4 x 22 AWG	80.0	in	4P_DashComms, 4P_ECUComms
+5	Cable, 5 x 22 AWG	22.0	in	5P_Accelmtr
 6	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD_C
 7	Connector, Binder 4P, female, 4 pins	4		Comms_Dash, Comms_ECU, ShiftLeverPos, ShiftdrumPos
 8	Connector, Deutsch DT04_6P, female, 6 pins	1		Accelmtr
 9	Connector, Honda CE3001 Connector 3P, female, 3 pins	1		CrankCase_Pressure
-10	Connector, Metri-Pack 150 3P, female, 3 pins	1		RBreakPressure

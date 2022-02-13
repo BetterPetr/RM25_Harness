@@ -131,6 +131,16 @@ connectors:
 # Rear Brake Pressure
   RBrake_Pressure:
     <<: *brakeP
+# Front Brake Temperature
+  FL_BrkTemp:
+    <<: *Bndr4P_f
+    pinlabels: [GND, PWR, SIG, NA]
+# Steering Wheel
+  Steering_Wheel:
+    pinlabels: [1-21]
+    type: Deutsch 22P 22AWG Bulkhead
+    subtype: female
+    notes: Steering Wheel
 
 
 cables:
@@ -280,6 +290,7 @@ cables:
   3P_GPS:
     <<: *temp_cbl3
     colors: [BK, RD, WH]
+    notes: May want to check the GND Dash Connection
 # Front Brake Pressure
   1P_FBrkPGND:
     <<: *temp_cbl1
@@ -319,6 +330,21 @@ cables:
     colors: [BK, RD]
     length: 92 in
     gauge: 16 AWG
+# ECU to PDM CAN
+  2P_ECU-PDM_CAN:
+    <<: *template_cbl2
+    colors: [BN, WH]
+    length: 15 in
+# Front Brake Temperature
+  3P_FLBrkTemp:
+    <<: *temp_cbl3
+    colors: [BK, RD, GY]
+    length: 34 in
+# Shift Up/Down
+  2P_Shifting:
+    <<: *template_cbl2
+    colors: [GY, YE]
+    length: 60 in]
 
 
 connections:
@@ -366,7 +392,10 @@ connections:
   - PDMB: [18]
 
 # ECU to PDM CAN
-
+-
+  - ECUA: [31, 30]
+  - 2P_ECU-PDM_CAN: [1-2]
+  - PDMB: [25-26]
 
 # E-Stop (emergency) Button
 -
@@ -409,6 +438,11 @@ connections:
   - Crank_Button: [1-2]
 # Launch Control?
 # Shifting
+-
+  - ECUA: [16-17]
+  - 2P_Shifting: [1-2]
+  - Steering_Wheel: [14-15]
+
 # Throttle Map Selector
 # Tune Selector
 # Steering Position
@@ -544,7 +578,12 @@ connections:
   - ECUB: [17]
   - 1P_FBrkPSIG: [1]
   - FBrake_Pressure: [3]
-# Front Brake Temperature
+# Front Brake Temperature - DASH logger
+-
+  - DASH: [9, 8, 17]
+  - 3P_FLBrkTemp: [1-3]
+  - FL_BrkTemp: [1-3]
+
 
 # Rear Brake Pressure
 -
@@ -559,11 +598,13 @@ connections:
   - ECUB: [18]
   - 1P_RBrkPSIG: [1]
   - RBrake_Pressure: [3]
-# Lambda Module
 
 # Exhaust Lambda Sensor, CAN Module with this too
-# EGT Module
+# LTC and Innovate Modules
 
+# EGT Module
+# Uses PWR/GND connection for EGT Module
+# Plus a PWR/GND and CAN Lo/Hi connection for data (from an AnalogX, ECUA CAN connection)
 
 # Wireless Comms
 
