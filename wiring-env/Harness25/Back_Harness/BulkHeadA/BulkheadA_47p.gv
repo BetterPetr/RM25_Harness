@@ -2785,16 +2785,16 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#000000:#000000"]
 	BULKHEAD_A:p44r:e -- "4P_OPT":w1:w
 	"4P_OPT":w1:e -- Oil_PT:p1l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#ff0000:#000000"]
 	BULKHEAD_A:p47r:e -- "4P_OPT":w2:w
 	"4P_OPT":w2:e -- Oil_PT:p2l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#ffff00:#000000"]
 	BULKHEAD_A:p7r:e -- "4P_OPT":w3:w
 	"4P_OPT":w3:e -- Oil_PT:p3l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#00ff00:#000000"]
 	BULKHEAD_A:p8r:e -- "4P_OPT":w4:w
 	"4P_OPT":w4:e -- Oil_PT:p4l:w
 	"4P_OPT" [label=<
@@ -2817,7 +2817,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:44:0VECUGND</td>
     <td>
-     1
+     1:BK
     </td>
     <td>Oil_PT:1:GND</td>
    </tr>
@@ -2825,7 +2825,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2833,7 +2833,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:47:5VECUPWR</td>
     <td>
-     2
+     2:RD
     </td>
     <td>Oil_PT:2:PWR</td>
    </tr>
@@ -2841,7 +2841,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2849,7 +2849,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:7:AV</td>
     <td>
-     3
+     3:YE
     </td>
     <td>Oil_PT:3:SIGY</td>
    </tr>
@@ -2857,7 +2857,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2865,7 +2865,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:8:AT</td>
     <td>
-     4
+     4:GN
     </td>
     <td>Oil_PT:4:SIGGn</td>
    </tr>
@@ -2873,7 +2873,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2883,16 +2883,16 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#000000:#000000"]
 	BULKHEAD_A:p44r:e -- "4P_WIPT":w1:w
 	"4P_WIPT":w1:e -- WaterIn_PT:p1l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#ff0000:#000000"]
 	BULKHEAD_A:p47r:e -- "4P_WIPT":w2:w
 	"4P_WIPT":w2:e -- WaterIn_PT:p2l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#ffff00:#000000"]
 	BULKHEAD_A:p11r:e -- "4P_WIPT":w3:w
 	"4P_WIPT":w3:e -- WaterIn_PT:p3l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#00ff00:#000000"]
 	BULKHEAD_A:p12r:e -- "4P_WIPT":w4:w
 	"4P_WIPT":w4:e -- WaterIn_PT:p4l:w
 	"4P_WIPT" [label=<
@@ -2914,7 +2914,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:44:0VECUGND</td>
     <td>
-     1
+     1:BK
     </td>
     <td>WaterIn_PT:1:GND</td>
    </tr>
@@ -2922,7 +2922,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2930,7 +2930,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:47:5VECUPWR</td>
     <td>
-     2
+     2:RD
     </td>
     <td>WaterIn_PT:2:PWR</td>
    </tr>
@@ -2938,7 +2938,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2946,7 +2946,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:11:AV</td>
     <td>
-     3
+     3:YE
     </td>
     <td>WaterIn_PT:3:SIGY</td>
    </tr>
@@ -2954,7 +2954,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2962,7 +2962,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:12:AT</td>
     <td>
-     4
+     4:GN
     </td>
     <td>WaterIn_PT:4:SIGGn</td>
    </tr>
@@ -2970,7 +2970,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -2985,16 +2985,16 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#000000:#000000"]
 	BULKHEAD_A:p44r:e -- "4P_IPT":w1:w
 	"4P_IPT":w1:e -- Intake_PT:p1l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#ff0000:#000000"]
 	BULKHEAD_A:p47r:e -- "4P_IPT":w2:w
 	"4P_IPT":w2:e -- Intake_PT:p2l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#ffff00:#000000"]
 	BULKHEAD_A:p9r:e -- "4P_IPT":w3:w
 	"4P_IPT":w3:e -- Intake_PT:p3l:w
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#00ff00:#000000"]
 	BULKHEAD_A:p10r:e -- "4P_IPT":w4:w
 	"4P_IPT":w4:e -- Intake_PT:p4l:w
 	"4P_IPT" [label=<
@@ -3017,7 +3017,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:44:0VECUGND</td>
     <td>
-     1
+     1:BK
     </td>
     <td>Intake_PT:1:GND</td>
    </tr>
@@ -3025,7 +3025,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -3033,7 +3033,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:47:5VECUPWR</td>
     <td>
-     2
+     2:RD
     </td>
     <td>Intake_PT:2:PWR</td>
    </tr>
@@ -3041,7 +3041,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -3049,7 +3049,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:9:AV</td>
     <td>
-     3
+     3:YE
     </td>
     <td>Intake_PT:3:SIGY</td>
    </tr>
@@ -3057,7 +3057,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -3065,7 +3065,7 @@ graph {
    <tr>
     <td>BULKHEAD_A:10:AT</td>
     <td>
-     4
+     4:GN
     </td>
     <td>Intake_PT:4:SIGGn</td>
    </tr>
@@ -3073,7 +3073,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#00ff00" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

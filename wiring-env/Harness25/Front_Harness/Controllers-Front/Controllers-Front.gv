@@ -15,10 +15,10 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
     <td port="p1l">1</td>
-    <td sides="tbl">GN</td>
+    <td sides="tbl">RD</td>
     <td sides="tbr">
      <table border="0" cellborder="1"><tr>
-      <td bgcolor="#00FF00" width="8" height="8" fixedsize="true"></td>
+      <td bgcolor="#FF0000" width="8" height="8" fixedsize="true"></td>
      </tr></table>
     </td>
    </tr>
@@ -26,7 +26,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">All ECU ATemps need 1k pullup to SEN_5V (check M150 datasheet)</td>
+   <td balign="left">DASH[14-Next, 15-Mode]</td>
   </tr></table>
  </td></tr>
 </table>
@@ -221,7 +221,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">MoTeC C125 Dash Logger</td>
+   <td balign="left">MoTeC C125 Dash Logger, Accelmtr in Ctrls-BC</td>
   </tr></table>
  </td></tr>
 </table>
@@ -1160,6 +1160,136 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	Steering_Wheel [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Steering_Wheel</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Deutsch 22P 22AWG Bulkhead</td>
+   <td balign="left">female</td>
+   <td balign="left">21-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td>PWR-Clutch</td>
+    <td port="p1r">1</td>
+   </tr>
+   <tr>
+    <td port="p2l">2</td>
+    <td>GND-Clutch</td>
+    <td port="p2r">2</td>
+   </tr>
+   <tr>
+    <td port="p3l">3</td>
+    <td>NA</td>
+    <td port="p3r">3</td>
+   </tr>
+   <tr>
+    <td port="p4l">4</td>
+    <td>Clutch</td>
+    <td port="p4r">4</td>
+   </tr>
+   <tr>
+    <td port="p5l">5</td>
+    <td>IGN</td>
+    <td port="p5r">5</td>
+   </tr>
+   <tr>
+    <td port="p6l">6</td>
+    <td>PWR</td>
+    <td port="p6r">6</td>
+   </tr>
+   <tr>
+    <td port="p7l">7</td>
+    <td>TC/LC Set</td>
+    <td port="p7r">7</td>
+   </tr>
+   <tr>
+    <td port="p8l">8</td>
+    <td>GND</td>
+    <td port="p8r">8</td>
+   </tr>
+   <tr>
+    <td port="p9l">9</td>
+    <td>Ntrl</td>
+    <td port="p9r">9</td>
+   </tr>
+   <tr>
+    <td port="p10l">10</td>
+    <td>ACK</td>
+    <td port="p10r">10</td>
+   </tr>
+   <tr>
+    <td port="p11l">11</td>
+    <td>TC/LC EN</td>
+    <td port="p11r">11</td>
+   </tr>
+   <tr>
+    <td port="p12l">12</td>
+    <td>Fuel Res</td>
+    <td port="p12r">12</td>
+   </tr>
+   <tr>
+    <td port="p13l">13</td>
+    <td>DRS</td>
+    <td port="p13r">13</td>
+   </tr>
+   <tr>
+    <td port="p14l">14</td>
+    <td>UpShft</td>
+    <td port="p14r">14</td>
+   </tr>
+   <tr>
+    <td port="p15l">15</td>
+    <td>DownShft</td>
+    <td port="p15r">15</td>
+   </tr>
+   <tr>
+    <td port="p16l">16</td>
+    <td>GND</td>
+    <td port="p16r">16</td>
+   </tr>
+   <tr>
+    <td port="p17l">17</td>
+    <td>N/A</td>
+    <td port="p17r">17</td>
+   </tr>
+   <tr>
+    <td port="p18l">18</td>
+    <td>N/A</td>
+    <td port="p18r">18</td>
+   </tr>
+   <tr>
+    <td port="p19l">19</td>
+    <td>NA</td>
+    <td port="p19r">19</td>
+   </tr>
+   <tr>
+    <td port="p20l">20</td>
+    <td>NA</td>
+    <td port="p20r">20</td>
+   </tr>
+   <tr>
+    <td port="p21l">21</td>
+    <td>NA</td>
+    <td port="p21r">21</td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Steering Wheel, THESE NEED TO BE VERIFIED</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	CHAS_GND [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -1762,6 +1892,61 @@ graph {
    <tr>
     <td port="p4l">4</td>
     <td>NA</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	Clutch_Pos [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Clutch_Pos</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td sides="tbl">GN</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#00FF00" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Pin 6 on C125 DASH</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	Bright [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Bright</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Deutsch DT04_2P</td>
+   <td balign="left">female</td>
+   <td balign="left">2-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td>GND</td>
+    <td port="p1r">1</td>
+   </tr>
+   <tr>
+    <td>SIG</td>
+    <td port="p2r">2</td>
    </tr>
   </table>
  </td></tr>
@@ -3142,6 +3327,11 @@ graph {
    <tr><td>&nbsp;</td></tr>
   </table>
  </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Must go through E-Stop button too (not shown currently)</td>
+  </tr></table>
+ </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
@@ -3421,6 +3611,11 @@ graph {
    </tr>
    <tr><td>&nbsp;</td></tr>
   </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">May want to check the GND Dash Connection</td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -3965,6 +4160,175 @@ graph {
    </tr>
    <tr><td>&nbsp;</td></tr>
   </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#999999:#000000"]
+	ECUA:p16r:e -- "2P_Shifting":w1:w
+	"2P_Shifting":w1:e -- Steering_Wheel:p14l:w
+	edge [color="#000000:#999999:#000000"]
+	ECUA:p17r:e -- "2P_Shifting":w2:w
+	"2P_Shifting":w2:e -- Steering_Wheel:p15l:w
+	"2P_Shifting" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_Shifting</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">22 AWG</td>
+   <td balign="left">60.0 in</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>ECUA:16:DIG3</td>
+    <td>
+     1:GY
+    </td>
+    <td>Steering_Wheel:14:UpShft</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>ECUA:17:DIG4</td>
+    <td>
+     2:GY
+    </td>
+    <td>Steering_Wheel:15:DownShft</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#895956:#000000"]
+	Steering_Wheel:p10r:e -- "1P_ACK":w1:w
+	"1P_ACK":w1:e -- DASH:p21l:w
+	"1P_ACK" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_ACK</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>Steering_Wheel:10:ACK</td>
+    <td>
+     1:BN
+    </td>
+    <td>DASH:21:SPD1</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Other side connected to GND, check GND pos</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#895956:#000000"]
+	Bright:p1r:e -- "1P_Bright":w1:w
+	"1P_Bright":w1:e -- DASH:p34l:w
+	edge [color="#000000:#895956:#000000"]
+	Bright:p2r:e -- "1P_Bright":w2:w
+	"1P_Bright":w2:e -- DASH:p22l:w
+	"1P_Bright" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">1P_Bright</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>Bright:1:GND</td>
+    <td>
+     1:BN
+    </td>
+    <td>DASH:34:BAT-</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Bright:2:SIG</td>
+    <td>
+     2:BN
+    </td>
+    <td>DASH:22:SPD2</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Other side connected to GND, Check GND pos</td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]

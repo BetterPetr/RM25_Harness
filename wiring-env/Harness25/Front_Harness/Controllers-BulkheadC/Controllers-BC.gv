@@ -137,23 +137,23 @@ graph {
    </tr>
    <tr>
     <td port="p23l">23</td>
-    <td>23</td>
+    <td>GND</td>
    </tr>
    <tr>
     <td port="p24l">24</td>
-    <td>24</td>
+    <td>PWR</td>
    </tr>
    <tr>
     <td port="p25l">25</td>
-    <td>25</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p26l">26</td>
-    <td>26</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p27l">27</td>
-    <td>27</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p28l">28</td>
@@ -578,108 +578,108 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
+    <td port="p1l">1</td>
     <td>OUT_HB9</td>
-    <td port="p1r">1</td>
    </tr>
    <tr>
+    <td port="p2l">2</td>
     <td>OUT_HB9</td>
-    <td port="p2r">2</td>
    </tr>
    <tr>
+    <td port="p3l">3</td>
     <td>UDIG8</td>
-    <td port="p3r">3</td>
    </tr>
    <tr>
+    <td port="p4l">4</td>
     <td>UDIG9</td>
-    <td port="p4r">4</td>
    </tr>
    <tr>
+    <td port="p5l">5</td>
     <td>UDIG10</td>
-    <td port="p5r">5</td>
    </tr>
    <tr>
+    <td port="p6l">6</td>
     <td>UDIG11</td>
-    <td port="p6r">6</td>
    </tr>
    <tr>
+    <td port="p7l">7</td>
     <td>UDIG12</td>
-    <td port="p7r">7</td>
    </tr>
    <tr>
+    <td port="p8l">8</td>
     <td>INJ_LS5</td>
-    <td port="p8r">8</td>
    </tr>
    <tr>
+    <td port="p9l">9</td>
     <td>INJ_LS3</td>
-    <td port="p9r">9</td>
    </tr>
    <tr>
+    <td port="p10l">10</td>
     <td>AV9</td>
-    <td port="p10r">10</td>
    </tr>
    <tr>
+    <td port="p11l">11</td>
     <td>AV10</td>
-    <td port="p11r">11</td>
    </tr>
    <tr>
+    <td port="p12l">12</td>
     <td>AV11</td>
-    <td port="p12r">12</td>
    </tr>
    <tr>
+    <td port="p13l">13</td>
     <td>BAT_POS</td>
-    <td port="p13r">13</td>
    </tr>
    <tr>
+    <td port="p14l">14</td>
     <td>INJ_LS6</td>
-    <td port="p14r">14</td>
    </tr>
    <tr>
+    <td port="p15l">15</td>
     <td>INJ_LS4</td>
-    <td port="p15r">15</td>
    </tr>
    <tr>
+    <td port="p16l">16</td>
     <td>AV12</td>
-    <td port="p16r">16</td>
    </tr>
    <tr>
+    <td port="p17l">17</td>
     <td>AV13</td>
-    <td port="p17r">17</td>
    </tr>
    <tr>
+    <td port="p18l">18</td>
     <td>AV14</td>
-    <td port="p18r">18</td>
    </tr>
    <tr>
+    <td port="p19l">19</td>
     <td>BAT_POS</td>
-    <td port="p19r">19</td>
    </tr>
    <tr>
+    <td port="p20l">20</td>
     <td>OUT_HB7</td>
-    <td port="p20r">20</td>
    </tr>
    <tr>
+    <td port="p21l">21</td>
     <td>OUT_HB8</td>
-    <td port="p21r">21</td>
    </tr>
    <tr>
+    <td port="p22l">22</td>
     <td>INJ_PH9</td>
-    <td port="p22r">22</td>
    </tr>
    <tr>
+    <td port="p23l">23</td>
     <td>INJ_PH10</td>
-    <td port="p23r">23</td>
    </tr>
    <tr>
+    <td port="p24l">24</td>
     <td>INJ_PH11</td>
-    <td port="p24r">24</td>
    </tr>
    <tr>
+    <td port="p25l">25</td>
     <td>INJ_PH12</td>
-    <td port="p25r">25</td>
    </tr>
    <tr>
+    <td port="p26l">26</td>
     <td>SEN_5V0_A</td>
-    <td port="p26r">26</td>
    </tr>
   </table>
  </td></tr>
@@ -1178,6 +1178,33 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	NOTES2 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">NOTES2</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td port="p1l">1</td>
+    <td sides="tbl">RD</td>
+    <td sides="tbr">
+     <table border="0" cellborder="1"><tr>
+      <td bgcolor="#FF0000" width="8" height="8" fixedsize="true"></td>
+     </tr></table>
+    </td>
+   </tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Pins 30-33 are free wires just in case</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
 	CHAS_GND:p1r:e -- PDMA_ChGND26:w1:w
 	PDMA_ChGND26:w1:e -- PDMA:p26l:w
@@ -1476,46 +1503,6 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#999999:#000000"]
-	ECUB:p18r:e -- "1P_RBrkP":w1:w
-	"1P_RBrkP":w1:e -- BULKHEAD_C:p15l:w
-	"1P_RBrkP" [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">1P_RBrkP</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">1x</td>
-   <td balign="left">22 AWG</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellborder="0">
-   <tr><td>&nbsp;</td></tr>
-   <tr>
-    <td>ECUB:18:AV14</td>
-    <td>
-     1:GY
-    </td>
-    <td>BULKHEAD_C:15:SIG</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr><td>&nbsp;</td></tr>
-  </table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ffff00:#000000"]
 	ECUC:p14r:e -- "1P_CrnkCsPSig":w1:w
 	"1P_CrnkCsPSig":w1:e -- BULKHEAD_C:p18l:w
@@ -1692,6 +1679,127 @@ graph {
    </tr>
    <tr><td>&nbsp;</td></tr>
   </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	DASH:p9r:e -- "5P_Accelmtr":w1:w
+	"5P_Accelmtr":w1:e -- BULKHEAD_C:p23l:w
+	edge [color="#000000:#ff0000:#000000"]
+	DASH:p8r:e -- "5P_Accelmtr":w2:w
+	"5P_Accelmtr":w2:e -- BULKHEAD_C:p24l:w
+	edge [color="#000000:#999999:#000000"]
+	DASH:p3r:e -- "5P_Accelmtr":w3:w
+	"5P_Accelmtr":w3:e -- BULKHEAD_C:p25l:w
+	edge [color="#000000:#999999:#000000"]
+	DASH:p4r:e -- "5P_Accelmtr":w4:w
+	"5P_Accelmtr":w4:e -- BULKHEAD_C:p26l:w
+	edge [color="#000000:#999999:#000000"]
+	DASH:p5r:e -- "5P_Accelmtr":w5:w
+	"5P_Accelmtr":w5:e -- BULKHEAD_C:p27l:w
+	"5P_Accelmtr" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">5P_Accelmtr</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">5x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>DASH:9:SEN-0V</td>
+    <td>
+     1:BK
+    </td>
+    <td>BULKHEAD_C:23:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>DASH:8:5V</td>
+    <td>
+     2:RD
+    </td>
+    <td>BULKHEAD_C:24:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>DASH:3:AV1</td>
+    <td>
+     3:GY
+    </td>
+    <td>BULKHEAD_C:25:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>DASH:4:AV2</td>
+    <td>
+     4:GY
+    </td>
+    <td>BULKHEAD_C:26:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>DASH:5:AV3</td>
+    <td>
+     5:GY
+    </td>
+    <td>BULKHEAD_C:27:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3-Longitude, 4-Lateral, 5-Vertical</td>
+  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]

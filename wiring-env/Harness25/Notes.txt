@@ -1,0 +1,6 @@
+
+
+Ran out of Black and Red 22AWG wire 2/18
+Switched to using Purple for GND and Orange for PWR
+
+

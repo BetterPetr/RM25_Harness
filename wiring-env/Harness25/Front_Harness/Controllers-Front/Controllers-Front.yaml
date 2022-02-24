@@ -40,7 +40,7 @@ connectors:
     pinlabels: [E-TX-, E-TX+, AV1, AV2, AV3, AV4, 8V, 5V, SEN-0V, E-RX-, E-RX+, AV5, AV6, DIG1, DIG2, AT1, AT2, CAN1L, CAN1H, RS232-1 TX, SPD1, SPD2, SPD3, VID1, RS232-2 RX, CAN2L, CAN2H, RS232-1 RX, AUX1, AUX2, AUX3, AUX4, BAT+, BAT-]
     type: MoTeC DASH 34P
     subtype: female
-    notes: MoTeC C125 Dash Logger
+    notes: MoTeC C125 Dash Logger, Accelmtr in Ctrls-BC
   ECUA:
     pinlabels: [AT5, AT6, AV15, AV16, AV17, IGN_LS9, IGN_LS10, IGN_LS11, IGN_LS12, SEN_5V0_C1, LA-NB1, LA-NB2, KNOCK3, KNOCK4, DIG2, DIG3, DIG4, SEN_5V0_C2, SEN_5V0_B2, LIN, RS232_RX, RS232_TX, DIG1, BAT_NEG3, BAT_NEG4, SEN_0V_C1, SEN_0V_C2, CAN3_HI, CAN3_LO, CAN2_HI, CAN2_LO, BAT_NEG5, SEN_0V_B1, SEN_0V_A1]
     type: MoTeC ECUA 34P
@@ -65,6 +65,11 @@ connectors:
     pinlabels: [NA, NA, OUT6, NA, OUT7, NA, OUT8, NA, OUT6, NA, OUT7, NA, OUT8, NA, DIG13, NA, DIG15, VBATT-, NA, DIG11, DIG12, GND, DIG14, DIG16, CAN Lo, CAN Hi]
     type: MoTeC PDMB
     subtype: female
+  Steering_Wheel:
+    pinlabels: [PWR-Clutch, GND-Clutch, NA, Clutch, IGN, PWR, TC/LC Set, GND, Ntrl, ACK, TC/LC EN, Fuel Res, DRS, UpShft, DownShft, GND, N/A, N/A, NA, NA, NA]
+    type: Deutsch 22P 22AWG Bulkhead
+    subtype: female
+    notes: Steering Wheel, THESE NEED TO BE VERIFIED
   CHAS_GND:
     pinlabels: [GND]
     type: Chassis Ground
@@ -135,12 +140,21 @@ connectors:
   FL_BrkTemp:
     <<: *Bndr4P_f
     pinlabels: [GND, PWR, SIG, NA]
-# Steering Wheel
-  Steering_Wheel:
-    pinlabels: [1-21]
-    type: Deutsch 22P 22AWG Bulkhead
-    subtype: female
-    notes: Steering Wheel
+# Clutch Pedal Position
+  Clutch_Pos:
+    pincolors: [GN]
+    show_pincount: false
+    notes: Pin 6 on C125 DASH
+# Backlight Brightness Switch
+  Bright:
+    <<: *DT2P_f
+    pinlabels: [GND, SIG]
+
+# Currently Missing
+  NOTES:
+    pincolors: [RD]
+    show_pincount: false
+    notes: DASH[14-Next, 15-Mode]
 
 
 cables:
@@ -178,7 +192,7 @@ cables:
   DASH_CANHi1:
     <<: *dash_can
     length: 74 in
-# DASH PWR/GND                                       ************************************check whether this should be 16 or 22AWG
+# DASH PWR/GND
   1P_DashPWR: &dash_pwr
     wirecount: 1
     gauge: 22 AWG
@@ -270,6 +284,7 @@ cables:
     wirecount: 2
     gauge: 22 AWG
     colors: [BK, GY]
+    notes: Must go through E-Stop button too (not shown currently)
 # APPS 1
   2P_APPS1PG: &apps_pg
     <<: *template_cbl2
@@ -343,8 +358,18 @@ cables:
 # Shift Up/Down
   2P_Shifting:
     <<: *template_cbl2
-    colors: [GY, YE]
-    length: 60 in]
+    colors: [GY, GY]
+    length: 60 in
+# Acknowledge Warnings - Steering Wheel
+  1P_ACK:
+    <<: *temp_cbl1
+    colors: [BN]
+    notes: Other side connected to GND, check GND pos
+# Backlight Brightness Switch
+  1P_Bright:
+    <<: *template_cbl2
+    colors: [BN, BN]
+    notes: Other side connected to GND, Check GND pos
 
 
 connections:
@@ -445,7 +470,13 @@ connections:
 
 # Throttle Map Selector
 # Tune Selector
-# Steering Position
+# Steering Position??
+# Acknowledge Warnings - Steering Wheel
+-
+  - Steering_Wheel: [10]
+  - 1P_ACK: [1]
+  - DASH: [21]
+
 # GPS Module 
 -
   - DASH: [34, 8, 25]
@@ -598,6 +629,12 @@ connections:
   - ECUB: [18]
   - 1P_RBrkPSIG: [1]
   - RBrake_Pressure: [3]
+
+# Backlight Brightness Switch
+-
+  - Bright: [1-2]
+  - 1P_Bright: [1-2]
+  - DASH: [34, 22]
 
 # Exhaust Lambda Sensor, CAN Module with this too
 # LTC and Innovate Modules

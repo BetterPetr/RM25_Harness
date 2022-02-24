@@ -236,13 +236,16 @@ cables:
     length: 26 in
   4P_OPT:
     <<: *temp_cbl4
+    colors: [BK, RD, YE, GN]
     length: 42 in
   4P_WIPT:
     <<: *temp_cbl4
+    colors: [BK, RD, YE, GN]
     length: 0 in
     notes: length TBD
   4P_IPT:
     <<: *temp_cbl4
+    colors: [BK, RD, YE, GN]
     length: 35 in
   1P_RFAN:
     wirecount: 1

@@ -5,6 +5,9 @@ templates:
   - &temp_cbl1
     wirecount: 1
     gauge: 22 AWG
+  - &temp_cbl5
+    wirecount: 5
+    gauge: 22 AWG
 
 connectors:
   NOTES:
@@ -12,7 +15,7 @@ connectors:
     show_pincount: false
     notes: AV for TPS conflicts with Shift Motor Position sensor currently, not enough AV inputs on ECU
   BULKHEAD_C: &ahdp47
-    pinlabels: [1_16G,2,3,4_16G,5_16G,6_16G, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV,23,24,25,26,27,28,29,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43,44,45,46,47]
+    pinlabels: [1_16G,2,3,4_16G,5_16G,6_16G, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV, GND, PWR, SIG, SIG, SIG,28,29,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43,44,45,46,47]
     type: AMPHENOL HDP 47P
     subtype: female
     notes: BULKHEAD_C Connector (Driver Side)
@@ -44,6 +47,10 @@ connectors:
   CHAS_GND:
     pinlabels: [GND]
     type: Chassis Ground
+  NOTES2:
+    pincolors: [RD]
+    show_pincount: false
+    notes: Pins 30-33 are free wires just in case
 
 
 cables:
@@ -79,6 +86,7 @@ cables:
   5P_Accelmtr:
     <<: *temp_cbl5
     colors: [BK, RD, GY, GY, GY]
+    notes: 3-Longitude, 4-Lateral, 5-Vertical
 
 connections:
 #PDM Chassis GND (Already in the Controllers-BA Harness, just for reference)
@@ -129,5 +137,5 @@ connections:
 # Accellerometer GND, PWR, Signals
 -
   - DASH: [9, 8, 3, 4, 5]
-  - 3P_Accelmtr: [1-5]
+  - 5P_Accelmtr: [1-5]
   - BULKHEAD_C: [23-27]
