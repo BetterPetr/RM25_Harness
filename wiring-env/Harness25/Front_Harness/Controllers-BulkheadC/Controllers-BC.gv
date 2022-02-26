@@ -49,7 +49,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
     <td port="p1l">1</td>
-    <td>1_16G</td>
+    <td>GND</td>
    </tr>
    <tr>
     <td port="p2l">2</td>
@@ -61,15 +61,15 @@ graph {
    </tr>
    <tr>
     <td port="p4l">4</td>
-    <td>4_16G</td>
+    <td>PWR</td>
    </tr>
    <tr>
     <td port="p5l">5</td>
-    <td>5_16G</td>
+    <td>PWR</td>
    </tr>
    <tr>
     <td port="p6l">6</td>
-    <td>6_16G</td>
+    <td>GND</td>
    </tr>
    <tr>
     <td port="p7l">7</td>
@@ -161,7 +161,7 @@ graph {
    </tr>
    <tr>
     <td port="p29l">29</td>
-    <td>29</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p30l">30</td>
@@ -221,11 +221,11 @@ graph {
    </tr>
    <tr>
     <td port="p44l">44</td>
-    <td>44</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p45l">45</td>
-    <td>45</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p46l">46</td>
@@ -1200,8 +1200,88 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Pins 30-33 are free wires just in case</td>
+   <td balign="left">Pins 30-33 are free wires just in case (for e-throttle)</td>
   </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	Lambda_Module1 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Lambda_Module1</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Lambda Connector</td>
+   <td balign="left">male-Bulkhead-Pass-Through</td>
+   <td balign="left">5-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td>GND</td>
+    <td port="p1r">1</td>
+   </tr>
+   <tr>
+    <td>PWR</td>
+    <td port="p2r">2</td>
+   </tr>
+   <tr>
+    <td>SIG-GY</td>
+    <td port="p3r">3</td>
+   </tr>
+   <tr>
+    <td>SIG-WH</td>
+    <td port="p4r">4</td>
+   </tr>
+   <tr>
+    <td>SIG-YE</td>
+    <td port="p5r">5</td>
+   </tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	Lambda_Module2 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Lambda_Module2</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Lambda Connector</td>
+   <td balign="left">male-Bulkhead-Pass-Through</td>
+   <td balign="left">5-pin</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
+   <tr>
+    <td>GND</td>
+    <td port="p1r">1</td>
+   </tr>
+   <tr>
+    <td>PWR</td>
+    <td port="p2r">2</td>
+   </tr>
+   <tr>
+    <td>SIG-GY</td>
+    <td port="p3r">3</td>
+   </tr>
+   <tr>
+    <td>SIG-WH</td>
+    <td port="p4r">4</td>
+   </tr>
+   <tr>
+    <td>SIG-YE</td>
+    <td port="p5r">5</td>
+   </tr>
+  </table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
@@ -1800,6 +1880,271 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">3-Longitude, 4-Lateral, 5-Vertical</td>
   </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#999999:#000000"]
+	Lambda_Module1:p3r:e -- "3P_Lambda_Signals1":w1:w
+	"3P_Lambda_Signals1":w1:e -- BULKHEAD_C:p45l:w
+	edge [color="#000000:#ffffff:#000000"]
+	Lambda_Module1:p4r:e -- "3P_Lambda_Signals1":w2:w
+	"3P_Lambda_Signals1":w2:e -- BULKHEAD_C:p29l:w
+	edge [color="#000000:#ffff00:#000000"]
+	Lambda_Module1:p5r:e -- "3P_Lambda_Signals1":w3:w
+	"3P_Lambda_Signals1":w3:e -- BULKHEAD_C:p44l:w
+	"3P_Lambda_Signals1" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3P_Lambda_Signals1</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>Lambda_Module1:3:SIG-GY</td>
+    <td>
+     1:GY
+    </td>
+    <td>BULKHEAD_C:45:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Lambda_Module1:4:SIG-WH</td>
+    <td>
+     2:WH
+    </td>
+    <td>BULKHEAD_C:29:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Lambda_Module1:5:SIG-YE</td>
+    <td>
+     3:YE
+    </td>
+    <td>BULKHEAD_C:44:SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	Lambda_Module1:p1r:e -- "2P_Lambda_PG1":w1:w
+	"2P_Lambda_PG1":w1:e -- BULKHEAD_C:p1l:w
+	edge [color="#000000:#ff0000:#000000"]
+	Lambda_Module1:p2r:e -- "2P_Lambda_PG1":w2:w
+	"2P_Lambda_PG1":w2:e -- BULKHEAD_C:p4l:w
+	"2P_Lambda_PG1" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_Lambda_PG1</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>Lambda_Module1:1:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>BULKHEAD_C:1:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Lambda_Module1:2:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>BULKHEAD_C:4:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	"3P_Lambda_Signals2" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3P_Lambda_Signals2</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">3x</td>
+   <td balign="left">22 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td><!-- 1_in --></td>
+    <td>
+     1:GY
+    </td>
+    <td><!-- 1_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#999999" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td><!-- 2_in --></td>
+    <td>
+     2:WH
+    </td>
+    <td><!-- 2_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td><!-- 3_in --></td>
+    <td>
+     3:YE
+    </td>
+    <td><!-- 3_out --></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffff00" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	Lambda_Module2:p1r:e -- "2P_Lambda_PG2":w1:w
+	"2P_Lambda_PG2":w1:e -- BULKHEAD_C:p6l:w
+	edge [color="#000000:#ff0000:#000000"]
+	Lambda_Module2:p2r:e -- "2P_Lambda_PG2":w2:w
+	"2P_Lambda_PG2":w2:e -- BULKHEAD_C:p5l:w
+	"2P_Lambda_PG2" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2P_Lambda_PG2</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+   <td balign="left">16 AWG</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
+   <tr>
+    <td>Lambda_Module2:1:GND</td>
+    <td>
+     1:BK
+    </td>
+    <td>BULKHEAD_C:6:GND</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>Lambda_Module2:2:PWR</td>
+    <td>
+     2:RD
+    </td>
+    <td>BULKHEAD_C:5:PWR</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]

@@ -39,7 +39,7 @@ templates:
 
 connectors:
   BULKHEAD_C: &ahdp47
-    pinlabels: [1_16G,2,3,4_16G,5_16G,6_16G, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV, GND, PWR, SIG, SIG, SIG,28,29,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43,44,45,46,47]
+    pinlabels: [GND,2,3, PWR, PWR, GND, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV, GND, PWR, SIG, SIG, SIG,28,SIG,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43, SIG, SIG,46,47]
     type: AMPHENOL HDP 47P
     subtype: female
     notes: BULKHEAD_C Connector (Engine Side)
@@ -60,8 +60,14 @@ connectors:
     notes: Assumed a Honeywell Hall Effect (contactless) Sensor for now
   Accelmtr:
     <<: *DT6P_f
-    pinlabels: [GND, PWR, SIG, SIG, SIG, NA]
+    pinlabels: [SIG, SIG, SIG, GND, PWR, NA]
     notes: Bosch Accelerometer AM 600
+  Lambda_Sensor1: &lambda
+    type: Lambda Sensor
+    subtype: Bulkhead-Pass-Through
+    pinlabels: [GND, PWR, SIG-GY, SIG-WH, SIG-YE]
+  Lambda_Sensor2:
+    <<: *lambda
     
 
 cables:
@@ -83,7 +89,7 @@ cables:
     length: 35 in
   2P_ShftDrmPos_PWR:
     <<: *template_cbl2
-    colors: [BK, RD]
+    colors: [BK, RD]  
     length: 32 in
   1P_ShftDrmPos_SIG:
     <<: *temp_cbl1
@@ -95,9 +101,19 @@ cables:
     length: 24 in
   5P_Accelmtr:
     <<: *temp_cbl5
-    colors: [BK, RD, GY, GY, GY]
+    colors: [GY, GY, GY, BK, RD]
     length: 22 in
-
+  3P_Lambda_Signals1: &lambda_sigs
+    <<: *temp_cbl3
+    colors: [GY, WH, YE]
+  2P_Lambda_PG1: &lambda_pg
+    <<: *template_cbl2
+    gauge: 16 AWG
+    colors: [BK, RD]
+  3P_Lambda_Signals2:
+    <<: *lambda_sigs
+  2P_Lambda_PG2:
+    <<: *lambda_pg
 
 connections:
 # DASH Comms
@@ -137,13 +153,26 @@ connections:
   - 3P_ShftLevPos: [1-3]
   - ShiftLeverPos: [1-3]
 
-
 # Accelerometer
 # Goes to DASH, See RM24->specific connectors sheet
 -
-  - BULKHEAD_C: [23-27]
+  - BULKHEAD_C: [25, 26, 27, 23, 24]
   - 5P_Accelmtr: [1-5]
   - Accelmtr: [1-5]
 
+# Lambda Sensor 1
+-
+  - BULKHEAD_C: [45, 29, 44]
+  - 3P_Lambda_Signals1: [1-3]
+  - Lambda_Sensor1: [3-5]
+-
+  - BULKHEAD_C: [1, 4]
+  - 2P_Lambda_PG1: [1-2]
+  - Lambda_Sensor1: [1-2]
 
+# Lambda Sensor 2
 
+-
+  - BULKHEAD_C: [6, 5]
+  - 2P_Lambda_PG2: [1-2]
+  - Lambda_Sensor2: [1-2]

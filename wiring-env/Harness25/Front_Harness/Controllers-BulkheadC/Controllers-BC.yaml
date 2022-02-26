@@ -8,6 +8,9 @@ templates:
   - &temp_cbl5
     wirecount: 5
     gauge: 22 AWG
+  - &temp_cbl3
+    wirecount: 3
+    gauge: 22 AWG
 
 connectors:
   NOTES:
@@ -15,7 +18,7 @@ connectors:
     show_pincount: false
     notes: AV for TPS conflicts with Shift Motor Position sensor currently, not enough AV inputs on ECU
   BULKHEAD_C: &ahdp47
-    pinlabels: [1_16G,2,3,4_16G,5_16G,6_16G, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV, GND, PWR, SIG, SIG, SIG,28,29,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43,44,45,46,47]
+    pinlabels: [GND,2,3, PWR, PWR, GND, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV, GND, PWR, SIG, SIG, SIG,28, SIG,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43, SIG, SIG,46,47]
     type: AMPHENOL HDP 47P
     subtype: female
     notes: BULKHEAD_C Connector (Driver Side)
@@ -50,7 +53,13 @@ connectors:
   NOTES2:
     pincolors: [RD]
     show_pincount: false
-    notes: Pins 30-33 are free wires just in case
+    notes: Pins 30-33 are free wires just in case (for e-throttle)
+  Lambda_Module1: &lambda
+    pinlabels: [GND, PWR, SIG-GY, SIG-WH, SIG-YE]
+    type: Lambda Connector
+    subtype: male-Bulkhead-Pass-Through
+  Lambda_Module2:
+    <<: *lambda
 
 
 cables:
@@ -87,6 +96,19 @@ cables:
     <<: *temp_cbl5
     colors: [BK, RD, GY, GY, GY]
     notes: 3-Longitude, 4-Lateral, 5-Vertical
+# Lambda Sensor Passthrough
+  3P_Lambda_Signals1: &lambda_sigs
+    <<: *temp_cbl3
+    colors: [GY, WH, YE]
+  2P_Lambda_PG1: &lambda_pg
+    <<: *template_cbl2
+    gauge: 16 AWG
+    colors: [BK, RD]
+  3P_Lambda_Signals2:
+    <<: *lambda_sigs
+  2P_Lambda_PG2:
+    <<: *lambda_pg
+
 
 connections:
 #PDM Chassis GND (Already in the Controllers-BA Harness, just for reference)
@@ -139,3 +161,20 @@ connections:
   - DASH: [9, 8, 3, 4, 5]
   - 5P_Accelmtr: [1-5]
   - BULKHEAD_C: [23-27]
+
+# Lambda Module 1
+-
+  - Lambda_Module1: [3-5]
+  - 3P_Lambda_Signals1: [1-3]
+  - BULKHEAD_C: [45, 29, 44]
+-
+  - Lambda_Module1: [1-2]
+  - 2P_Lambda_PG1: [1-2]
+  - BULKHEAD_C: [1, 4]
+
+# Lambda Module 2
+
+-
+  - Lambda_Module2: [1-2]
+  - 2P_Lambda_PG2: [1-2]
+  - BULKHEAD_C: [6, 5]

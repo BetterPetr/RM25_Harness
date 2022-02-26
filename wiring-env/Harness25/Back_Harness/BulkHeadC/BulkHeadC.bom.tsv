@@ -1,10 +1,13 @@
 Id	Description	Qty	Unit	Designators
 1	Cable, 1 x 22 AWG	67.0	in	1P_CrnkCsP_SIG, 1P_ShftDrmPos_SIG
-2	Cable, 2 x 22 AWG	67.0	in	2P_CrnkCsP_PWR, 2P_ShftDrmPos_PWR
-3	Cable, 3 x 22 AWG	24.0	in	3P_ShftLevPos
-4	Cable, 4 x 22 AWG	80.0	in	4P_DashComms, 4P_ECUComms
-5	Cable, 5 x 22 AWG	22.0	in	5P_Accelmtr
-6	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD_C
-7	Connector, Binder 4P, female, 4 pins	4		Comms_Dash, Comms_ECU, ShiftLeverPos, ShiftdrumPos
-8	Connector, Deutsch DT04_6P, female, 6 pins	1		Accelmtr
-9	Connector, Honda CE3001 Connector 3P, female, 3 pins	1		CrankCase_Pressure
+2	Cable, 2 x 16 AWG	0	m	2P_Lambda_PG1, 2P_Lambda_PG2
+3	Cable, 2 x 22 AWG	67.0	in	2P_CrnkCsP_PWR, 2P_ShftDrmPos_PWR
+4	Cable, 3 x 22 AWG	24.0	in	3P_ShftLevPos
+5	Cable, 3 x 22 AWG	0	m	3P_Lambda_Signals1, 3P_Lambda_Signals2
+6	Cable, 4 x 22 AWG	80.0	in	4P_DashComms, 4P_ECUComms
+7	Cable, 5 x 22 AWG	22.0	in	5P_Accelmtr
+8	Connector, AMPHENOL HDP 47P, female, 47 pins	1		BULKHEAD_C
+9	Connector, Binder 4P, female, 4 pins	4		Comms_Dash, Comms_ECU, ShiftLeverPos, ShiftdrumPos
+10	Connector, Deutsch DT04_6P, female, 6 pins	1		Accelmtr
+11	Connector, Honda CE3001 Connector 3P, female, 3 pins	1		CrankCase_Pressure
+12	Connector, Lambda Sensor, Bulkhead-Pass-Through, 5 pins	2		Lambda_Sensor1, Lambda_Sensor2
