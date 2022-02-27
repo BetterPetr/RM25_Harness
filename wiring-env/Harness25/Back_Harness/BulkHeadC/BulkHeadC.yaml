@@ -39,7 +39,7 @@ templates:
 
 connectors:
   BULKHEAD_C: &ahdp47
-    pinlabels: [GND,2,3, PWR, PWR, GND, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV, GND, PWR, SIG, SIG, SIG,28,SIG,30,31,32,33,34_16G,35,36,37,38,39,40,41,42,43, SIG, SIG,46,47]
+    pinlabels: [GND,2,3, PWR, PWR, GND, RX-, RX+, TX-, TX+, RX-, RX+, TX-, TX+, SIG, GND, PWR, AV, AV, GND, 12V, 5VAV, GND, PWR, SIG, SIG, SIG, SIG, SIG,30,31,32,33,34_16G,35,36,37,38,39,40,41, SIG, SIG, SIG, SIG,46,47]
     type: AMPHENOL HDP 47P
     subtype: female
     notes: BULKHEAD_C Connector (Engine Side)
@@ -171,8 +171,12 @@ connections:
   - Lambda_Sensor1: [1-2]
 
 # Lambda Sensor 2
-
+-
+  - BULKHEAD_C: [43, 28, 42]
+  - 3P_Lambda_Signals2: [1-3]
+  - Lambda_Sensor2: [3-5]
 -
   - BULKHEAD_C: [6, 5]
   - 2P_Lambda_PG2: [1-2]
   - Lambda_Sensor2: [1-2]
+

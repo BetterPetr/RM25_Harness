@@ -157,7 +157,7 @@ graph {
    </tr>
    <tr>
     <td port="p28l">28</td>
-    <td>28</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p29l">29</td>
@@ -213,11 +213,11 @@ graph {
    </tr>
    <tr>
     <td port="p42l">42</td>
-    <td>42</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p43l">43</td>
-    <td>43</td>
+    <td>SIG</td>
    </tr>
    <tr>
     <td port="p44l">44</td>
@@ -2020,6 +2020,15 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#999999:#000000"]
+	Lambda_Module2:p3r:e -- "3P_Lambda_Signals2":w1:w
+	"3P_Lambda_Signals2":w1:e -- BULKHEAD_C:p43l:w
+	edge [color="#000000:#ffffff:#000000"]
+	Lambda_Module2:p4r:e -- "3P_Lambda_Signals2":w2:w
+	"3P_Lambda_Signals2":w2:e -- BULKHEAD_C:p28l:w
+	edge [color="#000000:#ffff00:#000000"]
+	Lambda_Module2:p5r:e -- "3P_Lambda_Signals2":w3:w
+	"3P_Lambda_Signals2":w3:e -- BULKHEAD_C:p42l:w
 	"3P_Lambda_Signals2" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -2037,11 +2046,11 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td><!-- 1_in --></td>
+    <td>Lambda_Module2:3:SIG-GY</td>
     <td>
      1:GY
     </td>
-    <td><!-- 1_out --></td>
+    <td>BULKHEAD_C:43:SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
@@ -2053,11 +2062,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 2_in --></td>
+    <td>Lambda_Module2:4:SIG-WH</td>
     <td>
      2:WH
     </td>
-    <td><!-- 2_out --></td>
+    <td>BULKHEAD_C:28:SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
@@ -2069,11 +2078,11 @@ graph {
     </td>
    </tr>
    <tr>
-    <td><!-- 3_in --></td>
+    <td>Lambda_Module2:5:SIG-YE</td>
     <td>
      3:YE
     </td>
-    <td><!-- 3_out --></td>
+    <td>BULKHEAD_C:42:SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
